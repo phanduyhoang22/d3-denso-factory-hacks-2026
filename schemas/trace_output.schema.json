@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "d3/trace_output.schema.json",
+  "title": "Scenario output (truy vết + rủi ro + nguyên nhân + hành động)",
+  "description": "Output của pipeline cho MỘT kịch bản (Module 3a, 3b, 4, 5). Dashboard chỉ đọc file dạng này.",
+  "type": "object",
+  "required": ["scenario_id", "seed", "dataset", "incident", "forward", "risk", "backward", "actions"],
+  "additionalProperties": false,
+  "definitions": {
+    "node_type": {"enum": ["sensor", "machine", "process", "part", "product", "order"]}
+  },
+  "properties": {
+    "scenario_id": {"type": "string"},
+    "seed":        {"type": "integer"},
+    "dataset":     {"enum": ["ai4i", "secom", "mock"]},
+    "config":      {"type": "object", "description": "confounder_rate, edge_drop_rate, graph_size..."},
+    "incident":    {"$ref": "incident.schema.json"},
+    "bad_outcome_node": {"type": ["string", "null"], "description": "Node kết quả xấu dùng làm điểm xuất phát truy ngược"},
+    "forward": {
+      "description": "Module 3a (P3): forward_trace()",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node_id", "type", "depth", "path"],
+        "properties": {
+          "node_id": {"type": "string"},
+          "type":    {"$ref": "#/definitions/node_type"},
+          "depth":   {"type": "integer", "minimum": 1},
+          "path":    {"type": "array", "items": {"type": "string"}, "minItems": 2}
+        }
+      }
+    },
+    "risk": {
+      "description": "Module 4 (P4): risk_score(), sắp giảm dần theo risk_score (bảng mục 7)",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["node_id", "type", "risk_score", "reason"],
+        "properties": {
+          "node_id":    {"type": "string"},
+          "type":       {"$ref": "#/definitions/node_type"},
+          "risk_score": {"type": "number", "minimum": 0, "maximum": 1},
+          "reason":     {"type": "string"}
+        }
+      }
+    },
+    "backward": {
+      "description": "Module 3b (P1): backward_trace(), Top-k nguyên nhân khả dĩ (bảng mục 8)",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rank", "node_id", "cause", "score"],
+        "properties": {
+          "rank":    {"type": "integer", "minimum": 1},
+          "node_id": {"type": "string"},
+          "cause":   {"type": "string"},
+          "score":   {"type": "number", "minimum": 0, "maximum": 1},
+          "evidence": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    },
+    "actions": {
+      "description": "Module 5 (P4): recommend(), hành động theo bộ phận (đáp ứng yêu cầu D3 'gợi ý hành động theo bộ phận')",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["priority", "department", "action", "target_node"],
+        "properties": {
+          "priority":      {"type": "integer", "minimum": 1},
+          "department":    {"enum": ["maintenance", "production", "quality", "warehouse", "planning", "sales"]},
+          "action":        {"type": "string"},
+          "target_node":   {"type": "string"},
+          "kb_rule_id":    {"type": ["string", "null"]},
+          "adoption_rate": {"type": ["number", "null"], "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "timing_ms": {
+      "type": "object",
+      "description": "Thời gian từng bước, dùng cho E6",
+      "additionalProperties": {"type": "number"}
+    }
+  }
+}

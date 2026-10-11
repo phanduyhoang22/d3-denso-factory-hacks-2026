@@ -1,0 +1,613 @@
+{
+  "graph": {
+    "name": "factory_demo",
+    "seed": null,
+    "size": "demo"
+  },
+  "nodes": [
+    {
+      "id": "P01",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA1",
+      "step": 1,
+      "wip_buffer_true": 0.0,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "P02",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA1",
+      "step": 2,
+      "wip_buffer_true": 0.0,
+      "is_root": false,
+      "affected": true,
+      "est_impact": 0.558,
+      "hops": 1
+    },
+    {
+      "id": "P03",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA1",
+      "step": 3,
+      "wip_buffer_true": 0.0,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "P04",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA1",
+      "step": 4,
+      "wip_buffer_true": 0.0,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M01",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "L",
+      "spare_capacity": 0.1,
+      "alt_machines": [
+        "M02",
+        "M03",
+        "M06",
+        "M08"
+      ],
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M02",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "L",
+      "spare_capacity": 0.1,
+      "alt_machines": [
+        "M01",
+        "M03",
+        "M06",
+        "M08"
+      ],
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M05",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "M",
+      "spare_capacity": 0.1,
+      "alt_machines": [
+        "M07"
+      ],
+      "is_root": true,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M07",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "M",
+      "spare_capacity": 0.35,
+      "alt_machines": [
+        "M05"
+      ],
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M03",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "L",
+      "spare_capacity": 0.1,
+      "alt_machines": [
+        "M01",
+        "M02",
+        "M06",
+        "M08"
+      ],
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M04",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "H",
+      "spare_capacity": 0.1,
+      "alt_machines": [],
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M06",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "L",
+      "spare_capacity": 0.1,
+      "alt_machines": [
+        "M01",
+        "M02",
+        "M03",
+        "M08"
+      ],
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "M08",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "L",
+      "spare_capacity": 0.1,
+      "alt_machines": [
+        "M01",
+        "M02",
+        "M03",
+        "M06"
+      ],
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "A10",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 200,
+      "safety_stock": 800,
+      "lead_time_days": 5,
+      "n_alt_sources": 2,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "A11",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 150,
+      "safety_stock": 450,
+      "lead_time_days": 5,
+      "n_alt_sources": 1,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "A12",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 300,
+      "safety_stock": 1500,
+      "lead_time_days": 7,
+      "n_alt_sources": 2,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "A13",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 400,
+      "safety_stock": 400,
+      "lead_time_days": 7,
+      "n_alt_sources": 0,
+      "is_root": false,
+      "affected": true,
+      "est_impact": 0.4638,
+      "hops": 2
+    },
+    {
+      "id": "A14",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 100,
+      "safety_stock": 200,
+      "lead_time_days": 4,
+      "n_alt_sources": 1,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "A15",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 120,
+      "safety_stock": 720,
+      "lead_time_days": 4,
+      "n_alt_sources": 3,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "X1",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "is_root": false,
+      "affected": true,
+      "est_impact": 0.4175,
+      "hops": 3
+    },
+    {
+      "id": "X2",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "X3",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "O41",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 20,
+      "quantity": 1000,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "O42",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 1,
+      "due_in_days": 25,
+      "quantity": 1000,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "O43",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 3,
+      "due_in_days": 3,
+      "quantity": 1000,
+      "is_root": false,
+      "affected": true,
+      "est_impact": 0.334,
+      "hops": 4
+    },
+    {
+      "id": "O44",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 12,
+      "quantity": 1000,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "O50",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 9,
+      "quantity": 1000,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    },
+    {
+      "id": "O58",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 6,
+      "quantity": 1000,
+      "is_root": false,
+      "affected": true,
+      "est_impact": 0.2505,
+      "hops": 4
+    },
+    {
+      "id": "O60",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 1,
+      "due_in_days": 28,
+      "quantity": 1000,
+      "is_root": false,
+      "affected": false,
+      "est_impact": 0.0,
+      "hops": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "P01",
+      "target": "P03",
+      "type": "feeds",
+      "weight": 0.5,
+      "on_impact_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A10",
+      "type": "produces",
+      "weight": 0.9,
+      "on_impact_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A11",
+      "type": "produces",
+      "weight": 0.8,
+      "on_impact_path": false
+    },
+    {
+      "source": "P02",
+      "target": "A13",
+      "type": "produces",
+      "weight": 0.95,
+      "on_impact_path": true
+    },
+    {
+      "source": "P03",
+      "target": "A12",
+      "type": "produces",
+      "weight": 0.9,
+      "on_impact_path": false
+    },
+    {
+      "source": "P04",
+      "target": "A14",
+      "type": "produces",
+      "weight": 0.85,
+      "on_impact_path": false
+    },
+    {
+      "source": "P04",
+      "target": "A15",
+      "type": "produces",
+      "weight": 0.7,
+      "on_impact_path": false
+    },
+    {
+      "source": "M01",
+      "target": "P01",
+      "type": "operates_in",
+      "weight": 0.5,
+      "on_impact_path": false
+    },
+    {
+      "source": "M02",
+      "target": "P01",
+      "type": "operates_in",
+      "weight": 0.5,
+      "on_impact_path": false
+    },
+    {
+      "source": "M05",
+      "target": "P02",
+      "type": "operates_in",
+      "weight": 0.6,
+      "on_impact_path": true
+    },
+    {
+      "source": "M07",
+      "target": "P02",
+      "type": "operates_in",
+      "weight": 0.4,
+      "on_impact_path": false
+    },
+    {
+      "source": "M03",
+      "target": "P03",
+      "type": "operates_in",
+      "weight": 0.7,
+      "on_impact_path": false
+    },
+    {
+      "source": "M04",
+      "target": "P03",
+      "type": "operates_in",
+      "weight": 0.3,
+      "on_impact_path": false
+    },
+    {
+      "source": "M06",
+      "target": "P04",
+      "type": "operates_in",
+      "weight": 0.5,
+      "on_impact_path": false
+    },
+    {
+      "source": "M08",
+      "target": "P04",
+      "type": "operates_in",
+      "weight": 0.5,
+      "on_impact_path": false
+    },
+    {
+      "source": "A10",
+      "target": "X2",
+      "type": "used_in",
+      "weight": 0.8,
+      "on_impact_path": false
+    },
+    {
+      "source": "A11",
+      "target": "X2",
+      "type": "used_in",
+      "weight": 0.5,
+      "on_impact_path": false
+    },
+    {
+      "source": "A12",
+      "target": "X3",
+      "type": "used_in",
+      "weight": 0.9,
+      "on_impact_path": false
+    },
+    {
+      "source": "A13",
+      "target": "X1",
+      "type": "used_in",
+      "weight": 0.9,
+      "on_impact_path": true
+    },
+    {
+      "source": "A14",
+      "target": "X3",
+      "type": "used_in",
+      "weight": 0.6,
+      "on_impact_path": false
+    },
+    {
+      "source": "A15",
+      "target": "X2",
+      "type": "used_in",
+      "weight": 0.4,
+      "on_impact_path": false
+    },
+    {
+      "source": "X1",
+      "target": "O43",
+      "type": "fulfills",
+      "weight": 0.8,
+      "on_impact_path": true
+    },
+    {
+      "source": "X1",
+      "target": "O58",
+      "type": "fulfills",
+      "weight": 0.6,
+      "on_impact_path": true
+    },
+    {
+      "source": "X2",
+      "target": "O41",
+      "type": "fulfills",
+      "weight": 0.7,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O44",
+      "type": "fulfills",
+      "weight": 0.7,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O60",
+      "type": "fulfills",
+      "weight": 0.7,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O42",
+      "type": "fulfills",
+      "weight": 0.7,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O50",
+      "type": "fulfills",
+      "weight": 0.7,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O41",
+      "type": "fulfills",
+      "weight": 0.3,
+      "on_impact_path": false
+    }
+  ],
+  "root": "M05"
+}

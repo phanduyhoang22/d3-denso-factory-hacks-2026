@@ -1,0 +1,2681 @@
+{
+  "graph": {
+    "name": "factory_small_seed1",
+    "seed": 1,
+    "size": "small"
+  },
+  "nodes": [
+    {
+      "id": "P01",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA1",
+      "step": 1,
+      "wip_buffer_true": 0.037
+    },
+    {
+      "id": "P02",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA1",
+      "step": 2,
+      "wip_buffer_true": 0.132
+    },
+    {
+      "id": "P03",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA1",
+      "step": 3,
+      "wip_buffer_true": 0.092
+    },
+    {
+      "id": "M01",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "M",
+      "spare_capacity": 0.482,
+      "alt_machines": [
+        "M02"
+      ]
+    },
+    {
+      "id": "S_M01_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M01_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M01_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M01_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M01_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M02",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "M",
+      "spare_capacity": 0.467,
+      "alt_machines": [
+        "M01"
+      ]
+    },
+    {
+      "id": "S_M02_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M02_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M02_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M02_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M02_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M03",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "H",
+      "spare_capacity": 0.05,
+      "alt_machines": []
+    },
+    {
+      "id": "S_M03_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M03_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M03_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M03_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M03_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M04",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "L",
+      "spare_capacity": 0.379,
+      "alt_machines": [
+        "M05"
+      ]
+    },
+    {
+      "id": "S_M04_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M04_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M04_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M04_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M04_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M05",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA1",
+      "machine_type": "L",
+      "spare_capacity": 0.113,
+      "alt_machines": [
+        "M04"
+      ]
+    },
+    {
+      "id": "S_M05_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M05_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M05_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M05_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M05_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "P04",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA2",
+      "step": 1,
+      "wip_buffer_true": 0.194
+    },
+    {
+      "id": "P05",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA2",
+      "step": 2,
+      "wip_buffer_true": 0.2
+    },
+    {
+      "id": "P06",
+      "type": "process",
+      "layer": 2,
+      "branch": "A",
+      "line": "LA2",
+      "step": 3,
+      "wip_buffer_true": 0.014
+    },
+    {
+      "id": "M06",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA2",
+      "machine_type": "L",
+      "spare_capacity": 0.038,
+      "alt_machines": [
+        "M07",
+        "M08",
+        "M09",
+        "M11"
+      ]
+    },
+    {
+      "id": "S_M06_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M06_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M06_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M06_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M06_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M07",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA2",
+      "machine_type": "L",
+      "spare_capacity": 0.329,
+      "alt_machines": [
+        "M06",
+        "M08",
+        "M09",
+        "M11"
+      ]
+    },
+    {
+      "id": "S_M07_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M07_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M07_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M07_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M07_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M08",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA2",
+      "machine_type": "L",
+      "spare_capacity": 0.21,
+      "alt_machines": [
+        "M06",
+        "M07",
+        "M09",
+        "M11"
+      ]
+    },
+    {
+      "id": "S_M08_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M08_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M08_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M08_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M08_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M09",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA2",
+      "machine_type": "L",
+      "spare_capacity": 0.392,
+      "alt_machines": [
+        "M06",
+        "M07",
+        "M08",
+        "M11"
+      ]
+    },
+    {
+      "id": "S_M09_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M09_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M09_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M09_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M09_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M10",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA2",
+      "machine_type": "M",
+      "spare_capacity": 0.224,
+      "alt_machines": []
+    },
+    {
+      "id": "S_M10_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M10_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M10_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M10_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M10_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "M11",
+      "type": "machine",
+      "layer": 1,
+      "branch": "A",
+      "line": "LA2",
+      "machine_type": "L",
+      "spare_capacity": 0.35,
+      "alt_machines": [
+        "M06",
+        "M07",
+        "M08",
+        "M09"
+      ]
+    },
+    {
+      "id": "S_M11_air_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "air_temp"
+    },
+    {
+      "id": "S_M11_process_temp",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "process_temp"
+    },
+    {
+      "id": "S_M11_rot_speed",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "rot_speed"
+    },
+    {
+      "id": "S_M11_torque",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "torque"
+    },
+    {
+      "id": "S_M11_tool_wear",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "A",
+      "measures": "tool_wear"
+    },
+    {
+      "id": "P07",
+      "type": "process",
+      "layer": 2,
+      "branch": "B",
+      "line": "LB1",
+      "step": 1,
+      "wip_buffer_true": 0.177
+    },
+    {
+      "id": "S_P07_g1",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_1"
+    },
+    {
+      "id": "S_P07_g2",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_2"
+    },
+    {
+      "id": "S_P07_g3",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_3"
+    },
+    {
+      "id": "P08",
+      "type": "process",
+      "layer": 2,
+      "branch": "B",
+      "line": "LB1",
+      "step": 2,
+      "wip_buffer_true": 0.013
+    },
+    {
+      "id": "S_P08_g1",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_1"
+    },
+    {
+      "id": "S_P08_g2",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_2"
+    },
+    {
+      "id": "S_P08_g3",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_3"
+    },
+    {
+      "id": "P09",
+      "type": "process",
+      "layer": 2,
+      "branch": "B",
+      "line": "LB1",
+      "step": 3,
+      "wip_buffer_true": 0.167
+    },
+    {
+      "id": "S_P09_g1",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_1"
+    },
+    {
+      "id": "S_P09_g2",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_2"
+    },
+    {
+      "id": "S_P09_g3",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_3"
+    },
+    {
+      "id": "M12",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB1",
+      "machine_type": "M",
+      "spare_capacity": 0.125,
+      "alt_machines": [
+        "M13"
+      ]
+    },
+    {
+      "id": "M13",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB1",
+      "machine_type": "M",
+      "spare_capacity": 0.292,
+      "alt_machines": [
+        "M12"
+      ]
+    },
+    {
+      "id": "M14",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB1",
+      "machine_type": "L",
+      "spare_capacity": 0.272,
+      "alt_machines": [
+        "M16",
+        "M17"
+      ]
+    },
+    {
+      "id": "M15",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB1",
+      "machine_type": "H",
+      "spare_capacity": 0.131,
+      "alt_machines": []
+    },
+    {
+      "id": "M16",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB1",
+      "machine_type": "L",
+      "spare_capacity": 0.007,
+      "alt_machines": [
+        "M14",
+        "M17"
+      ]
+    },
+    {
+      "id": "M17",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB1",
+      "machine_type": "L",
+      "spare_capacity": 0.075,
+      "alt_machines": [
+        "M14",
+        "M16"
+      ]
+    },
+    {
+      "id": "P10",
+      "type": "process",
+      "layer": 2,
+      "branch": "B",
+      "line": "LB2",
+      "step": 1,
+      "wip_buffer_true": 0.138
+    },
+    {
+      "id": "S_P10_g1",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_1"
+    },
+    {
+      "id": "S_P10_g2",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_2"
+    },
+    {
+      "id": "S_P10_g3",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_3"
+    },
+    {
+      "id": "P11",
+      "type": "process",
+      "layer": 2,
+      "branch": "B",
+      "line": "LB2",
+      "step": 2,
+      "wip_buffer_true": 0.188
+    },
+    {
+      "id": "S_P11_g1",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_1"
+    },
+    {
+      "id": "S_P11_g2",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_2"
+    },
+    {
+      "id": "S_P11_g3",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_3"
+    },
+    {
+      "id": "P12",
+      "type": "process",
+      "layer": 2,
+      "branch": "B",
+      "line": "LB2",
+      "step": 3,
+      "wip_buffer_true": 0.029
+    },
+    {
+      "id": "S_P12_g1",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_1"
+    },
+    {
+      "id": "S_P12_g2",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_2"
+    },
+    {
+      "id": "S_P12_g3",
+      "type": "sensor",
+      "layer": 0,
+      "branch": "B",
+      "measures": "secom_group_3"
+    },
+    {
+      "id": "M18",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB2",
+      "machine_type": "L",
+      "spare_capacity": 0.356,
+      "alt_machines": [
+        "M21",
+        "M22"
+      ]
+    },
+    {
+      "id": "M19",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB2",
+      "machine_type": "M",
+      "spare_capacity": 0.184,
+      "alt_machines": [
+        "M20"
+      ]
+    },
+    {
+      "id": "M20",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB2",
+      "machine_type": "M",
+      "spare_capacity": 0.093,
+      "alt_machines": [
+        "M19"
+      ]
+    },
+    {
+      "id": "M21",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB2",
+      "machine_type": "L",
+      "spare_capacity": 0.385,
+      "alt_machines": [
+        "M18",
+        "M22"
+      ]
+    },
+    {
+      "id": "M22",
+      "type": "machine",
+      "layer": 1,
+      "branch": "B",
+      "line": "LB2",
+      "machine_type": "L",
+      "spare_capacity": 0.115,
+      "alt_machines": [
+        "M18",
+        "M21"
+      ]
+    },
+    {
+      "id": "A01",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 92,
+      "safety_stock": 407,
+      "lead_time_days": 3,
+      "n_alt_sources": 2,
+      "line": "LA1"
+    },
+    {
+      "id": "A02",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 121,
+      "safety_stock": 575,
+      "lead_time_days": 12,
+      "n_alt_sources": 2,
+      "line": "LA1"
+    },
+    {
+      "id": "A03",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 230,
+      "safety_stock": 1060,
+      "lead_time_days": 2,
+      "n_alt_sources": 0,
+      "line": "LA1"
+    },
+    {
+      "id": "A04",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 473,
+      "safety_stock": 378,
+      "lead_time_days": 10,
+      "n_alt_sources": 1,
+      "line": "LA1"
+    },
+    {
+      "id": "A05",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 158,
+      "safety_stock": 226,
+      "lead_time_days": 2,
+      "n_alt_sources": 0,
+      "line": "LA1"
+    },
+    {
+      "id": "A06",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 171,
+      "safety_stock": 79,
+      "lead_time_days": 6,
+      "n_alt_sources": 3,
+      "line": "LA1"
+    },
+    {
+      "id": "A07",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 81,
+      "safety_stock": 325,
+      "lead_time_days": 4,
+      "n_alt_sources": 3,
+      "line": "LA1"
+    },
+    {
+      "id": "A08",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 50,
+      "safety_stock": 6,
+      "lead_time_days": 10,
+      "n_alt_sources": 0,
+      "line": "LA1"
+    },
+    {
+      "id": "A09",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 211,
+      "safety_stock": 253,
+      "lead_time_days": 9,
+      "n_alt_sources": 3,
+      "line": "LA2"
+    },
+    {
+      "id": "A10",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 162,
+      "safety_stock": 669,
+      "lead_time_days": 10,
+      "n_alt_sources": 2,
+      "line": "LA2"
+    },
+    {
+      "id": "A11",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 100,
+      "safety_stock": 388,
+      "lead_time_days": 7,
+      "n_alt_sources": 2,
+      "line": "LA2"
+    },
+    {
+      "id": "A12",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 229,
+      "safety_stock": 852,
+      "lead_time_days": 3,
+      "n_alt_sources": 0,
+      "line": "LA2"
+    },
+    {
+      "id": "A13",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 158,
+      "safety_stock": 209,
+      "lead_time_days": 5,
+      "n_alt_sources": 3,
+      "line": "LA2"
+    },
+    {
+      "id": "A14",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 359,
+      "safety_stock": 1016,
+      "lead_time_days": 9,
+      "n_alt_sources": 0,
+      "line": "LA2"
+    },
+    {
+      "id": "A15",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 292,
+      "safety_stock": 818,
+      "lead_time_days": 9,
+      "n_alt_sources": 3,
+      "line": "LB1"
+    },
+    {
+      "id": "A16",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 207,
+      "safety_stock": 782,
+      "lead_time_days": 3,
+      "n_alt_sources": 3,
+      "line": "LB1"
+    },
+    {
+      "id": "A17",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 476,
+      "safety_stock": 1081,
+      "lead_time_days": 14,
+      "n_alt_sources": 3,
+      "line": "LB1"
+    },
+    {
+      "id": "A18",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 334,
+      "safety_stock": 725,
+      "lead_time_days": 7,
+      "n_alt_sources": 0,
+      "line": "LB1"
+    },
+    {
+      "id": "A19",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 469,
+      "safety_stock": 2040,
+      "lead_time_days": 12,
+      "n_alt_sources": 1,
+      "line": "LB2"
+    },
+    {
+      "id": "A20",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 351,
+      "safety_stock": 1190,
+      "lead_time_days": 8,
+      "n_alt_sources": 2,
+      "line": "LB2"
+    },
+    {
+      "id": "A21",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 55,
+      "safety_stock": 314,
+      "lead_time_days": 3,
+      "n_alt_sources": 1,
+      "line": "LB2"
+    },
+    {
+      "id": "A22",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 202,
+      "safety_stock": 329,
+      "lead_time_days": 2,
+      "n_alt_sources": 1,
+      "line": "LB2"
+    },
+    {
+      "id": "A23",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 274,
+      "safety_stock": 375,
+      "lead_time_days": 11,
+      "n_alt_sources": 2,
+      "line": "LB2"
+    },
+    {
+      "id": "A24",
+      "type": "component",
+      "layer": 3,
+      "branch": "shared",
+      "daily_usage": 236,
+      "safety_stock": 1291,
+      "lead_time_days": 4,
+      "n_alt_sources": 3,
+      "line": "LB2"
+    },
+    {
+      "id": "X1",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "family_line": "LA1"
+    },
+    {
+      "id": "X2",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "family_line": "LA2"
+    },
+    {
+      "id": "X3",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "family_line": "LB1"
+    },
+    {
+      "id": "X4",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "family_line": "LB2"
+    },
+    {
+      "id": "X5",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "family_line": "LA1"
+    },
+    {
+      "id": "X6",
+      "type": "product",
+      "layer": 4,
+      "branch": "shared",
+      "family_line": "LA2"
+    },
+    {
+      "id": "O01",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 26,
+      "quantity": 4172
+    },
+    {
+      "id": "O02",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 1,
+      "due_in_days": 20,
+      "quantity": 2741
+    },
+    {
+      "id": "O03",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 3,
+      "due_in_days": 30,
+      "quantity": 458
+    },
+    {
+      "id": "O04",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 3,
+      "due_in_days": 6,
+      "quantity": 2591
+    },
+    {
+      "id": "O05",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 1,
+      "due_in_days": 15,
+      "quantity": 2994
+    },
+    {
+      "id": "O06",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 3,
+      "due_in_days": 11,
+      "quantity": 4708
+    },
+    {
+      "id": "O07",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 6,
+      "quantity": 1873
+    },
+    {
+      "id": "O08",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 2,
+      "quantity": 1426
+    },
+    {
+      "id": "O09",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 1,
+      "due_in_days": 20,
+      "quantity": 1409
+    },
+    {
+      "id": "O10",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 3,
+      "due_in_days": 10,
+      "quantity": 2180
+    },
+    {
+      "id": "O11",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 15,
+      "quantity": 4370
+    },
+    {
+      "id": "O12",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 17,
+      "quantity": 1041
+    },
+    {
+      "id": "O13",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 2,
+      "quantity": 2409
+    },
+    {
+      "id": "O14",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 3,
+      "due_in_days": 2,
+      "quantity": 2014
+    },
+    {
+      "id": "O15",
+      "type": "order",
+      "layer": 5,
+      "branch": "shared",
+      "priority": 2,
+      "due_in_days": 24,
+      "quantity": 740
+    }
+  ],
+  "edges": [
+    {
+      "source": "P01",
+      "target": "P02",
+      "type": "feeds",
+      "weight": 0.4049,
+      "on_impact_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A01",
+      "type": "produces",
+      "weight": 0.7222,
+      "on_impact_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A02",
+      "type": "produces",
+      "weight": 0.9586,
+      "on_impact_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A03",
+      "type": "produces",
+      "weight": 0.6545,
+      "on_impact_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A20",
+      "type": "produces",
+      "weight": 0.3488,
+      "on_impact_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A22",
+      "type": "produces",
+      "weight": 0.4582,
+      "on_impact_path": false
+    },
+    {
+      "source": "P02",
+      "target": "A04",
+      "type": "produces",
+      "weight": 0.8034,
+      "on_impact_path": false
+    },
+    {
+      "source": "P02",
+      "target": "A05",
+      "type": "produces",
+      "weight": 0.8902,
+      "on_impact_path": false
+    },
+    {
+      "source": "P03",
+      "target": "A06",
+      "type": "produces",
+      "weight": 0.7275,
+      "on_impact_path": false
+    },
+    {
+      "source": "P03",
+      "target": "A07",
+      "type": "produces",
+      "weight": 0.904,
+      "on_impact_path": false
+    },
+    {
+      "source": "P03",
+      "target": "A08",
+      "type": "produces",
+      "weight": 0.7088,
+      "on_impact_path": false
+    },
+    {
+      "source": "M01",
+      "target": "P01",
+      "type": "operates_in",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M01",
+      "target": "P02",
+      "type": "operates_in",
+      "weight": 0.178,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M01_air_temp",
+      "target": "M01",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M01_process_temp",
+      "target": "M01",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M01_rot_speed",
+      "target": "M01",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M01_torque",
+      "target": "M01",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M01_tool_wear",
+      "target": "M01",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M02",
+      "target": "P02",
+      "type": "operates_in",
+      "weight": 0.3824,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M02_air_temp",
+      "target": "M02",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M02_process_temp",
+      "target": "M02",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M02_rot_speed",
+      "target": "M02",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M02_torque",
+      "target": "M02",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M02_tool_wear",
+      "target": "M02",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M03",
+      "target": "P02",
+      "type": "operates_in",
+      "weight": 0.3973,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M03_air_temp",
+      "target": "M03",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M03_process_temp",
+      "target": "M03",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M03_rot_speed",
+      "target": "M03",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M03_torque",
+      "target": "M03",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M03_tool_wear",
+      "target": "M03",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M04",
+      "target": "P02",
+      "type": "operates_in",
+      "weight": 0.0423,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M04_air_temp",
+      "target": "M04",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M04_process_temp",
+      "target": "M04",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M04_rot_speed",
+      "target": "M04",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M04_torque",
+      "target": "M04",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M04_tool_wear",
+      "target": "M04",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M05",
+      "target": "P03",
+      "type": "operates_in",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M05_air_temp",
+      "target": "M05",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M05_process_temp",
+      "target": "M05",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M05_rot_speed",
+      "target": "M05",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M05_torque",
+      "target": "M05",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M05_tool_wear",
+      "target": "M05",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "P04",
+      "target": "P05",
+      "type": "feeds",
+      "weight": 0.3124,
+      "on_impact_path": false
+    },
+    {
+      "source": "P04",
+      "target": "A09",
+      "type": "produces",
+      "weight": 0.964,
+      "on_impact_path": false
+    },
+    {
+      "source": "P04",
+      "target": "A10",
+      "type": "produces",
+      "weight": 0.8959,
+      "on_impact_path": false
+    },
+    {
+      "source": "P04",
+      "target": "A11",
+      "type": "produces",
+      "weight": 0.8725,
+      "on_impact_path": false
+    },
+    {
+      "source": "P05",
+      "target": "P06",
+      "type": "feeds",
+      "weight": 0.4024,
+      "on_impact_path": false
+    },
+    {
+      "source": "P05",
+      "target": "A12",
+      "type": "produces",
+      "weight": 0.7223,
+      "on_impact_path": false
+    },
+    {
+      "source": "P05",
+      "target": "A13",
+      "type": "produces",
+      "weight": 0.8267,
+      "on_impact_path": false
+    },
+    {
+      "source": "P05",
+      "target": "A21",
+      "type": "produces",
+      "weight": 0.4874,
+      "on_impact_path": false
+    },
+    {
+      "source": "P06",
+      "target": "A14",
+      "type": "produces",
+      "weight": 0.6906,
+      "on_impact_path": false
+    },
+    {
+      "source": "M06",
+      "target": "P04",
+      "type": "operates_in",
+      "weight": 0.3209,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M06_air_temp",
+      "target": "M06",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M06_process_temp",
+      "target": "M06",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M06_rot_speed",
+      "target": "M06",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M06_torque",
+      "target": "M06",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M06_tool_wear",
+      "target": "M06",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M07",
+      "target": "P04",
+      "type": "operates_in",
+      "weight": 0.6791,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M07_air_temp",
+      "target": "M07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M07_process_temp",
+      "target": "M07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M07_rot_speed",
+      "target": "M07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M07_torque",
+      "target": "M07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M07_tool_wear",
+      "target": "M07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M08",
+      "target": "P05",
+      "type": "operates_in",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M08_air_temp",
+      "target": "M08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M08_process_temp",
+      "target": "M08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M08_rot_speed",
+      "target": "M08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M08_torque",
+      "target": "M08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M08_tool_wear",
+      "target": "M08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M09",
+      "target": "P06",
+      "type": "operates_in",
+      "weight": 0.3432,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M09_air_temp",
+      "target": "M09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M09_process_temp",
+      "target": "M09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M09_rot_speed",
+      "target": "M09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M09_torque",
+      "target": "M09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M09_tool_wear",
+      "target": "M09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M10",
+      "target": "P06",
+      "type": "operates_in",
+      "weight": 0.5358,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M10_air_temp",
+      "target": "M10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M10_process_temp",
+      "target": "M10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M10_rot_speed",
+      "target": "M10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M10_torque",
+      "target": "M10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M10_tool_wear",
+      "target": "M10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M11",
+      "target": "P06",
+      "type": "operates_in",
+      "weight": 0.121,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M11_air_temp",
+      "target": "M11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M11_process_temp",
+      "target": "M11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M11_rot_speed",
+      "target": "M11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M11_torque",
+      "target": "M11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_M11_tool_wear",
+      "target": "M11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "P07",
+      "target": "A15",
+      "type": "produces",
+      "weight": 0.9986,
+      "on_impact_path": false
+    },
+    {
+      "source": "P07",
+      "target": "A16",
+      "type": "produces",
+      "weight": 0.8001,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P07_g1",
+      "target": "P07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P07_g2",
+      "target": "P07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P07_g3",
+      "target": "P07",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "P08",
+      "target": "P09",
+      "type": "feeds",
+      "weight": 0.4071,
+      "on_impact_path": false
+    },
+    {
+      "source": "P08",
+      "target": "A11",
+      "type": "produces",
+      "weight": 0.3622,
+      "on_impact_path": false
+    },
+    {
+      "source": "P08",
+      "target": "A17",
+      "type": "produces",
+      "weight": 0.9729,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P08_g1",
+      "target": "P08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P08_g2",
+      "target": "P08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P08_g3",
+      "target": "P08",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "P09",
+      "target": "A18",
+      "type": "produces",
+      "weight": 0.8057,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P09_g1",
+      "target": "P09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P09_g2",
+      "target": "P09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P09_g3",
+      "target": "P09",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M12",
+      "target": "P07",
+      "type": "operates_in",
+      "weight": 0.5239,
+      "on_impact_path": false
+    },
+    {
+      "source": "M13",
+      "target": "P07",
+      "type": "operates_in",
+      "weight": 0.4761,
+      "on_impact_path": false
+    },
+    {
+      "source": "M14",
+      "target": "P08",
+      "type": "operates_in",
+      "weight": 0.1554,
+      "on_impact_path": false
+    },
+    {
+      "source": "M15",
+      "target": "P08",
+      "type": "operates_in",
+      "weight": 0.8446,
+      "on_impact_path": false
+    },
+    {
+      "source": "M16",
+      "target": "P09",
+      "type": "operates_in",
+      "weight": 0.3353,
+      "on_impact_path": false
+    },
+    {
+      "source": "M17",
+      "target": "P09",
+      "type": "operates_in",
+      "weight": 0.6647,
+      "on_impact_path": false
+    },
+    {
+      "source": "P10",
+      "target": "A06",
+      "type": "produces",
+      "weight": 0.3779,
+      "on_impact_path": false
+    },
+    {
+      "source": "P10",
+      "target": "A19",
+      "type": "produces",
+      "weight": 0.8681,
+      "on_impact_path": false
+    },
+    {
+      "source": "P10",
+      "target": "A20",
+      "type": "produces",
+      "weight": 0.9521,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P10_g1",
+      "target": "P10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P10_g2",
+      "target": "P10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P10_g3",
+      "target": "P10",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "P11",
+      "target": "P12",
+      "type": "feeds",
+      "weight": 0.4014,
+      "on_impact_path": false
+    },
+    {
+      "source": "P11",
+      "target": "A21",
+      "type": "produces",
+      "weight": 0.8665,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P11_g1",
+      "target": "P11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P11_g2",
+      "target": "P11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P11_g3",
+      "target": "P11",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "P12",
+      "target": "A22",
+      "type": "produces",
+      "weight": 0.8037,
+      "on_impact_path": false
+    },
+    {
+      "source": "P12",
+      "target": "A23",
+      "type": "produces",
+      "weight": 0.8503,
+      "on_impact_path": false
+    },
+    {
+      "source": "P12",
+      "target": "A24",
+      "type": "produces",
+      "weight": 0.877,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P12_g1",
+      "target": "P12",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P12_g2",
+      "target": "P12",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "S_P12_g3",
+      "target": "P12",
+      "type": "monitors",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M18",
+      "target": "P10",
+      "type": "operates_in",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "M19",
+      "target": "P11",
+      "type": "operates_in",
+      "weight": 0.371,
+      "on_impact_path": false
+    },
+    {
+      "source": "M20",
+      "target": "P11",
+      "type": "operates_in",
+      "weight": 0.629,
+      "on_impact_path": false
+    },
+    {
+      "source": "M21",
+      "target": "P12",
+      "type": "operates_in",
+      "weight": 0.7718,
+      "on_impact_path": false
+    },
+    {
+      "source": "M22",
+      "target": "P12",
+      "type": "operates_in",
+      "weight": 0.2282,
+      "on_impact_path": false
+    },
+    {
+      "source": "A01",
+      "target": "X1",
+      "type": "used_in",
+      "weight": 0.9464,
+      "on_impact_path": false
+    },
+    {
+      "source": "A01",
+      "target": "X5",
+      "type": "used_in",
+      "weight": 0.5731,
+      "on_impact_path": false
+    },
+    {
+      "source": "A01",
+      "target": "X6",
+      "type": "used_in",
+      "weight": 0.3707,
+      "on_impact_path": false
+    },
+    {
+      "source": "A02",
+      "target": "X5",
+      "type": "used_in",
+      "weight": 0.9092,
+      "on_impact_path": false
+    },
+    {
+      "source": "A03",
+      "target": "X5",
+      "type": "used_in",
+      "weight": 0.5321,
+      "on_impact_path": false
+    },
+    {
+      "source": "A04",
+      "target": "X1",
+      "type": "used_in",
+      "weight": 0.3168,
+      "on_impact_path": false
+    },
+    {
+      "source": "A05",
+      "target": "X5",
+      "type": "used_in",
+      "weight": 0.3116,
+      "on_impact_path": false
+    },
+    {
+      "source": "A06",
+      "target": "X1",
+      "type": "used_in",
+      "weight": 0.7836,
+      "on_impact_path": false
+    },
+    {
+      "source": "A07",
+      "target": "X1",
+      "type": "used_in",
+      "weight": 0.7075,
+      "on_impact_path": false
+    },
+    {
+      "source": "A07",
+      "target": "X5",
+      "type": "used_in",
+      "weight": 0.5737,
+      "on_impact_path": false
+    },
+    {
+      "source": "A08",
+      "target": "X5",
+      "type": "used_in",
+      "weight": 0.7012,
+      "on_impact_path": false
+    },
+    {
+      "source": "A09",
+      "target": "X6",
+      "type": "used_in",
+      "weight": 0.4535,
+      "on_impact_path": false
+    },
+    {
+      "source": "A10",
+      "target": "X6",
+      "type": "used_in",
+      "weight": 0.6086,
+      "on_impact_path": false
+    },
+    {
+      "source": "A11",
+      "target": "X2",
+      "type": "used_in",
+      "weight": 0.7609,
+      "on_impact_path": false
+    },
+    {
+      "source": "A11",
+      "target": "X6",
+      "type": "used_in",
+      "weight": 0.9836,
+      "on_impact_path": false
+    },
+    {
+      "source": "A12",
+      "target": "X6",
+      "type": "used_in",
+      "weight": 0.6798,
+      "on_impact_path": false
+    },
+    {
+      "source": "A13",
+      "target": "X2",
+      "type": "used_in",
+      "weight": 0.5224,
+      "on_impact_path": false
+    },
+    {
+      "source": "A14",
+      "target": "X2",
+      "type": "used_in",
+      "weight": 0.3286,
+      "on_impact_path": false
+    },
+    {
+      "source": "A15",
+      "target": "X3",
+      "type": "used_in",
+      "weight": 0.7604,
+      "on_impact_path": false
+    },
+    {
+      "source": "A16",
+      "target": "X3",
+      "type": "used_in",
+      "weight": 0.5063,
+      "on_impact_path": false
+    },
+    {
+      "source": "A17",
+      "target": "X3",
+      "type": "used_in",
+      "weight": 0.8456,
+      "on_impact_path": false
+    },
+    {
+      "source": "A18",
+      "target": "X3",
+      "type": "used_in",
+      "weight": 0.7729,
+      "on_impact_path": false
+    },
+    {
+      "source": "A19",
+      "target": "X4",
+      "type": "used_in",
+      "weight": 0.6963,
+      "on_impact_path": false
+    },
+    {
+      "source": "A20",
+      "target": "X4",
+      "type": "used_in",
+      "weight": 0.9351,
+      "on_impact_path": false
+    },
+    {
+      "source": "A21",
+      "target": "X3",
+      "type": "used_in",
+      "weight": 0.8316,
+      "on_impact_path": false
+    },
+    {
+      "source": "A21",
+      "target": "X4",
+      "type": "used_in",
+      "weight": 0.6733,
+      "on_impact_path": false
+    },
+    {
+      "source": "A22",
+      "target": "X4",
+      "type": "used_in",
+      "weight": 0.449,
+      "on_impact_path": false
+    },
+    {
+      "source": "A23",
+      "target": "X4",
+      "type": "used_in",
+      "weight": 0.5964,
+      "on_impact_path": false
+    },
+    {
+      "source": "A24",
+      "target": "X2",
+      "type": "used_in",
+      "weight": 0.6108,
+      "on_impact_path": false
+    },
+    {
+      "source": "X1",
+      "target": "O03",
+      "type": "fulfills",
+      "weight": 0.2431,
+      "on_impact_path": false
+    },
+    {
+      "source": "X1",
+      "target": "O05",
+      "type": "fulfills",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "X1",
+      "target": "O06",
+      "type": "fulfills",
+      "weight": 0.1846,
+      "on_impact_path": false
+    },
+    {
+      "source": "X1",
+      "target": "O13",
+      "type": "fulfills",
+      "weight": 0.4298,
+      "on_impact_path": false
+    },
+    {
+      "source": "X1",
+      "target": "O14",
+      "type": "fulfills",
+      "weight": 0.3089,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O01",
+      "type": "fulfills",
+      "weight": 0.2783,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O02",
+      "type": "fulfills",
+      "weight": 0.2349,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O04",
+      "type": "fulfills",
+      "weight": 0.4133,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O06",
+      "type": "fulfills",
+      "weight": 0.8154,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O11",
+      "type": "fulfills",
+      "weight": 0.1296,
+      "on_impact_path": false
+    },
+    {
+      "source": "X2",
+      "target": "O13",
+      "type": "fulfills",
+      "weight": 0.5702,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O07",
+      "type": "fulfills",
+      "weight": 0.1533,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O08",
+      "type": "fulfills",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O11",
+      "type": "fulfills",
+      "weight": 0.1236,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O12",
+      "type": "fulfills",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "X3",
+      "target": "O15",
+      "type": "fulfills",
+      "weight": 0.4664,
+      "on_impact_path": false
+    },
+    {
+      "source": "X4",
+      "target": "O04",
+      "type": "fulfills",
+      "weight": 0.2402,
+      "on_impact_path": false
+    },
+    {
+      "source": "X4",
+      "target": "O10",
+      "type": "fulfills",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "X4",
+      "target": "O15",
+      "type": "fulfills",
+      "weight": 0.3376,
+      "on_impact_path": false
+    },
+    {
+      "source": "X5",
+      "target": "O03",
+      "type": "fulfills",
+      "weight": 0.05,
+      "on_impact_path": false
+    },
+    {
+      "source": "X5",
+      "target": "O07",
+      "type": "fulfills",
+      "weight": 0.4447,
+      "on_impact_path": false
+    },
+    {
+      "source": "X5",
+      "target": "O14",
+      "type": "fulfills",
+      "weight": 0.2701,
+      "on_impact_path": false
+    },
+    {
+      "source": "X5",
+      "target": "O15",
+      "type": "fulfills",
+      "weight": 0.196,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O01",
+      "type": "fulfills",
+      "weight": 0.7217,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O02",
+      "type": "fulfills",
+      "weight": 0.7651,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O03",
+      "type": "fulfills",
+      "weight": 0.7312,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O04",
+      "type": "fulfills",
+      "weight": 0.3466,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O07",
+      "type": "fulfills",
+      "weight": 0.402,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O09",
+      "type": "fulfills",
+      "weight": 1.0,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O11",
+      "type": "fulfills",
+      "weight": 0.7469,
+      "on_impact_path": false
+    },
+    {
+      "source": "X6",
+      "target": "O14",
+      "type": "fulfills",
+      "weight": 0.421,
+      "on_impact_path": false
+    }
+  ],
+  "root": null
+}

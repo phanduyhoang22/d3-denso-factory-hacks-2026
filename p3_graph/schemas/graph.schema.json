@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "D3 factory graph (node-link)",
+  "description": "Đồ thị tri thức sản xuất. Cạnh luôn hướng thượng nguồn → hạ nguồn. Mọi thuộc tính vận hành là THAM SỐ MÔ PHỎNG (docs/sim_params.md).",
+  "type": "object",
+  "required": [
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "graph": {
+      "type": "object",
+      "description": "name, seed, size, edge_drop (nếu là graph_observed)"
+    },
+    "root": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "layer",
+          "branch"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "M01, P02, A13, X1, O43, S_M01_torque, S_P05_g1"
+          },
+          "type": {
+            "enum": [
+              "sensor",
+              "machine",
+              "process",
+              "component",
+              "product",
+              "order"
+            ]
+          },
+          "layer": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 5
+          },
+          "branch": {
+            "enum": [
+              "A",
+              "B",
+              "shared"
+            ]
+          },
+          "line": {
+            "type": "string",
+            "description": "machine/process/component"
+          },
+          "step": {
+            "type": "integer",
+            "description": "process: thứ tự trong line"
+          },
+          "machine_type": {
+            "enum": [
+              "L",
+              "M",
+              "H"
+            ],
+            "description": "machine: khớp cột Type của AI4I"
+          },
+          "spare_capacity": {
+            "type": "number",
+            "description": "machine: công suất dư 0..0.5"
+          },
+          "alt_machines": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "machine: máy thay thế cùng line & loại"
+          },
+          "data_source": {
+            "enum": [
+              "ai4i",
+              "secom"
+            ],
+            "description": "node mang dữ liệu thật"
+          },
+          "data_summary": {
+            "type": "object"
+          },
+          "hist_fail_rate": {
+            "type": "number",
+            "description": "tần suất lỗi lịch sử, CHỈ từ train (làm trơn Laplace)"
+          },
+          "hist_fail_count": {
+            "type": "integer"
+          },
+          "hist_n": {
+            "type": "integer"
+          },
+          "wip_buffer_true": {
+            "type": "number",
+            "description": "process: CHỈ có trong graph_full, ẩn với hệ thống"
+          },
+          "daily_usage": {
+            "type": "integer"
+          },
+          "safety_stock": {
+            "type": "integer"
+          },
+          "lead_time_days": {
+            "type": "integer"
+          },
+          "n_alt_sources": {
+            "type": "integer"
+          },
+          "family_line": {
+            "type": "string",
+            "description": "product: line nhà"
+          },
+          "priority": {
+            "enum": [
+              1,
+              2,
+              3
+            ],
+            "description": "order: 3 = cao"
+          },
+          "due_in_days": {
+            "type": "integer"
+          },
+          "quantity": {
+            "type": "integer"
+          },
+          "measures": {
+            "type": "string",
+            "description": "sensor"
+          },
+          "is_root": {
+            "type": "boolean"
+          },
+          "affected": {
+            "type": "boolean"
+          },
+          "est_impact": {
+            "type": "number"
+          },
+          "hops": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "true_impact": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "target",
+          "type",
+          "weight"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "monitors",
+              "operates_in",
+              "feeds",
+              "produces",
+              "used_in",
+              "fulfills"
+            ]
+          },
+          "weight": {
+            "type": "number",
+            "exclusiveMinimum": 0,
+            "maximum": 1
+          },
+          "on_impact_path": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

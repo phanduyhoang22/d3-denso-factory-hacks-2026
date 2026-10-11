@@ -1,0 +1,152 @@
+{
+  "schema_version": "p2.impact_report.v1",
+  "scenario": "machine_incident",
+  "selection": null,
+  "trigger": {
+    "type": "machine_incident",
+    "id": "INC_demo_other_machine",
+    "source_node": "M03",
+    "machine_id": "M03",
+    "owner_dept": "Bảo trì",
+    "time": "2026-10-02 06:59",
+    "udi": 1500,
+    "product_id": null,
+    "details": {
+      "anomaly_score": null,
+      "anomaly_type": "Cảnh báo PLC",
+      "level": "Thấp",
+      "suspected_cause_group": null,
+      "hints_applied": [],
+      "hints_ignored": [],
+      "history": null,
+      "node_id": "M03",
+      "dataset": "AI4I2020",
+      "timestamp_is_synthetic": true
+    }
+  },
+  "causes": [],
+  "effect": {
+    "downtime_min": 20.0,
+    "effective_downtime_min": 20.0,
+    "severity": 0.3,
+    "severity_source": "P1"
+  },
+  "affected": [
+    {
+      "id": "P01",
+      "name": "Cắt phôi",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "cum_buffer_min": 0.0,
+      "risk": 0.3,
+      "path": [
+        "M03",
+        "P01"
+      ],
+      "reason": "Phụ thuộc M03 qua 1 bước, đệm tích lũy 0 phút so với dừng hiệu dụng 20 phút"
+    },
+    {
+      "id": "A11",
+      "name": "Phôi A11",
+      "type": "part",
+      "layer": "logic",
+      "owner_dept": "Kho & Logistics",
+      "cum_buffer_min": 0.0,
+      "risk": 0.3,
+      "path": [
+        "M03",
+        "P01",
+        "A11"
+      ],
+      "reason": "Phụ thuộc M03 qua 2 bước, đệm tích lũy 0 phút so với dừng hiệu dụng 20 phút"
+    }
+  ],
+  "by_department": {
+    "Sản xuất": {
+      "count": 1,
+      "max_risk": 0.3,
+      "items": [
+        {
+          "id": "P01",
+          "type": "process",
+          "risk": 0.3,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Kho & Logistics": {
+      "count": 1,
+      "max_risk": 0.3,
+      "items": [
+        {
+          "id": "A11",
+          "type": "part",
+          "risk": 0.3,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Bảo trì": {
+      "count": 1,
+      "max_risk": 0.3,
+      "items": [
+        {
+          "id": "M03",
+          "type": "machine",
+          "risk": 0.3,
+          "role": "source"
+        }
+      ],
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "substitutes": [],
+  "buffers": [],
+  "direct_lots": [
+    {
+      "lot": "LOT_015",
+      "units_delayed": 1
+    },
+    {
+      "lot": "LOT_016",
+      "units_delayed": 19
+    }
+  ],
+  "contributing_incidents": [],
+  "assumptions": {
+    "business_layer": "synthetic",
+    "takt_min": 1.0,
+    "substitute_share": 0.3,
+    "recovery_tau_h": 24.0,
+    "slack_mean_min": 360.0,
+    "priority_factor": {
+      "1": 0.7,
+      "2": 0.85,
+      "3": 1.0
+    },
+    "downtime_min_by_cause": {
+      "TWF": 15,
+      "HDF": 45,
+      "PWF": 60,
+      "OSF": 90,
+      "RNF": 30
+    },
+    "severity_by_cause": {
+      "TWF": 0.5,
+      "HDF": 0.75,
+      "PWF": 0.85,
+      "OSF": 0.95,
+      "RNF": 0.6
+    },
+    "note": "Đơn hàng, đệm, thời gian dừng, máy dự phòng là giả lập; cần hiệu chỉnh bằng dữ liệu DENSO."
+  }
+}

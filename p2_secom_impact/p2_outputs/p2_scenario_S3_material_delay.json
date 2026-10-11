@@ -1,0 +1,450 @@
+{
+  "schema_version": "p2.impact_report.v1",
+  "scenario": "material_delay",
+  "selection": null,
+  "trigger": {
+    "type": "supplier_delay",
+    "id": "SUP_A11_04000",
+    "source_node": "A11",
+    "owner_dept": "Kho & Logistics",
+    "time": "2026-10-04 00:39",
+    "udi": 4000,
+    "details": {
+      "part": "A11",
+      "delay_min": 180.0,
+      "buffer_min": 60.0
+    }
+  },
+  "causes": [],
+  "effect": {
+    "downtime_min": 180.0,
+    "effective_downtime_min": 180.0,
+    "severity": 0.6,
+    "severity_source": "assumed"
+  },
+  "affected": [
+    {
+      "id": "P02",
+      "name": "Phay",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "cum_buffer_min": 60.0,
+      "risk": 0.4,
+      "path": [
+        "A11",
+        "P02"
+      ],
+      "reason": "Phụ thuộc A11 qua 1 bước, đệm tích lũy 60 phút so với dừng hiệu dụng 180 phút"
+    },
+    {
+      "id": "A13",
+      "name": "Chi tiết phay A13",
+      "type": "part",
+      "layer": "logic",
+      "owner_dept": "Kho & Logistics",
+      "cum_buffer_min": 65.0,
+      "risk": 0.345,
+      "path": [
+        "A11",
+        "P02",
+        "A13"
+      ],
+      "reason": "Phụ thuộc A11 qua 2 bước, đệm tích lũy 65 phút so với dừng hiệu dụng 180 phút"
+    },
+    {
+      "id": "P03",
+      "name": "Lắp ráp & kiểm tra",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "cum_buffer_min": 70.0,
+      "risk": 0.314,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03"
+      ],
+      "reason": "Phụ thuộc A11 qua 3 bước, đệm tích lũy 70 phút so với dừng hiệu dụng 180 phút"
+    },
+    {
+      "id": "PRD_H",
+      "name": "Sản phẩm loại H",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "cum_buffer_min": 70.0,
+      "risk": 0.282,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_H"
+      ],
+      "reason": "Phụ thuộc A11 qua 4 bước, đệm tích lũy 70 phút so với dừng hiệu dụng 180 phút"
+    },
+    {
+      "id": "PRD_M",
+      "name": "Sản phẩm loại M",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "cum_buffer_min": 78.0,
+      "risk": 0.262,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_M"
+      ],
+      "reason": "Phụ thuộc A11 qua 4 bước, đệm tích lũy 78 phút so với dừng hiệu dụng 180 phút"
+    },
+    {
+      "id": "PRD_L",
+      "name": "Sản phẩm loại L",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "cum_buffer_min": 90.0,
+      "risk": 0.231,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_L"
+      ],
+      "reason": "Phụ thuộc A11 qua 4 bước, đệm tích lũy 90 phút so với dừng hiệu dụng 180 phút"
+    },
+    {
+      "id": "ORD_M08",
+      "name": "ORD_M08",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.18,
+      "cum_buffer_min": 78.0,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_M",
+        "ORD_M08"
+      ],
+      "reach": 0.262,
+      "delay_min": 15.7,
+      "slack_min": 16,
+      "miss_deadline": false,
+      "priority": 1,
+      "product": "M",
+      "qty": 250,
+      "customer": "KH2",
+      "due": "2026-10-05 21:51",
+      "time_to_impact_min": 1856.0,
+      "direct_units": 0,
+      "reason": "Trễ dự kiến 16 phút, dư thời gian 16 phút, ưu tiên 1"
+    },
+    {
+      "id": "ORD_H04",
+      "name": "ORD_H04",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.099,
+      "cum_buffer_min": 70.0,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_H",
+        "ORD_H04"
+      ],
+      "reach": 0.282,
+      "delay_min": 57.5,
+      "slack_min": 139,
+      "miss_deadline": false,
+      "priority": 2,
+      "product": "H",
+      "qty": 125,
+      "customer": "KH3",
+      "due": "2026-10-04 18:33",
+      "time_to_impact_min": 0.0,
+      "direct_units": 11,
+      "reason": "Trễ dự kiến 57 phút, dư thời gian 139 phút, ưu tiên 2"
+    },
+    {
+      "id": "ORD_H05",
+      "name": "ORD_H05",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.077,
+      "cum_buffer_min": 70.0,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_H",
+        "ORD_H05"
+      ],
+      "reach": 0.282,
+      "delay_min": 21.6,
+      "slack_min": 67,
+      "miss_deadline": false,
+      "priority": 2,
+      "product": "H",
+      "qty": 125,
+      "customer": "KH3",
+      "due": "2026-10-05 16:52",
+      "time_to_impact_min": 944.0,
+      "direct_units": 0,
+      "reason": "Trễ dự kiến 22 phút, dư thời gian 67 phút, ưu tiên 2"
+    },
+    {
+      "id": "ORD_L12",
+      "name": "ORD_L12",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.07,
+      "cum_buffer_min": 90.0,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_L",
+        "ORD_L12"
+      ],
+      "reach": 0.231,
+      "delay_min": 22.7,
+      "slack_min": 64,
+      "miss_deadline": false,
+      "priority": 2,
+      "product": "L",
+      "qty": 300,
+      "customer": "KH1",
+      "due": "2026-10-05 10:47",
+      "time_to_impact_min": 1495.0,
+      "direct_units": 0,
+      "reason": "Trễ dự kiến 23 phút, dư thời gian 64 phút, ưu tiên 2"
+    },
+    {
+      "id": "ORD_L08",
+      "name": "ORD_L08",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.054,
+      "cum_buffer_min": 90.0,
+      "path": [
+        "A11",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_L",
+        "ORD_L08"
+      ],
+      "reach": 0.231,
+      "delay_min": 89.3,
+      "slack_min": 324,
+      "miss_deadline": false,
+      "priority": 2,
+      "product": "L",
+      "qty": 300,
+      "customer": "KH1",
+      "due": "2026-10-04 06:14",
+      "time_to_impact_min": 0.0,
+      "direct_units": 0,
+      "reason": "Trễ dự kiến 89 phút, dư thời gian 324 phút, ưu tiên 2"
+    }
+  ],
+  "by_department": {
+    "Sản xuất": {
+      "count": 2,
+      "max_risk": 0.4,
+      "items": [
+        {
+          "id": "P02",
+          "type": "process",
+          "risk": 0.4,
+          "role": "affected"
+        },
+        {
+          "id": "P03",
+          "type": "process",
+          "risk": 0.314,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Kho & Logistics": {
+      "count": 2,
+      "max_risk": 0.6,
+      "items": [
+        {
+          "id": "A13",
+          "type": "part",
+          "risk": 0.345,
+          "role": "affected"
+        },
+        {
+          "id": "A11",
+          "type": "part",
+          "risk": 0.6,
+          "role": "source"
+        }
+      ],
+      "roles": [
+        "affected",
+        "source"
+      ]
+    },
+    "Chất lượng": {
+      "count": 3,
+      "max_risk": 0.282,
+      "items": [
+        {
+          "id": "PRD_H",
+          "type": "product",
+          "risk": 0.282,
+          "role": "affected"
+        },
+        {
+          "id": "PRD_M",
+          "type": "product",
+          "risk": 0.262,
+          "role": "affected"
+        },
+        {
+          "id": "PRD_L",
+          "type": "product",
+          "risk": 0.231,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Kế hoạch sản xuất": {
+      "count": 5,
+      "max_risk": 0.18,
+      "items": [
+        {
+          "id": "ORD_M08",
+          "type": "order",
+          "risk": 0.18,
+          "role": "affected"
+        },
+        {
+          "id": "ORD_H04",
+          "type": "order",
+          "risk": 0.099,
+          "role": "affected"
+        },
+        {
+          "id": "ORD_H05",
+          "type": "order",
+          "risk": 0.077,
+          "role": "affected"
+        },
+        {
+          "id": "ORD_L12",
+          "type": "order",
+          "risk": 0.07,
+          "role": "affected"
+        },
+        {
+          "id": "ORD_L08",
+          "type": "order",
+          "risk": 0.054,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    }
+  },
+  "substitutes": [],
+  "buffers": [
+    {
+      "src": "P02",
+      "dst": "A13",
+      "buffer_min": 5.0,
+      "kind": "wip"
+    },
+    {
+      "src": "P03",
+      "dst": "PRD_L",
+      "buffer_min": 20.0,
+      "kind": "finished_goods"
+    },
+    {
+      "src": "P03",
+      "dst": "PRD_M",
+      "buffer_min": 8.0,
+      "kind": "finished_goods"
+    },
+    {
+      "src": "A11",
+      "dst": "P02",
+      "buffer_min": 60.0,
+      "kind": "raw_material"
+    },
+    {
+      "src": "A13",
+      "dst": "P03",
+      "buffer_min": 5.0,
+      "kind": "wip"
+    }
+  ],
+  "direct_lots": [
+    {
+      "lot": "LOT_041",
+      "units_delayed": 41
+    },
+    {
+      "lot": "LOT_042",
+      "units_delayed": 79
+    }
+  ],
+  "contributing_incidents": [],
+  "assumptions": {
+    "business_layer": "synthetic",
+    "takt_min": 1.0,
+    "substitute_share": 0.3,
+    "recovery_tau_h": 24.0,
+    "slack_mean_min": 360.0,
+    "priority_factor": {
+      "1": 0.7,
+      "2": 0.85,
+      "3": 1.0
+    },
+    "downtime_min_by_cause": {
+      "TWF": 15,
+      "HDF": 45,
+      "PWF": 60,
+      "OSF": 90,
+      "RNF": 30
+    },
+    "severity_by_cause": {
+      "TWF": 0.5,
+      "HDF": 0.75,
+      "PWF": 0.85,
+      "OSF": 0.95,
+      "RNF": 0.6
+    },
+    "note": "Đơn hàng, đệm, thời gian dừng, máy dự phòng là giả lập; cần hiệu chỉnh bằng dữ liệu DENSO."
+  }
+}

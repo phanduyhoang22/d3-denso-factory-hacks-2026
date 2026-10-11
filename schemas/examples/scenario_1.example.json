@@ -1,0 +1,350 @@
+{
+  "scenario_id": "INC_A001_d0",
+  "seed": 1,
+  "dataset": "ai4i",
+  "config": {
+    "dataset": "ai4i"
+  },
+  "incident": {
+    "incident_id": "INC_A001",
+    "timestamp": "2026-01-01T00:20:00",
+    "timestamp_is_synthetic": true,
+    "dataset": "ai4i",
+    "node_id": "M34",
+    "source_row": 70,
+    "anomaly_type": "Quá tải mô-men (+PWF)",
+    "failure_mode": "PWF+OSF",
+    "severity": "high",
+    "anomaly_score": 0.9707,
+    "detector": "iforest",
+    "suspected_cause_group": "Mòn dao × mô-men vượt ngưỡng theo loại máy",
+    "split": "test"
+  },
+  "bad_outcome_node": "DH12434",
+  "forward": [
+    {
+      "node_id": "P6",
+      "type": "process",
+      "depth": 1,
+      "path": [
+        "M34",
+        "P6"
+      ]
+    },
+    {
+      "node_id": "C632@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C632@M34"
+      ]
+    },
+    {
+      "node_id": "C605@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C605@M34"
+      ]
+    },
+    {
+      "node_id": "C634@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C634@M34"
+      ]
+    },
+    {
+      "node_id": "C603@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C603@M34"
+      ]
+    },
+    {
+      "node_id": "C618@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C618@M34"
+      ]
+    },
+    {
+      "node_id": "C601@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C601@M34"
+      ]
+    },
+    {
+      "node_id": "C628@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C628@M34"
+      ]
+    },
+    {
+      "node_id": "C606@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C606@M34"
+      ]
+    },
+    {
+      "node_id": "C611@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C611@M34"
+      ]
+    },
+    {
+      "node_id": "C626@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C626@M34"
+      ]
+    },
+    {
+      "node_id": "C616@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C616@M34"
+      ]
+    },
+    {
+      "node_id": "C612@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C612@M34"
+      ]
+    },
+    {
+      "node_id": "C635@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C635@M34"
+      ]
+    },
+    {
+      "node_id": "C602@M34",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M34",
+        "C602@M34"
+      ]
+    }
+  ],
+  "risk": [
+    {
+      "node_id": "C628@M34",
+      "type": "part",
+      "risk_score": 0.81,
+      "reason": "dùng cho 12 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "P6",
+      "type": "process",
+      "risk_score": 0.7161,
+      "reason": "công đoạn của máy lỗi, phụ thuộc trực tiếp; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "C618@M34",
+      "type": "part",
+      "risk_score": 0.675,
+      "reason": "dùng cho 7 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C605@M34",
+      "type": "part",
+      "risk_score": 0.648,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C616@M34",
+      "type": "part",
+      "risk_score": 0.648,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C626@M34",
+      "type": "part",
+      "risk_score": 0.648,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C634@M34",
+      "type": "part",
+      "risk_score": 0.648,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C606@M34",
+      "type": "part",
+      "risk_score": 0.621,
+      "reason": "dùng cho 5 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C612@M34",
+      "type": "part",
+      "risk_score": 0.621,
+      "reason": "dùng cho 5 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C632@M34",
+      "type": "part",
+      "risk_score": 0.621,
+      "reason": "dùng cho 5 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C635@M34",
+      "type": "part",
+      "risk_score": 0.621,
+      "reason": "dùng cho 5 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C601@M34",
+      "type": "part",
+      "risk_score": 0.594,
+      "reason": "dùng cho 4 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C602@M34",
+      "type": "part",
+      "risk_score": 0.594,
+      "reason": "dùng cho 4 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C603@M34",
+      "type": "part",
+      "risk_score": 0.594,
+      "reason": "dùng cho 4 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C611@M34",
+      "type": "part",
+      "risk_score": 0.594,
+      "reason": "dùng cho 4 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    }
+  ],
+  "backward": [
+    {
+      "rank": 1,
+      "node_id": "M34",
+      "cause": "M34: Mòn dao × mô-men vượt ngưỡng theo loại máy",
+      "score": 0.9707,
+      "evidence": [
+        "INC_A001 · Quá tải mô-men (+PWF) · điểm bất thường 0.97",
+        "nối được tới kết quả xấu trên đồ thị"
+      ]
+    },
+    {
+      "rank": 2,
+      "node_id": "M03",
+      "cause": "M03: Công suất ngoài dải 3500–9000 W",
+      "score": 0.4975,
+      "evidence": [
+        "INC_A000 · Lỗi công suất · điểm bất thường 0.99",
+        "không nối được tới kết quả xấu"
+      ]
+    },
+    {
+      "rank": 3,
+      "node_id": "M47",
+      "cause": "M47: Dao mòn quá hạn (tool wear ~200–250 phút)",
+      "score": 0.2331,
+      "evidence": [
+        "INC_A002 · Mòn dao · điểm bất thường 0.47",
+        "không nối được tới kết quả xấu"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "priority": 1,
+      "department": "maintenance",
+      "action": "Kiểm tra M34: Kiểm tra nguồn điện, mô-men và tốc độ — PWF: Công suất ngoài 3500-9000 W",
+      "target_node": "M34",
+      "kb_rule_id": "PWF",
+      "adoption_rate": null
+    },
+    {
+      "priority": 2,
+      "department": "maintenance",
+      "action": "Kiểm tra M34: Giảm tải, kiểm tra tool wear và mô-men — OSF: Quá tải (tool wear x mô-men vượt ngưỡng L/M/H)",
+      "target_node": "M34",
+      "kb_rule_id": "OSF",
+      "adoption_rate": null
+    },
+    {
+      "priority": 3,
+      "department": "maintenance",
+      "action": "Chuyển cảnh báo tới: Bảo trì điện — sự cố PWF+OSF tại M34",
+      "target_node": "M34",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 4,
+      "department": "maintenance",
+      "action": "Chuyển cảnh báo tới: Kỹ thuật quy trình — sự cố PWF+OSF tại M34",
+      "target_node": "M34",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 5,
+      "department": "production",
+      "action": "Chuyển tải sang M36 — nhận ít đơn nhất (487 đơn); tránh M39 (847 đơn). Chưa mô hình hóa công suất máy dự phòng",
+      "target_node": "M34",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 6,
+      "department": "planning",
+      "action": "Ưu tiên giữ tiến độ 5 đơn rủi ro cao nhất: DH12041, DH19728, DH13262, DH35378, DH35902 — điểm 0.46–0.45; 2/5 đơn ưu tiên Cao",
+      "target_node": "M34",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 7,
+      "department": "sales",
+      "action": "Cân nhắc dời lịch 397 đơn ưu tiên Thấp có hạn giao ≥ 60 ngày — tổng 97826 sản phẩm; giải phóng năng lực cho đơn gấp",
+      "target_node": "M34",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    }
+  ],
+  "timing_ms": {
+    "generate": 65.832,
+    "forward": 5.023,
+    "risk": 227.18,
+    "backward": 0.136,
+    "action": 19.397
+  }
+}

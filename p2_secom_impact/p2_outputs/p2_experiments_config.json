@@ -1,0 +1,93 @@
+{
+  "n_units": 10000,
+  "sizes": {
+    "small": {
+      "stages": [
+        2,
+        2,
+        2
+      ],
+      "products": 3,
+      "orders_per_product": 4
+    },
+    "medium": {
+      "stages": [
+        3,
+        4,
+        4,
+        3
+      ],
+      "products": 5,
+      "orders_per_product": 5
+    },
+    "large": {
+      "stages": [
+        4,
+        6,
+        6,
+        6,
+        4
+      ],
+      "products": 8,
+      "orders_per_product": 6
+    }
+  },
+  "confounder_pcts": [
+    0,
+    25,
+    50
+  ],
+  "delete_pcts": [
+    0,
+    10,
+    25,
+    50
+  ],
+  "w_range": [
+    0.7,
+    1.0
+  ],
+  "buf_range": [
+    0.0,
+    12.0
+  ],
+  "raw_buf_range": [
+    20.0,
+    90.0
+  ],
+  "p_substitute": 0.5,
+  "substitute_share": 0.3,
+  "w_noise_sd": 0.15,
+  "buf_noise_sd": 0.3,
+  "downtime_noise_sd": 0.35,
+  "tau_true_h": [
+    12.0,
+    48.0
+  ],
+  "impact_thr": 0.05,
+  "lookback_h": 72.0,
+  "reach_floor": 0.5,
+  "reach_floor_sweep": [
+    0.0,
+    0.25,
+    0.5,
+    0.75
+  ],
+  "split": [
+    0.5,
+    0.2,
+    0.3
+  ],
+  "target_recall": 0.9,
+  "data_seed": 0,
+  "hist_rate_median": 4.0,
+  "hist_rate_sd": 0.7,
+  "hist_units": 20000,
+  "hist_gamma_sweep": [
+    0.25,
+    0.5,
+    1.0
+  ],
+  "root_sampling": "uniform",
+  "secom_downtime_min": 45.0
+}

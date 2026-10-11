@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "D3 scenario (generate_scenario output, JSON hóa)",
+  "type": "object",
+  "required": [
+    "scenario_id",
+    "seed",
+    "config",
+    "incidents",
+    "bad_outcome",
+    "forward_truth",
+    "true_impact",
+    "backward_truth"
+  ],
+  "properties": {
+    "scenario_id": {
+      "type": "string"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "config": {
+      "type": "object"
+    },
+    "incidents": {
+      "type": "array",
+      "items": {
+        "$ref": "incident.schema.json"
+      }
+    },
+    "bad_outcome": {
+      "type": "object",
+      "required": [
+        "node_id",
+        "type",
+        "timestamp"
+      ]
+    },
+    "forward_truth": {
+      "type": "object",
+      "description": "đối tượng có true_impact >= 0.10, theo tầng"
+    },
+    "true_impact": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number"
+      }
+    },
+    "backward_truth": {
+      "type": "object",
+      "required": [
+        "root_node",
+        "root_incident_id"
+      ]
+    },
+    "confounder_nodes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "meta": {
+      "type": "object"
+    }
+  }
+}

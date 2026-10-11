@@ -1,0 +1,307 @@
+{
+  "scenario_id": "INC_B339_d0",
+  "seed": 0,
+  "dataset": "secom",
+  "config": {
+    "dataset": "secom"
+  },
+  "incident": {
+    "incident_id": "INC_B339",
+    "timestamp": "2008-07-19T13:17:00",
+    "timestamp_is_synthetic": false,
+    "dataset": "secom",
+    "node_id": "PB04",
+    "source_row": 2,
+    "anomaly_type": "Lô bán dẫn không đạt QC",
+    "failure_mode": "SECOM_FAIL",
+    "severity": "high",
+    "anomaly_score": 1.0,
+    "detector": "label",
+    "suspected_cause_group": "Bất thường trong 590 thông số quy trình",
+    "split": "test"
+  },
+  "bad_outcome_node": "DHB02223",
+  "forward": [
+    {
+      "node_id": "CB0411",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0411"
+      ]
+    },
+    {
+      "node_id": "CB0413",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0413"
+      ]
+    },
+    {
+      "node_id": "CB0402",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0402"
+      ]
+    },
+    {
+      "node_id": "CB0405",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0405"
+      ]
+    },
+    {
+      "node_id": "CB0420",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0420"
+      ]
+    },
+    {
+      "node_id": "CB0414",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0414"
+      ]
+    },
+    {
+      "node_id": "CB0428",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0428"
+      ]
+    },
+    {
+      "node_id": "CB0419",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0419"
+      ]
+    },
+    {
+      "node_id": "CB0412",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0412"
+      ]
+    },
+    {
+      "node_id": "CB0410",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0410"
+      ]
+    },
+    {
+      "node_id": "CB0430",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0430"
+      ]
+    },
+    {
+      "node_id": "CB0421",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0421"
+      ]
+    },
+    {
+      "node_id": "CB0407",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0407"
+      ]
+    },
+    {
+      "node_id": "CB0427",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "PB04",
+        "CB0427"
+      ]
+    },
+    {
+      "node_id": "SPB131",
+      "type": "product",
+      "depth": 2,
+      "path": [
+        "PB04",
+        "CB0421",
+        "SPB131"
+      ]
+    }
+  ],
+  "risk": [
+    {
+      "node_id": "CB0410",
+      "type": "part",
+      "risk_score": 0.9,
+      "reason": "dùng cho 13 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0411",
+      "type": "part",
+      "risk_score": 0.9,
+      "reason": "dùng cho 13 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0430",
+      "type": "part",
+      "risk_score": 0.8723,
+      "reason": "dùng cho 12 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0420",
+      "type": "part",
+      "risk_score": 0.8446,
+      "reason": "dùng cho 11 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0428",
+      "type": "part",
+      "risk_score": 0.8169,
+      "reason": "dùng cho 10 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0402",
+      "type": "part",
+      "risk_score": 0.7892,
+      "reason": "dùng cho 9 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0407",
+      "type": "part",
+      "risk_score": 0.7892,
+      "reason": "dùng cho 9 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0413",
+      "type": "part",
+      "risk_score": 0.7892,
+      "reason": "dùng cho 9 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0427",
+      "type": "part",
+      "risk_score": 0.7892,
+      "reason": "dùng cho 9 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0412",
+      "type": "part",
+      "risk_score": 0.7615,
+      "reason": "dùng cho 8 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0414",
+      "type": "part",
+      "risk_score": 0.7615,
+      "reason": "dùng cho 8 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0419",
+      "type": "part",
+      "risk_score": 0.7615,
+      "reason": "dùng cho 8 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0405",
+      "type": "part",
+      "risk_score": 0.7338,
+      "reason": "dùng cho 7 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "CB0421",
+      "type": "part",
+      "risk_score": 0.7338,
+      "reason": "dùng cho 7 sản phẩm bị ảnh hưởng; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "SPB131",
+      "type": "product",
+      "risk_score": 0.7221,
+      "reason": "1 đơn hàng bị ảnh hưởng, 0 đơn ưu tiên Cao; cách nguồn lỗi 2 bước"
+    }
+  ],
+  "backward": [
+    {
+      "rank": 1,
+      "node_id": "PB04",
+      "cause": "PB04: Bất thường trong 590 thông số quy trình",
+      "score": 1.0,
+      "evidence": [
+        "INC_B339 · Lô bán dẫn không đạt QC · điểm bất thường 1.00",
+        "nối được tới kết quả xấu trên đồ thị"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "priority": 1,
+      "department": "quality",
+      "action": "Kiểm tra PB04: Rà soát cảm biến lệch nhiều nhất tại công đoạn này — SECOM_FAIL: Lô SECOM fail, không có chế độ lỗi",
+      "target_node": "PB04",
+      "kb_rule_id": "SECOM_FAIL",
+      "adoption_rate": null
+    },
+    {
+      "priority": 2,
+      "department": "quality",
+      "action": "Chuyển cảnh báo tới: Kỹ thuật quy trình — sự cố SECOM_FAIL tại PB04",
+      "target_node": "PB04",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 3,
+      "department": "planning",
+      "action": "Ưu tiên giữ tiến độ 5 đơn rủi ro cao nhất: DHB01585, DHB01584, DHB04097, DHB07326, DHB09359 — điểm 0.72–0.69; 5/5 đơn ưu tiên Cao",
+      "target_node": "PB04",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 4,
+      "department": "sales",
+      "action": "Cân nhắc dời lịch 469 đơn ưu tiên Thấp có hạn giao ≥ 60 ngày — tổng 118868 sản phẩm; giải phóng năng lực cho đơn gấp",
+      "target_node": "PB04",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    }
+  ],
+  "timing_ms": {
+    "generate": 94.646,
+    "forward": 5.718,
+    "risk": 246.902,
+    "backward": 0.067,
+    "action": 7.299
+  }
+}

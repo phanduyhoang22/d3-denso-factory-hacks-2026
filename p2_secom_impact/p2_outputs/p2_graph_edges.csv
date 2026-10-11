@@ -1,0 +1,657 @@
+src,dst,rel,flow,w,buffer_min,stock_kind,capacity_share,qty
+S_AIR,FM_HDF,evidence_for,,,,,,
+S_AIR,M05,monitors,,,,,,
+S_PROC,FM_HDF,evidence_for,,,,,,
+S_PROC,M05,monitors,,,,,,
+S_RPM,FM_HDF,evidence_for,,,,,,
+S_RPM,FM_PWF,evidence_for,,,,,,
+S_RPM,M05,monitors,,,,,,
+S_TORQUE,FM_PWF,evidence_for,,,,,,
+S_TORQUE,FM_OSF,evidence_for,,,,,,
+S_TORQUE,M05,monitors,,,,,,
+S_WEAR,FM_TWF,evidence_for,,,,,,
+S_WEAR,FM_OSF,evidence_for,,,,,,
+S_WEAR,M05,monitors,,,,,,
+FM_TWF,M05,can_occur_on,,,,,,
+M05,P02,performs,True,1.0,0.0,,,
+M05,DEPT_Bảo trì,owned_by,,,,,,
+FM_HDF,M05,can_occur_on,,,,,,
+FM_PWF,M05,can_occur_on,,,,,,
+FM_OSF,M05,can_occur_on,,,,,,
+FM_RNF,M05,can_occur_on,,,,,,
+M03,P01,performs,True,1.0,0.0,,,
+M03,DEPT_Bảo trì,owned_by,,,,,,
+M07,P02,can_perform,,,,,0.3,
+M07,DEPT_Bảo trì,owned_by,,,,,,
+M09,P03,performs,True,1.0,0.0,,,
+M09,DEPT_Bảo trì,owned_by,,,,,,
+P01,A11,produces,True,1.0,0.0,,,
+P01,DEPT_Sản xuất,owned_by,,,,,,
+P02,A13,produces,True,0.9,5.0,wip,,
+P02,LOT_001,processed_in,,,,,,
+P02,LOT_002,processed_in,,,,,,
+P02,LOT_003,processed_in,,,,,,
+P02,LOT_004,processed_in,,,,,,
+P02,LOT_005,processed_in,,,,,,
+P02,LOT_006,processed_in,,,,,,
+P02,LOT_007,processed_in,,,,,,
+P02,LOT_008,processed_in,,,,,,
+P02,LOT_009,processed_in,,,,,,
+P02,LOT_010,processed_in,,,,,,
+P02,LOT_011,processed_in,,,,,,
+P02,LOT_012,processed_in,,,,,,
+P02,LOT_013,processed_in,,,,,,
+P02,LOT_014,processed_in,,,,,,
+P02,LOT_015,processed_in,,,,,,
+P02,LOT_016,processed_in,,,,,,
+P02,LOT_017,processed_in,,,,,,
+P02,LOT_018,processed_in,,,,,,
+P02,LOT_019,processed_in,,,,,,
+P02,LOT_020,processed_in,,,,,,
+P02,LOT_021,processed_in,,,,,,
+P02,LOT_022,processed_in,,,,,,
+P02,LOT_023,processed_in,,,,,,
+P02,LOT_024,processed_in,,,,,,
+P02,LOT_025,processed_in,,,,,,
+P02,LOT_026,processed_in,,,,,,
+P02,LOT_027,processed_in,,,,,,
+P02,LOT_028,processed_in,,,,,,
+P02,LOT_029,processed_in,,,,,,
+P02,LOT_030,processed_in,,,,,,
+P02,LOT_031,processed_in,,,,,,
+P02,LOT_032,processed_in,,,,,,
+P02,LOT_033,processed_in,,,,,,
+P02,LOT_034,processed_in,,,,,,
+P02,LOT_035,processed_in,,,,,,
+P02,LOT_036,processed_in,,,,,,
+P02,LOT_037,processed_in,,,,,,
+P02,LOT_038,processed_in,,,,,,
+P02,LOT_039,processed_in,,,,,,
+P02,LOT_040,processed_in,,,,,,
+P02,LOT_041,processed_in,,,,,,
+P02,LOT_042,processed_in,,,,,,
+P02,LOT_043,processed_in,,,,,,
+P02,LOT_044,processed_in,,,,,,
+P02,LOT_045,processed_in,,,,,,
+P02,LOT_046,processed_in,,,,,,
+P02,LOT_047,processed_in,,,,,,
+P02,LOT_048,processed_in,,,,,,
+P02,LOT_049,processed_in,,,,,,
+P02,LOT_050,processed_in,,,,,,
+P02,LOT_051,processed_in,,,,,,
+P02,LOT_052,processed_in,,,,,,
+P02,LOT_053,processed_in,,,,,,
+P02,LOT_054,processed_in,,,,,,
+P02,LOT_055,processed_in,,,,,,
+P02,LOT_056,processed_in,,,,,,
+P02,LOT_057,processed_in,,,,,,
+P02,LOT_058,processed_in,,,,,,
+P02,LOT_059,processed_in,,,,,,
+P02,LOT_060,processed_in,,,,,,
+P02,LOT_061,processed_in,,,,,,
+P02,LOT_062,processed_in,,,,,,
+P02,LOT_063,processed_in,,,,,,
+P02,LOT_064,processed_in,,,,,,
+P02,LOT_065,processed_in,,,,,,
+P02,LOT_066,processed_in,,,,,,
+P02,LOT_067,processed_in,,,,,,
+P02,LOT_068,processed_in,,,,,,
+P02,LOT_069,processed_in,,,,,,
+P02,LOT_070,processed_in,,,,,,
+P02,LOT_071,processed_in,,,,,,
+P02,LOT_072,processed_in,,,,,,
+P02,LOT_073,processed_in,,,,,,
+P02,LOT_074,processed_in,,,,,,
+P02,LOT_075,processed_in,,,,,,
+P02,LOT_076,processed_in,,,,,,
+P02,LOT_077,processed_in,,,,,,
+P02,LOT_078,processed_in,,,,,,
+P02,LOT_079,processed_in,,,,,,
+P02,LOT_080,processed_in,,,,,,
+P02,LOT_081,processed_in,,,,,,
+P02,LOT_082,processed_in,,,,,,
+P02,LOT_083,processed_in,,,,,,
+P02,LOT_084,processed_in,,,,,,
+P02,LOT_085,processed_in,,,,,,
+P02,LOT_086,processed_in,,,,,,
+P02,LOT_087,processed_in,,,,,,
+P02,LOT_088,processed_in,,,,,,
+P02,LOT_089,processed_in,,,,,,
+P02,LOT_090,processed_in,,,,,,
+P02,LOT_091,processed_in,,,,,,
+P02,LOT_092,processed_in,,,,,,
+P02,LOT_093,processed_in,,,,,,
+P02,LOT_094,processed_in,,,,,,
+P02,LOT_095,processed_in,,,,,,
+P02,LOT_096,processed_in,,,,,,
+P02,LOT_097,processed_in,,,,,,
+P02,LOT_098,processed_in,,,,,,
+P02,LOT_099,processed_in,,,,,,
+P02,LOT_100,processed_in,,,,,,
+P02,DEPT_Sản xuất,owned_by,,,,,,
+P03,PRD_L,produces,True,0.9,20.0,finished_goods,,
+P03,PRD_M,produces,True,0.9,8.0,finished_goods,,
+P03,PRD_H,produces,True,0.9,0.0,finished_goods,,
+P03,DEPT_Sản xuất,owned_by,,,,,,
+A11,P02,consumed_by,True,1.0,60.0,raw_material,,
+A11,DEPT_Kho & Logistics,owned_by,,,,,,
+A13,P03,consumed_by,True,0.95,5.0,wip,,
+A13,DEPT_Kho & Logistics,owned_by,,,,,,
+PRD_L,ORD_L01,requested,True,1.0,0.0,,,
+PRD_L,ORD_L02,requested,True,1.0,0.0,,,
+PRD_L,ORD_L03,requested,True,1.0,0.0,,,
+PRD_L,ORD_L04,requested,True,1.0,0.0,,,
+PRD_L,ORD_L05,requested,True,1.0,0.0,,,
+PRD_L,ORD_L06,requested,True,1.0,0.0,,,
+PRD_L,ORD_L07,requested,True,1.0,0.0,,,
+PRD_L,ORD_L08,requested,True,1.0,0.0,,,
+PRD_L,ORD_L09,requested,True,1.0,0.0,,,
+PRD_L,ORD_L10,requested,True,1.0,0.0,,,
+PRD_L,ORD_L11,requested,True,1.0,0.0,,,
+PRD_L,ORD_L12,requested,True,1.0,0.0,,,
+PRD_L,ORD_L13,requested,True,1.0,0.0,,,
+PRD_L,ORD_L14,requested,True,1.0,0.0,,,
+PRD_L,ORD_L15,requested,True,1.0,0.0,,,
+PRD_L,ORD_L16,requested,True,1.0,0.0,,,
+PRD_L,ORD_L17,requested,True,1.0,0.0,,,
+PRD_L,ORD_L18,requested,True,1.0,0.0,,,
+PRD_L,ORD_L19,requested,True,1.0,0.0,,,
+PRD_L,ORD_L20,requested,True,1.0,0.0,,,
+PRD_L,DEPT_Chất lượng,owned_by,,,,,,
+PRD_M,ORD_M01,requested,True,1.0,0.0,,,
+PRD_M,ORD_M02,requested,True,1.0,0.0,,,
+PRD_M,ORD_M03,requested,True,1.0,0.0,,,
+PRD_M,ORD_M04,requested,True,1.0,0.0,,,
+PRD_M,ORD_M05,requested,True,1.0,0.0,,,
+PRD_M,ORD_M06,requested,True,1.0,0.0,,,
+PRD_M,ORD_M07,requested,True,1.0,0.0,,,
+PRD_M,ORD_M08,requested,True,1.0,0.0,,,
+PRD_M,ORD_M09,requested,True,1.0,0.0,,,
+PRD_M,ORD_M10,requested,True,1.0,0.0,,,
+PRD_M,ORD_M11,requested,True,1.0,0.0,,,
+PRD_M,ORD_M12,requested,True,1.0,0.0,,,
+PRD_M,DEPT_Chất lượng,owned_by,,,,,,
+PRD_H,ORD_H01,requested,True,1.0,0.0,,,
+PRD_H,ORD_H02,requested,True,1.0,0.0,,,
+PRD_H,ORD_H03,requested,True,1.0,0.0,,,
+PRD_H,ORD_H04,requested,True,1.0,0.0,,,
+PRD_H,ORD_H05,requested,True,1.0,0.0,,,
+PRD_H,ORD_H06,requested,True,1.0,0.0,,,
+PRD_H,ORD_H07,requested,True,1.0,0.0,,,
+PRD_H,ORD_H08,requested,True,1.0,0.0,,,
+PRD_H,DEPT_Chất lượng,owned_by,,,,,,
+ORD_L01,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L02,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L03,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L04,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L05,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L06,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L07,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L08,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L09,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L10,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L11,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L12,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L13,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L14,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L15,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L16,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L17,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L18,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L19,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_L20,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M01,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M02,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M03,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M04,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M05,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M06,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M07,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M08,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M09,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M10,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M11,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_M12,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H01,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H02,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H03,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H04,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H05,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H06,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H07,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+ORD_H08,DEPT_Kế hoạch sản xuất,owned_by,,,,,,
+LOT_001,ORD_M01,allocated_to,,,,,,31.0
+LOT_001,ORD_L01,allocated_to,,,,,,57.0
+LOT_001,ORD_H01,allocated_to,,,,,,12.0
+LOT_001,DEPT_Chất lượng,owned_by,,,,,,
+LOT_002,ORD_L01,allocated_to,,,,,,62.0
+LOT_002,ORD_M01,allocated_to,,,,,,24.0
+LOT_002,ORD_H01,allocated_to,,,,,,14.0
+LOT_002,DEPT_Chất lượng,owned_by,,,,,,
+LOT_003,ORD_L01,allocated_to,,,,,,67.0
+LOT_003,ORD_M01,allocated_to,,,,,,24.0
+LOT_003,ORD_H01,allocated_to,,,,,,9.0
+LOT_003,DEPT_Chất lượng,owned_by,,,,,,
+LOT_004,ORD_L01,allocated_to,,,,,,57.0
+LOT_004,ORD_H01,allocated_to,,,,,,10.0
+LOT_004,ORD_M01,allocated_to,,,,,,33.0
+LOT_004,DEPT_Chất lượng,owned_by,,,,,,
+LOT_005,ORD_L01,allocated_to,,,,,,57.0
+LOT_005,ORD_M01,allocated_to,,,,,,27.0
+LOT_005,ORD_H01,allocated_to,,,,,,9.0
+LOT_005,ORD_L02,allocated_to,,,,,,7.0
+LOT_005,DEPT_Chất lượng,owned_by,,,,,,
+LOT_006,ORD_M01,allocated_to,,,,,,30.0
+LOT_006,ORD_L02,allocated_to,,,,,,54.0
+LOT_006,ORD_H01,allocated_to,,,,,,16.0
+LOT_006,DEPT_Chất lượng,owned_by,,,,,,
+LOT_007,ORD_L02,allocated_to,,,,,,61.0
+LOT_007,ORD_M01,allocated_to,,,,,,26.0
+LOT_007,ORD_H01,allocated_to,,,,,,13.0
+LOT_007,DEPT_Chất lượng,owned_by,,,,,,
+LOT_008,ORD_M01,allocated_to,,,,,,25.0
+LOT_008,ORD_L02,allocated_to,,,,,,64.0
+LOT_008,ORD_H01,allocated_to,,,,,,11.0
+LOT_008,DEPT_Chất lượng,owned_by,,,,,,
+LOT_009,ORD_M01,allocated_to,,,,,,30.0
+LOT_009,ORD_L02,allocated_to,,,,,,60.0
+LOT_009,ORD_H01,allocated_to,,,,,,10.0
+LOT_009,DEPT_Chất lượng,owned_by,,,,,,
+LOT_010,ORD_L02,allocated_to,,,,,,54.0
+LOT_010,ORD_H01,allocated_to,,,,,,10.0
+LOT_010,ORD_M02,allocated_to,,,,,,35.0
+LOT_010,ORD_L03,allocated_to,,,,,,1.0
+LOT_010,DEPT_Chất lượng,owned_by,,,,,,
+LOT_011,ORD_L03,allocated_to,,,,,,61.0
+LOT_011,ORD_H01,allocated_to,,,,,,11.0
+LOT_011,ORD_M02,allocated_to,,,,,,28.0
+LOT_011,DEPT_Chất lượng,owned_by,,,,,,
+LOT_012,ORD_H01,allocated_to,,,,,,1.0
+LOT_012,ORD_H02,allocated_to,,,,,,13.0
+LOT_012,ORD_L03,allocated_to,,,,,,56.0
+LOT_012,ORD_M02,allocated_to,,,,,,30.0
+LOT_012,DEPT_Chất lượng,owned_by,,,,,,
+LOT_013,ORD_M02,allocated_to,,,,,,34.0
+LOT_013,ORD_L03,allocated_to,,,,,,46.0
+LOT_013,ORD_H02,allocated_to,,,,,,20.0
+LOT_013,DEPT_Chất lượng,owned_by,,,,,,
+LOT_014,ORD_L03,allocated_to,,,,,,65.0
+LOT_014,ORD_M02,allocated_to,,,,,,26.0
+LOT_014,ORD_H02,allocated_to,,,,,,9.0
+LOT_014,DEPT_Chất lượng,owned_by,,,,,,
+LOT_015,ORD_H02,allocated_to,,,,,,7.0
+LOT_015,ORD_M02,allocated_to,,,,,,35.0
+LOT_015,ORD_L03,allocated_to,,,,,,58.0
+LOT_015,DEPT_Chất lượng,owned_by,,,,,,
+LOT_016,ORD_M02,allocated_to,,,,,,31.0
+LOT_016,ORD_L03,allocated_to,,,,,,13.0
+LOT_016,ORD_H02,allocated_to,,,,,,7.0
+LOT_016,ORD_L04,allocated_to,,,,,,49.0
+LOT_016,DEPT_Chất lượng,owned_by,,,,,,
+LOT_017,ORD_M02,allocated_to,,,,,,24.0
+LOT_017,ORD_L04,allocated_to,,,,,,62.0
+LOT_017,ORD_H02,allocated_to,,,,,,14.0
+LOT_017,DEPT_Chất lượng,owned_by,,,,,,
+LOT_018,ORD_M02,allocated_to,,,,,,7.0
+LOT_018,ORD_L04,allocated_to,,,,,,57.0
+LOT_018,ORD_M03,allocated_to,,,,,,25.0
+LOT_018,ORD_H02,allocated_to,,,,,,11.0
+LOT_018,DEPT_Chất lượng,owned_by,,,,,,
+LOT_019,ORD_M03,allocated_to,,,,,,32.0
+LOT_019,ORD_H02,allocated_to,,,,,,11.0
+LOT_019,ORD_L04,allocated_to,,,,,,57.0
+LOT_019,DEPT_Chất lượng,owned_by,,,,,,
+LOT_020,ORD_H02,allocated_to,,,,,,9.0
+LOT_020,ORD_M03,allocated_to,,,,,,31.0
+LOT_020,ORD_L04,allocated_to,,,,,,60.0
+LOT_020,DEPT_Chất lượng,owned_by,,,,,,
+LOT_021,ORD_L04,allocated_to,,,,,,15.0
+LOT_021,ORD_M03,allocated_to,,,,,,26.0
+LOT_021,ORD_L05,allocated_to,,,,,,51.0
+LOT_021,ORD_H02,allocated_to,,,,,,8.0
+LOT_021,DEPT_Chất lượng,owned_by,,,,,,
+LOT_022,ORD_M03,allocated_to,,,,,,34.0
+LOT_022,ORD_L05,allocated_to,,,,,,51.0
+LOT_022,ORD_H02,allocated_to,,,,,,15.0
+LOT_022,DEPT_Chất lượng,owned_by,,,,,,
+LOT_023,ORD_L05,allocated_to,,,,,,67.0
+LOT_023,ORD_M03,allocated_to,,,,,,25.0
+LOT_023,ORD_H02,allocated_to,,,,,,2.0
+LOT_023,ORD_H03,allocated_to,,,,,,6.0
+LOT_023,DEPT_Chất lượng,owned_by,,,,,,
+LOT_024,ORD_L05,allocated_to,,,,,,61.0
+LOT_024,ORD_M03,allocated_to,,,,,,32.0
+LOT_024,ORD_H03,allocated_to,,,,,,7.0
+LOT_024,DEPT_Chất lượng,owned_by,,,,,,
+LOT_025,ORD_H03,allocated_to,,,,,,11.0
+LOT_025,ORD_M03,allocated_to,,,,,,27.0
+LOT_025,ORD_L05,allocated_to,,,,,,62.0
+LOT_025,DEPT_Chất lượng,owned_by,,,,,,
+LOT_026,ORD_L05,allocated_to,,,,,,8.0
+LOT_026,ORD_M03,allocated_to,,,,,,18.0
+LOT_026,ORD_H03,allocated_to,,,,,,7.0
+LOT_026,ORD_L06,allocated_to,,,,,,64.0
+LOT_026,ORD_M04,allocated_to,,,,,,3.0
+LOT_026,DEPT_Chất lượng,owned_by,,,,,,
+LOT_027,ORD_L06,allocated_to,,,,,,64.0
+LOT_027,ORD_M04,allocated_to,,,,,,25.0
+LOT_027,ORD_H03,allocated_to,,,,,,11.0
+LOT_027,DEPT_Chất lượng,owned_by,,,,,,
+LOT_028,ORD_L06,allocated_to,,,,,,64.0
+LOT_028,ORD_M04,allocated_to,,,,,,30.0
+LOT_028,ORD_H03,allocated_to,,,,,,6.0
+LOT_028,DEPT_Chất lượng,owned_by,,,,,,
+LOT_029,ORD_M04,allocated_to,,,,,,36.0
+LOT_029,ORD_L06,allocated_to,,,,,,55.0
+LOT_029,ORD_H03,allocated_to,,,,,,9.0
+LOT_029,DEPT_Chất lượng,owned_by,,,,,,
+LOT_030,ORD_L06,allocated_to,,,,,,53.0
+LOT_030,ORD_M04,allocated_to,,,,,,37.0
+LOT_030,ORD_H03,allocated_to,,,,,,9.0
+LOT_030,ORD_L07,allocated_to,,,,,,1.0
+LOT_030,DEPT_Chất lượng,owned_by,,,,,,
+LOT_031,ORD_H03,allocated_to,,,,,,8.0
+LOT_031,ORD_L07,allocated_to,,,,,,60.0
+LOT_031,ORD_M04,allocated_to,,,,,,32.0
+LOT_031,DEPT_Chất lượng,owned_by,,,,,,
+LOT_032,ORD_L07,allocated_to,,,,,,56.0
+LOT_032,ORD_H03,allocated_to,,,,,,12.0
+LOT_032,ORD_M04,allocated_to,,,,,,32.0
+LOT_032,DEPT_Chất lượng,owned_by,,,,,,
+LOT_033,ORD_M04,allocated_to,,,,,,35.0
+LOT_033,ORD_L07,allocated_to,,,,,,56.0
+LOT_033,ORD_H03,allocated_to,,,,,,9.0
+LOT_033,DEPT_Chất lượng,owned_by,,,,,,
+LOT_034,ORD_H03,allocated_to,,,,,,8.0
+LOT_034,ORD_L07,allocated_to,,,,,,71.0
+LOT_034,ORD_M04,allocated_to,,,,,,20.0
+LOT_034,ORD_M05,allocated_to,,,,,,1.0
+LOT_034,DEPT_Chất lượng,owned_by,,,,,,
+LOT_035,ORD_H03,allocated_to,,,,,,13.0
+LOT_035,ORD_M05,allocated_to,,,,,,21.0
+LOT_035,ORD_L07,allocated_to,,,,,,56.0
+LOT_035,ORD_L08,allocated_to,,,,,,10.0
+LOT_035,DEPT_Chất lượng,owned_by,,,,,,
+LOT_036,ORD_H03,allocated_to,,,,,,10.0
+LOT_036,ORD_M05,allocated_to,,,,,,35.0
+LOT_036,ORD_L08,allocated_to,,,,,,55.0
+LOT_036,DEPT_Chất lượng,owned_by,,,,,,
+LOT_037,ORD_L08,allocated_to,,,,,,60.0
+LOT_037,ORD_M05,allocated_to,,,,,,36.0
+LOT_037,ORD_H04,allocated_to,,,,,,4.0
+LOT_037,DEPT_Chất lượng,owned_by,,,,,,
+LOT_038,ORD_L08,allocated_to,,,,,,61.0
+LOT_038,ORD_M05,allocated_to,,,,,,32.0
+LOT_038,ORD_H04,allocated_to,,,,,,7.0
+LOT_038,DEPT_Chất lượng,owned_by,,,,,,
+LOT_039,ORD_M05,allocated_to,,,,,,38.0
+LOT_039,ORD_L08,allocated_to,,,,,,52.0
+LOT_039,ORD_H04,allocated_to,,,,,,10.0
+LOT_039,DEPT_Chất lượng,owned_by,,,,,,
+LOT_040,ORD_M05,allocated_to,,,,,,33.0
+LOT_040,ORD_H04,allocated_to,,,,,,12.0
+LOT_040,ORD_L08,allocated_to,,,,,,55.0
+LOT_040,DEPT_Chất lượng,owned_by,,,,,,
+LOT_041,ORD_L08,allocated_to,,,,,,7.0
+LOT_041,ORD_H04,allocated_to,,,,,,8.0
+LOT_041,ORD_M05,allocated_to,,,,,,28.0
+LOT_041,ORD_L09,allocated_to,,,,,,57.0
+LOT_041,DEPT_Chất lượng,owned_by,,,,,,
+LOT_042,ORD_L09,allocated_to,,,,,,60.0
+LOT_042,ORD_M05,allocated_to,,,,,,26.0
+LOT_042,ORD_H04,allocated_to,,,,,,8.0
+LOT_042,ORD_M06,allocated_to,,,,,,6.0
+LOT_042,DEPT_Chất lượng,owned_by,,,,,,
+LOT_043,ORD_L09,allocated_to,,,,,,63.0
+LOT_043,ORD_M06,allocated_to,,,,,,33.0
+LOT_043,ORD_H04,allocated_to,,,,,,4.0
+LOT_043,DEPT_Chất lượng,owned_by,,,,,,
+LOT_044,ORD_M06,allocated_to,,,,,,27.0
+LOT_044,ORD_L09,allocated_to,,,,,,60.0
+LOT_044,ORD_H04,allocated_to,,,,,,13.0
+LOT_044,DEPT_Chất lượng,owned_by,,,,,,
+LOT_045,ORD_L09,allocated_to,,,,,,60.0
+LOT_045,ORD_H04,allocated_to,,,,,,13.0
+LOT_045,ORD_M06,allocated_to,,,,,,22.0
+LOT_045,ORD_L10,allocated_to,,,,,,5.0
+LOT_045,DEPT_Chất lượng,owned_by,,,,,,
+LOT_046,ORD_L10,allocated_to,,,,,,67.0
+LOT_046,ORD_M06,allocated_to,,,,,,29.0
+LOT_046,ORD_H04,allocated_to,,,,,,4.0
+LOT_046,DEPT_Chất lượng,owned_by,,,,,,
+LOT_047,ORD_L10,allocated_to,,,,,,60.0
+LOT_047,ORD_M06,allocated_to,,,,,,29.0
+LOT_047,ORD_H04,allocated_to,,,,,,11.0
+LOT_047,DEPT_Chất lượng,owned_by,,,,,,
+LOT_048,ORD_L10,allocated_to,,,,,,66.0
+LOT_048,ORD_H04,allocated_to,,,,,,13.0
+LOT_048,ORD_M06,allocated_to,,,,,,21.0
+LOT_048,DEPT_Chất lượng,owned_by,,,,,,
+LOT_049,ORD_M06,allocated_to,,,,,,30.0
+LOT_049,ORD_L10,allocated_to,,,,,,58.0
+LOT_049,ORD_H04,allocated_to,,,,,,12.0
+LOT_049,DEPT_Chất lượng,owned_by,,,,,,
+LOT_050,ORD_L10,allocated_to,,,,,,44.0
+LOT_050,ORD_M06,allocated_to,,,,,,36.0
+LOT_050,ORD_H04,allocated_to,,,,,,6.0
+LOT_050,ORD_H05,allocated_to,,,,,,2.0
+LOT_050,ORD_L11,allocated_to,,,,,,12.0
+LOT_050,DEPT_Chất lượng,owned_by,,,,,,
+LOT_051,ORD_L11,allocated_to,,,,,,51.0
+LOT_051,ORD_M06,allocated_to,,,,,,17.0
+LOT_051,ORD_H05,allocated_to,,,,,,11.0
+LOT_051,ORD_M07,allocated_to,,,,,,21.0
+LOT_051,DEPT_Chất lượng,owned_by,,,,,,
+LOT_052,ORD_M07,allocated_to,,,,,,31.0
+LOT_052,ORD_L11,allocated_to,,,,,,59.0
+LOT_052,ORD_H05,allocated_to,,,,,,10.0
+LOT_052,DEPT_Chất lượng,owned_by,,,,,,
+LOT_053,ORD_L11,allocated_to,,,,,,65.0
+LOT_053,ORD_M07,allocated_to,,,,,,30.0
+LOT_053,ORD_H05,allocated_to,,,,,,5.0
+LOT_053,DEPT_Chất lượng,owned_by,,,,,,
+LOT_054,ORD_M07,allocated_to,,,,,,31.0
+LOT_054,ORD_L11,allocated_to,,,,,,53.0
+LOT_054,ORD_H05,allocated_to,,,,,,16.0
+LOT_054,DEPT_Chất lượng,owned_by,,,,,,
+LOT_055,ORD_L11,allocated_to,,,,,,60.0
+LOT_055,ORD_M07,allocated_to,,,,,,32.0
+LOT_055,ORD_H05,allocated_to,,,,,,7.0
+LOT_055,ORD_L12,allocated_to,,,,,,1.0
+LOT_055,DEPT_Chất lượng,owned_by,,,,,,
+LOT_056,ORD_L12,allocated_to,,,,,,59.0
+LOT_056,ORD_H05,allocated_to,,,,,,10.0
+LOT_056,ORD_M07,allocated_to,,,,,,31.0
+LOT_056,DEPT_Chất lượng,owned_by,,,,,,
+LOT_057,ORD_L12,allocated_to,,,,,,60.0
+LOT_057,ORD_M07,allocated_to,,,,,,32.0
+LOT_057,ORD_H05,allocated_to,,,,,,8.0
+LOT_057,DEPT_Chất lượng,owned_by,,,,,,
+LOT_058,ORD_L12,allocated_to,,,,,,62.0
+LOT_058,ORD_M07,allocated_to,,,,,,28.0
+LOT_058,ORD_H05,allocated_to,,,,,,10.0
+LOT_058,DEPT_Chất lượng,owned_by,,,,,,
+LOT_059,ORD_L12,allocated_to,,,,,,67.0
+LOT_059,ORD_M07,allocated_to,,,,,,14.0
+LOT_059,ORD_H05,allocated_to,,,,,,5.0
+LOT_059,ORD_M08,allocated_to,,,,,,14.0
+LOT_059,DEPT_Chất lượng,owned_by,,,,,,
+LOT_060,ORD_M08,allocated_to,,,,,,27.0
+LOT_060,ORD_L12,allocated_to,,,,,,51.0
+LOT_060,ORD_H05,allocated_to,,,,,,14.0
+LOT_060,ORD_L13,allocated_to,,,,,,8.0
+LOT_060,DEPT_Chất lượng,owned_by,,,,,,
+LOT_061,ORD_H05,allocated_to,,,,,,9.0
+LOT_061,ORD_M08,allocated_to,,,,,,33.0
+LOT_061,ORD_L13,allocated_to,,,,,,58.0
+LOT_061,DEPT_Chất lượng,owned_by,,,,,,
+LOT_062,ORD_M08,allocated_to,,,,,,28.0
+LOT_062,ORD_L13,allocated_to,,,,,,65.0
+LOT_062,ORD_H05,allocated_to,,,,,,7.0
+LOT_062,DEPT_Chất lượng,owned_by,,,,,,
+LOT_063,ORD_L13,allocated_to,,,,,,63.0
+LOT_063,ORD_M08,allocated_to,,,,,,30.0
+LOT_063,ORD_H05,allocated_to,,,,,,7.0
+LOT_063,DEPT_Chất lượng,owned_by,,,,,,
+LOT_064,ORD_L13,allocated_to,,,,,,54.0
+LOT_064,ORD_M08,allocated_to,,,,,,35.0
+LOT_064,ORD_H05,allocated_to,,,,,,4.0
+LOT_064,ORD_H06,allocated_to,,,,,,7.0
+LOT_064,DEPT_Chất lượng,owned_by,,,,,,
+LOT_065,ORD_L13,allocated_to,,,,,,52.0
+LOT_065,ORD_M08,allocated_to,,,,,,23.0
+LOT_065,ORD_H06,allocated_to,,,,,,11.0
+LOT_065,ORD_L14,allocated_to,,,,,,14.0
+LOT_065,DEPT_Chất lượng,owned_by,,,,,,
+LOT_066,ORD_M08,allocated_to,,,,,,29.0
+LOT_066,ORD_L14,allocated_to,,,,,,60.0
+LOT_066,ORD_H06,allocated_to,,,,,,11.0
+LOT_066,DEPT_Chất lượng,owned_by,,,,,,
+LOT_067,ORD_M08,allocated_to,,,,,,31.0
+LOT_067,ORD_L14,allocated_to,,,,,,61.0
+LOT_067,ORD_H06,allocated_to,,,,,,6.0
+LOT_067,ORD_M09,allocated_to,,,,,,2.0
+LOT_067,DEPT_Chất lượng,owned_by,,,,,,
+LOT_068,ORD_H06,allocated_to,,,,,,9.0
+LOT_068,ORD_L14,allocated_to,,,,,,56.0
+LOT_068,ORD_M09,allocated_to,,,,,,35.0
+LOT_068,DEPT_Chất lượng,owned_by,,,,,,
+LOT_069,ORD_M09,allocated_to,,,,,,35.0
+LOT_069,ORD_L14,allocated_to,,,,,,55.0
+LOT_069,ORD_H06,allocated_to,,,,,,10.0
+LOT_069,DEPT_Chất lượng,owned_by,,,,,,
+LOT_070,ORD_L14,allocated_to,,,,,,54.0
+LOT_070,ORD_M09,allocated_to,,,,,,35.0
+LOT_070,ORD_H06,allocated_to,,,,,,8.0
+LOT_070,ORD_L15,allocated_to,,,,,,3.0
+LOT_070,DEPT_Chất lượng,owned_by,,,,,,
+LOT_071,ORD_M09,allocated_to,,,,,,25.0
+LOT_071,ORD_L15,allocated_to,,,,,,62.0
+LOT_071,ORD_H06,allocated_to,,,,,,13.0
+LOT_071,DEPT_Chất lượng,owned_by,,,,,,
+LOT_072,ORD_L15,allocated_to,,,,,,61.0
+LOT_072,ORD_M09,allocated_to,,,,,,32.0
+LOT_072,ORD_H06,allocated_to,,,,,,7.0
+LOT_072,DEPT_Chất lượng,owned_by,,,,,,
+LOT_073,ORD_L15,allocated_to,,,,,,55.0
+LOT_073,ORD_M09,allocated_to,,,,,,37.0
+LOT_073,ORD_H06,allocated_to,,,,,,8.0
+LOT_073,DEPT_Chất lượng,owned_by,,,,,,
+LOT_074,ORD_L15,allocated_to,,,,,,63.0
+LOT_074,ORD_M09,allocated_to,,,,,,28.0
+LOT_074,ORD_H06,allocated_to,,,,,,9.0
+LOT_074,DEPT_Chất lượng,owned_by,,,,,,
+LOT_075,ORD_M09,allocated_to,,,,,,21.0
+LOT_075,ORD_L15,allocated_to,,,,,,56.0
+LOT_075,ORD_H06,allocated_to,,,,,,8.0
+LOT_075,ORD_M10,allocated_to,,,,,,12.0
+LOT_075,ORD_L16,allocated_to,,,,,,3.0
+LOT_075,DEPT_Chất lượng,owned_by,,,,,,
+LOT_076,ORD_L16,allocated_to,,,,,,62.0
+LOT_076,ORD_H06,allocated_to,,,,,,7.0
+LOT_076,ORD_M10,allocated_to,,,,,,31.0
+LOT_076,DEPT_Chất lượng,owned_by,,,,,,
+LOT_077,ORD_M10,allocated_to,,,,,,29.0
+LOT_077,ORD_L16,allocated_to,,,,,,62.0
+LOT_077,ORD_H06,allocated_to,,,,,,9.0
+LOT_077,DEPT_Chất lượng,owned_by,,,,,,
+LOT_078,ORD_M10,allocated_to,,,,,,28.0
+LOT_078,ORD_H06,allocated_to,,,,,,2.0
+LOT_078,ORD_L16,allocated_to,,,,,,58.0
+LOT_078,ORD_H07,allocated_to,,,,,,12.0
+LOT_078,DEPT_Chất lượng,owned_by,,,,,,
+LOT_079,ORD_M10,allocated_to,,,,,,27.0
+LOT_079,ORD_L16,allocated_to,,,,,,64.0
+LOT_079,ORD_H07,allocated_to,,,,,,9.0
+LOT_079,DEPT_Chất lượng,owned_by,,,,,,
+LOT_080,ORD_L16,allocated_to,,,,,,51.0
+LOT_080,ORD_M10,allocated_to,,,,,,25.0
+LOT_080,ORD_H07,allocated_to,,,,,,8.0
+LOT_080,ORD_L17,allocated_to,,,,,,16.0
+LOT_080,DEPT_Chất lượng,owned_by,,,,,,
+LOT_081,ORD_M10,allocated_to,,,,,,22.0
+LOT_081,ORD_L17,allocated_to,,,,,,67.0
+LOT_081,ORD_H07,allocated_to,,,,,,11.0
+LOT_081,DEPT_Chất lượng,owned_by,,,,,,
+LOT_082,ORD_L17,allocated_to,,,,,,63.0
+LOT_082,ORD_M10,allocated_to,,,,,,25.0
+LOT_082,ORD_H07,allocated_to,,,,,,12.0
+LOT_082,DEPT_Chất lượng,owned_by,,,,,,
+LOT_083,ORD_L17,allocated_to,,,,,,58.0
+LOT_083,ORD_M10,allocated_to,,,,,,28.0
+LOT_083,ORD_H07,allocated_to,,,,,,14.0
+LOT_083,DEPT_Chất lượng,owned_by,,,,,,
+LOT_084,ORD_L17,allocated_to,,,,,,53.0
+LOT_084,ORD_M10,allocated_to,,,,,,22.0
+LOT_084,ORD_H07,allocated_to,,,,,,10.0
+LOT_084,ORD_M11,allocated_to,,,,,,15.0
+LOT_084,DEPT_Chất lượng,owned_by,,,,,,
+LOT_085,ORD_L17,allocated_to,,,,,,43.0
+LOT_085,ORD_H07,allocated_to,,,,,,7.0
+LOT_085,ORD_M11,allocated_to,,,,,,30.0
+LOT_085,ORD_L18,allocated_to,,,,,,20.0
+LOT_085,DEPT_Chất lượng,owned_by,,,,,,
+LOT_086,ORD_L18,allocated_to,,,,,,63.0
+LOT_086,ORD_H07,allocated_to,,,,,,8.0
+LOT_086,ORD_M11,allocated_to,,,,,,29.0
+LOT_086,DEPT_Chất lượng,owned_by,,,,,,
+LOT_087,ORD_L18,allocated_to,,,,,,64.0
+LOT_087,ORD_H07,allocated_to,,,,,,12.0
+LOT_087,ORD_M11,allocated_to,,,,,,24.0
+LOT_087,DEPT_Chất lượng,owned_by,,,,,,
+LOT_088,ORD_M11,allocated_to,,,,,,28.0
+LOT_088,ORD_L18,allocated_to,,,,,,65.0
+LOT_088,ORD_H07,allocated_to,,,,,,7.0
+LOT_088,DEPT_Chất lượng,owned_by,,,,,,
+LOT_089,ORD_L18,allocated_to,,,,,,49.0
+LOT_089,ORD_M11,allocated_to,,,,,,37.0
+LOT_089,ORD_H07,allocated_to,,,,,,14.0
+LOT_089,DEPT_Chất lượng,owned_by,,,,,,
+LOT_090,ORD_M11,allocated_to,,,,,,35.0
+LOT_090,ORD_L18,allocated_to,,,,,,39.0
+LOT_090,ORD_H07,allocated_to,,,,,,1.0
+LOT_090,ORD_H08,allocated_to,,,,,,4.0
+LOT_090,ORD_L19,allocated_to,,,,,,21.0
+LOT_090,DEPT_Chất lượng,owned_by,,,,,,
+LOT_091,ORD_L19,allocated_to,,,,,,61.0
+LOT_091,ORD_M11,allocated_to,,,,,,28.0
+LOT_091,ORD_H08,allocated_to,,,,,,11.0
+LOT_091,DEPT_Chất lượng,owned_by,,,,,,
+LOT_092,ORD_L19,allocated_to,,,,,,64.0
+LOT_092,ORD_H08,allocated_to,,,,,,9.0
+LOT_092,ORD_M11,allocated_to,,,,,,23.0
+LOT_092,ORD_M12,allocated_to,,,,,,4.0
+LOT_092,DEPT_Chất lượng,owned_by,,,,,,
+LOT_093,ORD_M12,allocated_to,,,,,,31.0
+LOT_093,ORD_L19,allocated_to,,,,,,60.0
+LOT_093,ORD_H08,allocated_to,,,,,,9.0
+LOT_093,DEPT_Chất lượng,owned_by,,,,,,
+LOT_094,ORD_L19,allocated_to,,,,,,56.0
+LOT_094,ORD_M12,allocated_to,,,,,,27.0
+LOT_094,ORD_H08,allocated_to,,,,,,17.0
+LOT_094,DEPT_Chất lượng,owned_by,,,,,,
+LOT_095,ORD_L19,allocated_to,,,,,,38.0
+LOT_095,ORD_M12,allocated_to,,,,,,36.0
+LOT_095,ORD_H08,allocated_to,,,,,,14.0
+LOT_095,ORD_L20,allocated_to,,,,,,12.0
+LOT_095,DEPT_Chất lượng,owned_by,,,,,,
+LOT_096,ORD_L20,allocated_to,,,,,,61.0
+LOT_096,ORD_M12,allocated_to,,,,,,32.0
+LOT_096,ORD_H08,allocated_to,,,,,,7.0
+LOT_096,DEPT_Chất lượng,owned_by,,,,,,
+LOT_097,ORD_M12,allocated_to,,,,,,28.0
+LOT_097,ORD_L20,allocated_to,,,,,,61.0
+LOT_097,ORD_H08,allocated_to,,,,,,11.0
+LOT_097,DEPT_Chất lượng,owned_by,,,,,,
+LOT_098,ORD_M12,allocated_to,,,,,,25.0
+LOT_098,ORD_L20,allocated_to,,,,,,59.0
+LOT_098,ORD_H08,allocated_to,,,,,,16.0
+LOT_098,DEPT_Chất lượng,owned_by,,,,,,
+LOT_099,ORD_H08,allocated_to,,,,,,13.0
+LOT_099,ORD_M12,allocated_to,,,,,,33.0
+LOT_099,ORD_L20,allocated_to,,,,,,54.0
+LOT_099,DEPT_Chất lượng,owned_by,,,,,,
+LOT_100,ORD_H08,allocated_to,,,,,,14.0
+LOT_100,ORD_M12,allocated_to,,,,,,33.0
+LOT_100,ORD_L20,allocated_to,,,,,,53.0
+LOT_100,DEPT_Chất lượng,owned_by,,,,,,

@@ -1,0 +1,216 @@
+{
+  "meta": {
+    "seed": 42,
+    "size": "large",
+    "view": "full",
+    "edge_drop_rate": 0.0,
+    "generator": "factory.build_graph@v1/B"
+  },
+  "nodes": [
+    {
+      "id": "CB0430",
+      "type": "part",
+      "label": "Linh kiện CB0430",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0413",
+      "type": "part",
+      "label": "Linh kiện CB0413",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0407",
+      "type": "part",
+      "label": "Linh kiện CB0407",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0411",
+      "type": "part",
+      "label": "Linh kiện CB0411",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0402",
+      "type": "part",
+      "label": "Linh kiện CB0402",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0412",
+      "type": "part",
+      "label": "Linh kiện CB0412",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0420",
+      "type": "part",
+      "label": "Linh kiện CB0420",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0414",
+      "type": "part",
+      "label": "Linh kiện CB0414",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "SPB131",
+      "type": "product",
+      "label": "Sản phẩm SPB131",
+      "department": "planning",
+      "n_orders": 1,
+      "qty_total": 230
+    },
+    {
+      "id": "PB04",
+      "type": "process",
+      "label": "Công đoạn PB04",
+      "department": "production",
+      "branch": "B"
+    },
+    {
+      "id": "CB0410",
+      "type": "part",
+      "label": "Linh kiện CB0410",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0405",
+      "type": "part",
+      "label": "Linh kiện CB0405",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0419",
+      "type": "part",
+      "label": "Linh kiện CB0419",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0421",
+      "type": "part",
+      "label": "Linh kiện CB0421",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0428",
+      "type": "part",
+      "label": "Linh kiện CB0428",
+      "department": "warehouse",
+      "process": "PB04"
+    },
+    {
+      "id": "CB0427",
+      "type": "part",
+      "label": "Linh kiện CB0427",
+      "department": "warehouse",
+      "process": "PB04"
+    }
+  ],
+  "edges": [
+    {
+      "source": "PB04",
+      "target": "CB0411",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0413",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0402",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0405",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0420",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0414",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0428",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0419",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0412",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0410",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0430",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0421",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0407",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "PB04",
+      "target": "CB0427",
+      "relation": "produces",
+      "weight": 1.0
+    },
+    {
+      "source": "CB0421",
+      "target": "SPB131",
+      "relation": "component_of",
+      "weight": 1.0
+    }
+  ]
+}

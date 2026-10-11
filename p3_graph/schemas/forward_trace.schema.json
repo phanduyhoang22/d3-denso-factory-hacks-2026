@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "D3 forward trace output",
+  "type": "object",
+  "required": [
+    "method",
+    "root",
+    "affected",
+    "by_layer"
+  ],
+  "properties": {
+    "method": {
+      "type": "string"
+    },
+    "root": {
+      "type": "string"
+    },
+    "root_type": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "severity": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "threshold": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "affected": {
+      "type": "array",
+      "description": "mọi đối tượng hạ nguồn, xếp giảm dần est_impact",
+      "items": {
+        "type": "object",
+        "required": [
+          "node_id",
+          "type",
+          "est_impact",
+          "hops",
+          "path"
+        ],
+        "properties": {
+          "node_id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "process",
+              "component",
+              "product",
+              "order"
+            ]
+          },
+          "type_vn": {
+            "type": "string"
+          },
+          "est_impact": {
+            "type": "number"
+          },
+          "hops": {
+            "type": "integer"
+          },
+          "path": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "path_strength": {
+            "type": "number"
+          },
+          "above_threshold": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "by_layer": {
+      "type": "object",
+      "properties": {
+        "process": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "component": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "product": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "order": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "order_paths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

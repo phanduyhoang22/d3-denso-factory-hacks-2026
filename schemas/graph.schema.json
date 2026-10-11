@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "d3/graph.schema.json",
+  "title": "Manufacturing knowledge graph (đồ thị tri thức sản xuất, mục 6.1)",
+  "description": "Output của Module 2 (P3). Hướng cạnh = hướng lan truyền tác động: sensor → machine → process → part → product → order. Mọi thuộc tính nghiệp vụ là THAM SỐ MÔ PHỎNG (mục 18.1).",
+  "type": "object",
+  "required": ["meta", "nodes", "edges"],
+  "additionalProperties": false,
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["seed", "size", "view"],
+      "properties": {
+        "seed":           {"type": "integer"},
+        "size":           {"enum": ["small", "medium", "large", "demo"]},
+        "view":           {"enum": ["full", "observed"], "description": "full = đồ thị thật (chỉ dùng tính ground truth); observed = đồ thị hệ thống được nhìn"},
+        "edge_drop_rate": {"type": "number", "minimum": 0, "maximum": 1, "default": 0},
+        "generator":      {"type": "string", "description": "Tên/phiên bản hàm sinh, ví dụ generate_graph@v1"}
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type"],
+        "properties": {
+          "id":              {"type": "string"},
+          "type":            {"enum": ["sensor", "machine", "process", "part", "product", "order"]},
+          "label":           {"type": "string"},
+          "branch":          {"enum": ["A", "B", null], "description": "A = gán AI4I, B = gán SECOM"},
+          "department":      {"enum": ["maintenance", "production", "quality", "warehouse", "planning", "sales", null],
+                              "description": "Bộ phận chịu trách nhiệm node (lớp Nghiệp vụ)"},
+          "machine_type":    {"enum": ["L", "M", "H", null], "description": "Chỉ node machine; dùng để lấy bản ghi AI4I cùng Type"},
+          "alt_machines":    {"type": "array", "items": {"type": "string"}, "description": "Chỉ node machine: máy thay thế"},
+          "spare_inventory": {"type": "number", "minimum": 0, "description": "Chỉ node part: tồn kho dự phòng (số ngày dùng được)"},
+          "n_suppliers":     {"type": "integer", "minimum": 0, "description": "Chỉ node part: số nguồn thay thế"},
+          "priority":        {"type": "number", "minimum": 0, "maximum": 1, "description": "Chỉ node order: độ ưu tiên"},
+          "due_in_days":     {"type": "number", "description": "Chỉ node order: số ngày tới hạn giao"},
+          "data_rows":       {"type": "array", "items": {"type": "integer"}, "description": "Chỉ số dòng dataset gán vào node (assign_data)"}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "relation", "weight"],
+        "additionalProperties": false,
+        "properties": {
+          "source":   {"type": "string"},
+          "target":   {"type": "string"},
+          "relation": {"enum": ["monitors", "performs", "produces", "component_of", "fulfills"]},
+          "weight":   {"type": "number", "minimum": 0, "maximum": 1, "description": "Mức phụ thuộc (tham số mô phỏng)"}
+        }
+      }
+    }
+  }
+}

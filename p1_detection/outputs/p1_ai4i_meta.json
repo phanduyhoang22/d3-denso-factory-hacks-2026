@@ -1,0 +1,45 @@
+{
+ "facts": {
+  "n_rows": 10000,
+  "n_fail": 339,
+  "split_counts": {
+   "test": {
+    "size": 2000,
+    "sum": 68
+   },
+   "train": {
+    "size": 6000,
+    "sum": 203
+   },
+   "val": {
+    "size": 2000,
+    "sum": 68
+   }
+  },
+  "mode_counts_fail_only": {
+   "TWF": 46,
+   "HDF": 115,
+   "PWF": 95,
+   "OSF": 98,
+   "RNF": 1
+  },
+  "rnf_flag_but_no_failure": 18,
+  "fail_without_mode": 9
+ },
+ "thresholds": {
+  "rule": 0.5,
+  "iforest": 0.573,
+  "iforest_phys": 0.6161666666666666,
+  "autoencoder": 0.2805
+ },
+ "main_detector": "iforest_phys",
+ "selection": "tỷ lệ báo sai thấp nhất trên validation (không dùng test, không xét luật)",
+ "val_false_alarm_rate": {
+  "rule": 0.0735,
+  "iforest": 0.4198,
+  "iforest_phys": 0.3742,
+  "autoencoder": 0.7013
+ },
+ "n_alarms_test": 794,
+ "n_true_alarms_test": 63
+}

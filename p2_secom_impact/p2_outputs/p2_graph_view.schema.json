@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "P2 GraphView (đồ thị rút gọn cho dashboard)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "p2.graph_view.v1"
+    },
+    "scenario": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "type",
+          "layer",
+          "risk",
+          "band",
+          "is_source"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "layer": {
+            "enum": [
+              "logic",
+              "business"
+            ]
+          },
+          "owner_dept": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "risk": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "band": {
+            "enum": [
+              "high",
+              "medium",
+              "low",
+              null
+            ]
+          },
+          "is_source": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "target",
+          "rel",
+          "on_path"
+        ],
+        "properties": {
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "rel": {
+            "type": "string"
+          },
+          "buffer_min": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "on_path": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "legend": {
+      "type": "object"
+    }
+  }
+}

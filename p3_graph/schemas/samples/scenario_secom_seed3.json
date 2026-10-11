@@ -1,0 +1,326 @@
+{
+  "scenario_id": "SCN_secom_medium_s3_c50_d0",
+  "seed": 3,
+  "config": {
+    "domain": "secom",
+    "size": "medium",
+    "confounder_ratio": 0.5,
+    "edge_drop": 0.0,
+    "weight_noise": 0.25,
+    "stock_noise": 0.2,
+    "failure_mode": null,
+    "background_fp": false,
+    "impact_threshold": 0.1,
+    "drop_types": null
+  },
+  "incidents": [
+    {
+      "incident_id": "INC_0003_001",
+      "timestamp": "2026-09-18T08:29",
+      "timestamp_is_synthetic": true,
+      "node_id": "P14",
+      "node_type": "process",
+      "dataset": "secom",
+      "source_row_id": 1062,
+      "source_row_pos": 1229,
+      "failure_mode": "SECOM_FAIL",
+      "anomaly_type": "Thông số quy trình bán dẫn",
+      "severity": "Trung bình",
+      "severity_score": 0.8,
+      "anomaly_score": 0.0122,
+      "detected": false,
+      "suspected_cause_group": "Thông số quy trình bán dẫn"
+    },
+    {
+      "incident_id": "INC_0003_002",
+      "timestamp": "2026-09-18T09:54",
+      "timestamp_is_synthetic": true,
+      "node_id": "P19",
+      "node_type": "process",
+      "dataset": "secom",
+      "source_row_id": 189,
+      "source_row_pos": 1386,
+      "failure_mode": "SECOM_FAIL",
+      "anomaly_type": "Thông số quy trình bán dẫn",
+      "severity": "Trung bình",
+      "severity_score": 0.8,
+      "anomaly_score": 0.2369,
+      "detected": true,
+      "suspected_cause_group": "Thông số quy trình bán dẫn"
+    },
+    {
+      "incident_id": "INC_0003_003",
+      "timestamp": "2026-09-18T10:43",
+      "timestamp_is_synthetic": true,
+      "node_id": "P15",
+      "node_type": "process",
+      "dataset": "secom",
+      "source_row_id": 1151,
+      "source_row_pos": 1318,
+      "failure_mode": "SECOM_FAIL",
+      "anomaly_type": "Thông số quy trình bán dẫn",
+      "severity": "Trung bình",
+      "severity_score": 0.8,
+      "anomaly_score": 0.4654,
+      "detected": true,
+      "suspected_cause_group": "Thông số quy trình bán dẫn"
+    }
+  ],
+  "bad_outcome": {
+    "node_id": "O39",
+    "type": "order",
+    "timestamp": "2026-09-18T13:50",
+    "timestamp_is_synthetic": true
+  },
+  "forward_truth": {
+    "process": [
+      "P15"
+    ],
+    "component": [
+      "A27",
+      "A28",
+      "A29",
+      "A01"
+    ],
+    "product": [
+      "X4",
+      "X9",
+      "X11"
+    ],
+    "order": [
+      "O10",
+      "O31",
+      "O08",
+      "O23",
+      "O29",
+      "O18",
+      "O39",
+      "O24"
+    ]
+  },
+  "true_impact": {
+    "X4": 0.565138,
+    "O10": 0.565138,
+    "A27": 0.441032,
+    "O31": 0.433699,
+    "O08": 0.413776,
+    "P15": 0.36386,
+    "O23": 0.359542,
+    "A28": 0.332767,
+    "O29": 0.307348,
+    "O18": 0.302221,
+    "A29": 0.26474,
+    "X9": 0.259825,
+    "O39": 0.259825,
+    "A01": 0.15816,
+    "X11": 0.101017
+  },
+  "backward_truth": {
+    "root_node": "P14",
+    "root_incident_id": "INC_0003_001",
+    "source_row_id": 1062,
+    "failure_mode": "SECOM_FAIL",
+    "severity_score": 0.8
+  },
+  "confounder_nodes": [
+    "P19",
+    "P15"
+  ],
+  "meta": {
+    "n_eligible_confounders": 5,
+    "n_incidents": 3,
+    "dropped_edges": [],
+    "n_prop_edges": 231,
+    "graph_summary_full": {
+      "nodes": {
+        "process": 20,
+        "machine": 40,
+        "sensor": 159,
+        "component": 40,
+        "product": 12,
+        "order": 40
+      },
+      "edges": {
+        "feeds": 7,
+        "produces": 46,
+        "operates_in": 45,
+        "monitors": 159,
+        "used_in": 53,
+        "fulfills": 80
+      },
+      "n_nodes": 311,
+      "n_edges": 390
+    }
+  },
+  "forward_trace_example": {
+    "method": "forward_trace",
+    "root": "P14",
+    "root_type": "process",
+    "severity": 0.8,
+    "threshold": 0.1,
+    "affected": [
+      {
+        "node_id": "P15",
+        "type": "process",
+        "type_vn": "Công đoạn",
+        "est_impact": 0.5711,
+        "hops": 1,
+        "path": [
+          "P14",
+          "P15"
+        ],
+        "path_strength": 0.7139,
+        "above_threshold": true
+      },
+      {
+        "node_id": "X4",
+        "type": "product",
+        "type_vn": "Sản phẩm",
+        "est_impact": 0.5621,
+        "hops": 2,
+        "path": [
+          "P14",
+          "P15",
+          "A29",
+          "X4"
+        ],
+        "path_strength": 0.5753,
+        "above_threshold": true
+      },
+      {
+        "node_id": "O10",
+        "type": "order",
+        "type_vn": "Đơn hàng",
+        "est_impact": 0.5204,
+        "hops": 3,
+        "path": [
+          "P14",
+          "P15",
+          "A29",
+          "X4",
+          "O10"
+        ],
+        "path_strength": 0.5326,
+        "above_threshold": true
+      },
+      {
+        "node_id": "O08",
+        "type": "order",
+        "type_vn": "Đơn hàng",
+        "est_impact": 0.435,
+        "hops": 3,
+        "path": [
+          "P14",
+          "P15",
+          "A29",
+          "X4",
+          "O08"
+        ],
+        "path_strength": 0.3805,
+        "above_threshold": true
+      },
+      {
+        "node_id": "A29",
+        "type": "component",
+        "type_vn": "Linh kiện",
+        "est_impact": 0.4322,
+        "hops": 2,
+        "path": [
+          "P14",
+          "P15",
+          "A29"
+        ],
+        "path_strength": 0.6014,
+        "above_threshold": true
+      },
+      {
+        "node_id": "O23",
+        "type": "order",
+        "type_vn": "Đơn hàng",
+        "est_impact": 0.4165,
+        "hops": 3,
+        "path": [
+          "P14",
+          "P15",
+          "A29",
+          "X4",
+          "O23"
+        ],
+        "path_strength": 0.3675,
+        "above_threshold": true
+      },
+      {
+        "node_id": "O31",
+        "type": "order",
+        "type_vn": "Đơn hàng",
+        "est_impact": 0.4023,
+        "hops": 3,
+        "path": [
+          "P14",
+          "P15",
+          "A29",
+          "X4",
+          "O31"
+        ],
+        "path_strength": 0.3706,
+        "above_threshold": true
+      },
+      {
+        "node_id": "O29",
+        "type": "order",
+        "type_vn": "Đơn hàng",
+        "est_impact": 0.3817,
+        "hops": 3,
+        "path": [
+          "P14",
+          "P15",
+          "A29",
+          "X4",
+          "O29"
+        ],
+        "path_strength": 0.3429,
+        "above_threshold": true
+      }
+    ],
+    "by_layer": {
+      "process": [
+        "P15"
+      ],
+      "component": [
+        "A29",
+        "A27",
+        "A28",
+        "A01"
+      ],
+      "product": [
+        "X4",
+        "X9",
+        "X11"
+      ],
+      "order": [
+        "O10",
+        "O08",
+        "O23",
+        "O31",
+        "O29",
+        "O18",
+        "O39",
+        "O24",
+        "O22",
+        "O19"
+      ]
+    },
+    "order_paths": [
+      "P14 → P15 → A29 → X4 → O10",
+      "P14 → P15 → A29 → X4 → O08",
+      "P14 → P15 → A29 → X4 → O23",
+      "P14 → P15 → A29 → X4 → O31",
+      "P14 → P15 → A29 → X4 → O29",
+      "P14 → A28 → X9 → O18",
+      "P14 → A28 → X9 → O39",
+      "P14 → A01 → X11 → O24",
+      "P14 → A01 → X11 → O22",
+      "P14 → A01 → X11 → O19"
+    ]
+  }
+}

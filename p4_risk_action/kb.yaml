@@ -1,0 +1,14 @@
+# Luật Fault -> Solution (luật chuyên gia GIẢ ĐỊNH, dựa mô tả dataset AI4I).
+# ĐÃ XÁC NHẬN (P1.7, 12/10/2026) bằng cách đối chiếu với 10.000 dòng AI4I (p1_detection/p1_ai4i.py, rule_flags):
+#   HDF 115/115, PWF 95/95, OSF 98/98 dòng có nhãn khớp đúng điều kiện ghi trong `cause`, không có dòng nào sai.
+#   TWF: dao hỏng thực tế ở tool wear 198–253 phút (không phải 200–240 như mô tả gốc) → đã sửa `cause`.
+#   Điều kiện TWF không tách được lỗi với bình thường (678 dòng bình thường cũng mòn ≥ 200 phút) → chỉ dùng làm gợi ý.
+# `action` và `team` vẫn là giả định của nhóm, cần kỹ sư DENSO xác nhận.
+# adoption_rate = n_accepted / n_shown; để null cho tới khi có vòng phản hồi (mục 19, việc 4). KHÔNG tự điền số.
+# team: bộ phận kỹ thuật nhận cảnh báo (giả định).
+TWF:        {cause: "Dao mòn (tool wear ~200-250 phút)",                 action: "Thay dao / kiểm tra tool wear",                       team: "Bảo trì cơ khí",     adoption_rate: null, n_shown: 0, n_accepted: 0}
+HDF:        {cause: "Tản nhiệt kém (chênh nhiệt <8.6K, tốc độ <1380 rpm)", action: "Kiểm tra hệ thống làm mát, tăng tốc độ quay",         team: "Bảo trì làm mát",    adoption_rate: null, n_shown: 0, n_accepted: 0}
+PWF:        {cause: "Công suất ngoài 3500-9000 W",                         action: "Kiểm tra nguồn điện, mô-men và tốc độ",               team: "Bảo trì điện",       adoption_rate: null, n_shown: 0, n_accepted: 0}
+OSF:        {cause: "Quá tải (tool wear x mô-men vượt ngưỡng L/M/H)",      action: "Giảm tải, kiểm tra tool wear và mô-men",              team: "Kỹ thuật quy trình", adoption_rate: null, n_shown: 0, n_accepted: 0}
+UNKNOWN:    {cause: "Không rõ chế độ lỗi (gồm RNF)",                       action: "Kỹ sư kiểm tra thủ công",                             team: "Kỹ sư chuyên trách", adoption_rate: null, n_shown: 0, n_accepted: 0}
+SECOM_FAIL: {cause: "Lô SECOM fail, không có chế độ lỗi",                  action: "Rà soát cảm biến lệch nhiều nhất tại công đoạn này",  team: "Kỹ thuật quy trình", adoption_rate: null, n_shown: 0, n_accepted: 0}

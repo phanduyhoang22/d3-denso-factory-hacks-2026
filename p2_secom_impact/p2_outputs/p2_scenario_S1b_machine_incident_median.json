@@ -1,0 +1,373 @@
+{
+  "schema_version": "p2.impact_report.v1",
+  "scenario": "machine_incident",
+  "selection": "median_of_339",
+  "trigger": {
+    "type": "machine_incident",
+    "id": "INC_06991",
+    "source_node": "M05",
+    "machine_id": "M05",
+    "owner_dept": "Bảo trì",
+    "time": "2026-10-06 02:30",
+    "udi": 6991,
+    "product_id": "L54170",
+    "details": {
+      "anomaly_score": null,
+      "anomaly_type": null,
+      "level": null,
+      "suspected_cause_group": null,
+      "hints_applied": [],
+      "hints_ignored": [],
+      "history": {
+        "machine_failures_per_1000_units": 39.71,
+        "top_cause": "PWF",
+        "top_cause_historical_share": 0.247
+      },
+      "node_id": "M05",
+      "dataset": "AI4I2020",
+      "timestamp_is_synthetic": true
+    }
+  },
+  "causes": [
+    {
+      "cause": "PWF",
+      "name": "Công suất bất thường",
+      "score": 0.871,
+      "prior": 0.247,
+      "evidence": 0.538
+    },
+    {
+      "cause": "HDF",
+      "name": "Tản nhiệt kém",
+      "score": 0.047,
+      "prior": 0.372,
+      "evidence": 0.0
+    },
+    {
+      "cause": "OSF",
+      "name": "Quá tải cơ học",
+      "score": 0.028,
+      "prior": 0.221,
+      "evidence": 0.0
+    },
+    {
+      "cause": "TWF",
+      "name": "Mòn dụng cụ",
+      "score": 0.028,
+      "prior": 0.103,
+      "evidence": 0.023
+    },
+    {
+      "cause": "RNF",
+      "name": "Lỗi ngẫu nhiên",
+      "score": 0.026,
+      "prior": 0.058,
+      "evidence": 0.05
+    }
+  ],
+  "effect": {
+    "downtime_min": 58.1,
+    "effective_downtime_min": 40.7,
+    "severity": 0.832,
+    "severity_source": "cause_mixture"
+  },
+  "affected": [
+    {
+      "id": "P02",
+      "name": "Phay",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "cum_buffer_min": 0.0,
+      "risk": 0.832,
+      "path": [
+        "M05",
+        "P02"
+      ],
+      "reason": "Phụ thuộc M05 qua 1 bước, đệm tích lũy 0 phút so với dừng hiệu dụng 41 phút"
+    },
+    {
+      "id": "A13",
+      "name": "Chi tiết phay A13",
+      "type": "part",
+      "layer": "logic",
+      "owner_dept": "Kho & Logistics",
+      "cum_buffer_min": 5.0,
+      "risk": 0.657,
+      "path": [
+        "M05",
+        "P02",
+        "A13"
+      ],
+      "reason": "Phụ thuộc M05 qua 2 bước, đệm tích lũy 5 phút so với dừng hiệu dụng 41 phút"
+    },
+    {
+      "id": "P03",
+      "name": "Lắp ráp & kiểm tra",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "cum_buffer_min": 10.0,
+      "risk": 0.536,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "P03"
+      ],
+      "reason": "Phụ thuộc M05 qua 3 bước, đệm tích lũy 10 phút so với dừng hiệu dụng 41 phút"
+    },
+    {
+      "id": "PRD_H",
+      "name": "Sản phẩm loại H",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "cum_buffer_min": 10.0,
+      "risk": 0.483,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_H"
+      ],
+      "reason": "Phụ thuộc M05 qua 4 bước, đệm tích lũy 10 phút so với dừng hiệu dụng 41 phút"
+    },
+    {
+      "id": "PRD_M",
+      "name": "Sản phẩm loại M",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "cum_buffer_min": 18.0,
+      "risk": 0.357,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_M"
+      ],
+      "reason": "Phụ thuộc M05 qua 4 bước, đệm tích lũy 18 phút so với dừng hiệu dụng 41 phút"
+    },
+    {
+      "id": "PRD_L",
+      "name": "Sản phẩm loại L",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "cum_buffer_min": 30.0,
+      "risk": 0.168,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_L"
+      ],
+      "reason": "Phụ thuộc M05 qua 4 bước, đệm tích lũy 30 phút so với dừng hiệu dụng 41 phút"
+    },
+    {
+      "id": "ORD_H06",
+      "name": "ORD_H06",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.054,
+      "cum_buffer_min": 10.0,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "P03",
+        "PRD_H",
+        "ORD_H06"
+      ],
+      "reach": 0.483,
+      "delay_min": 18.7,
+      "slack_min": 118,
+      "miss_deadline": false,
+      "priority": 1,
+      "product": "H",
+      "qty": 125,
+      "customer": "KH3",
+      "due": "2026-10-06 16:22",
+      "time_to_impact_min": 0.0,
+      "direct_units": 5,
+      "reason": "Trễ dự kiến 19 phút, dư thời gian 118 phút, ưu tiên 1"
+    }
+  ],
+  "by_department": {
+    "Sản xuất": {
+      "count": 2,
+      "max_risk": 0.832,
+      "items": [
+        {
+          "id": "P02",
+          "type": "process",
+          "risk": 0.832,
+          "role": "affected"
+        },
+        {
+          "id": "P03",
+          "type": "process",
+          "risk": 0.536,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Kho & Logistics": {
+      "count": 1,
+      "max_risk": 0.657,
+      "items": [
+        {
+          "id": "A13",
+          "type": "part",
+          "risk": 0.657,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Chất lượng": {
+      "count": 3,
+      "max_risk": 0.483,
+      "items": [
+        {
+          "id": "PRD_H",
+          "type": "product",
+          "risk": 0.483,
+          "role": "affected"
+        },
+        {
+          "id": "PRD_M",
+          "type": "product",
+          "risk": 0.357,
+          "role": "affected"
+        },
+        {
+          "id": "PRD_L",
+          "type": "product",
+          "risk": 0.168,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Kế hoạch sản xuất": {
+      "count": 1,
+      "max_risk": 0.054,
+      "items": [
+        {
+          "id": "ORD_H06",
+          "type": "order",
+          "risk": 0.054,
+          "role": "affected"
+        }
+      ],
+      "roles": [
+        "affected"
+      ]
+    },
+    "Bảo trì": {
+      "count": 1,
+      "max_risk": 0.832,
+      "items": [
+        {
+          "id": "M05",
+          "type": "machine",
+          "risk": 0.832,
+          "role": "source"
+        }
+      ],
+      "roles": [
+        "source"
+      ]
+    }
+  },
+  "substitutes": [
+    {
+      "machine_id": "M07",
+      "name": "Máy phay dự phòng",
+      "process": "P02",
+      "capacity_share": 0.3
+    }
+  ],
+  "buffers": [
+    {
+      "src": "P02",
+      "dst": "A13",
+      "buffer_min": 5.0,
+      "kind": "wip"
+    },
+    {
+      "src": "P03",
+      "dst": "PRD_L",
+      "buffer_min": 20.0,
+      "kind": "finished_goods"
+    },
+    {
+      "src": "P03",
+      "dst": "PRD_M",
+      "buffer_min": 8.0,
+      "kind": "finished_goods"
+    },
+    {
+      "src": "A13",
+      "dst": "P03",
+      "buffer_min": 5.0,
+      "kind": "wip"
+    }
+  ],
+  "direct_lots": [
+    {
+      "lot": "LOT_070",
+      "units_delayed": 10
+    },
+    {
+      "lot": "LOT_071",
+      "units_delayed": 31
+    }
+  ],
+  "contributing_incidents": [],
+  "assumptions": {
+    "business_layer": "synthetic",
+    "takt_min": 1.0,
+    "substitute_share": 0.3,
+    "recovery_tau_h": 24.0,
+    "slack_mean_min": 360.0,
+    "priority_factor": {
+      "1": 0.7,
+      "2": 0.85,
+      "3": 1.0
+    },
+    "downtime_min_by_cause": {
+      "TWF": 15,
+      "HDF": 45,
+      "PWF": 60,
+      "OSF": 90,
+      "RNF": 30
+    },
+    "severity_by_cause": {
+      "TWF": 0.5,
+      "HDF": 0.75,
+      "PWF": 0.85,
+      "OSF": 0.95,
+      "RNF": 0.6
+    },
+    "note": "Đơn hàng, đệm, thời gian dừng, máy dự phòng là giả lập; cần hiệu chỉnh bằng dữ liệu DENSO."
+  },
+  "eval_only": {
+    "label_modes": [
+      "PWF"
+    ]
+  }
+}

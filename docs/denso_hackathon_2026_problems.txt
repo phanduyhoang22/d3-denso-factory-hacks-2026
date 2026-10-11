@@ -1,0 +1,72 @@
+
+## A1 — Predictive-Maintenance AI Despite Scarce Fault Data [knowledge]
+[en] Overview: Predictive-maintenance AI with scarce fault data | Train predictive-maintenance AI with limited fault-mode data.
+[en] Deliverables: An anomaly data generator ; An augmented dataset ; A report comparing prediction accuracy before and after data augmentation
+[en] Tech: Python - Physics-based simulation - GAN/Diffusion for time-series data - Scikit-learn/PyTorch
+[vi] Overview: AI bảo trì dự đoán khi thiếu dữ liệu lỗi | Huấn luyện AI bảo trì dự đoán trong điều kiện thiếu dữ liệu về các chế độ lỗi.
+[vi] Deliverables: Bộ sinh dữ liệu bất thường ; Tập dữ liệu tăng cường ; Báo cáo so sánh độ chính xác dự báo trước và sau khi tăng cường dữ liệu
+[vi] Tech: Python - Mô phỏng vật lý - GAN/Diffusion cho dữ liệu chuỗi thời gian - Scikit-learn/PyTorch
+
+## A2 — Accumulate Master Know-How for AI to Learn [knowledge]
+[en] Overview: Accumulate Master Know-How for AI to Learn | Build a system that captures experts' workflows and reasoning into a knowledge base, combined with LLMs to reuse knowledge for similar tasks without requiring manual documentation.
+[en] Deliverables: Standardized knowledge capture template ; Knowledge base ; LLM assistant for solution recommendations ; Usefulness evaluation report
+[en] Tech: LLM + RAG, Knowledge Base, Process/Workflow Capture, LangChain/LlamaIndex
+[vi] Overview: Tích lũy bí quyết chuyên gia cho AI học | Xây dựng hệ thống ghi lại quá trình làm việc và suy luận của chuyên gia vào cơ sở tri thức, kết hợp LLM để tái sử dụng cho bài toán tương tự mà không cần soạn tài liệu.
+[vi] Deliverables: Mẫu chuẩn ghi tri thức ; Cơ sở tri thức ; Trợ lý LLM gợi ý lời giải ; Báo cáo mức độ hữu ích
+[vi] Tech: LLM + RAG, Knowledge Base, Process/Workflow Capture, LangChain/LlamaIndex
+
+## A3 — AI Agent Understanding Diverse Document Formats [knowledge]
+[en] Overview: AI Agent Understanding Diverse Document Formats | Build a pipeline that enables AI to understand multi-format documents (PDFs, images, tables, and bilingual documents) without manual preprocessing, supporting accurate chatbot responses.
+[en] Deliverables: Multi-format document ingestion pipeline ; RAG chatbot demo ; Accuracy and latency report
+[en] Tech: OCR/VLM, LayoutLM, LangChain/LlamaIndex, Vector Database, Multilingual Embeddings
+[vi] Overview: AI Agent phân tích & hiểu tài liệu đa định dạng | Xây dựng pipeline giúp AI hiểu tài liệu đa định dạng (PDF/ảnh/bảng/song ngữ) không cần chỉnh sửa thủ công, phục vụ chatbot trả lời chính xác.
+[vi] Deliverables: Pipeline ingest đa định dạng ; RAG chatbot demo ; Báo cáo độ chính xác & độ trễ
+[vi] Tech: OCR/VLM, LayoutLM, LangChain/LlamaIndex, Cơ sở dữ liệu Vector, Nhúng đa ngôn ngữ
+
+## H1 — Train Humanoids Fast, Accurate, Low Man-Hours [robot]
+[en] Overview: Train Humanoids Fast, Accurate, Low Man-Hours | Explore and evaluate simpler, more efficient humanoid training methods while designing a DENSO data collection framework for robot training.
+[en] Deliverables: Standardized data collection workflow ; Training method comparison report ; Demonstration of the learned skill
+[en] Tech: Isaac Sim, Imitation Learning / Reinforcement Learning (RL), Teleoperation Data, PyTorch, Robomimic
+[vi] Overview: Huấn luyện humanoid nhanh, chính xác, ít công sức | Khảo sát và thử nghiệm phương pháp huấn luyện humanoid đơn giản, hiệu quả hơn; đồng thời thiết kế mô hình thu thập dữ liệu DENSO để huấn luyện robot.
+[vi] Deliverables: Quy trình thu thập dữ liệu chuẩn ; Báo cáo so sánh phương pháp huấn luyện ; Demo kỹ năng học được
+[vi] Tech: Isaac Sim, Imitation Learning / Reinforcement Learning (RL), Dữ liệu điều khiển từ xa (Teleoperation Data), PyTorch, Robomimic
+
+## H2 — High-Precision Control for Dexterous Finger Work [robot]
+[en] Overview: High-Precision Control for Dexterous Finger Work | Improve and benchmark finger joint force/angle precision for dexterous manipulation while evaluating battery and power solutions for continuous operation.
+[en] Deliverables: Dexterity benchmark test suite ; Force/angle accuracy benchmark report ; Battery solution evaluation
+[en] Tech: Force Control, Tactile Sensors, Multi-finger Gripper, Simulation (Isaac / MuJoCo)
+[vi] Overview: Điều khiển chính xác cho thao tác ngón tay khéo léo | Nâng cao và benchmark độ chính xác lực/góc của khớp ngón tay cho các thao tác tinh vi, đồng thời khảo sát giải pháp pin/năng lượng phục vụ vận hành liên tục.
+[vi] Deliverables: Bộ bài test dexterity ; Báo cáo benchmark độ chính xác lực/góc ; Đánh giá giải pháp pin
+[vi] Tech: Điều khiển lực, Cảm biến xúc giác, Gripper nhiều ngón, Mô phỏng (Isaac/MuJoCo)
+
+## H3 — Low-Cost, Flexible Automation for High-Mix Production [robot]
+[en] Overview: Low-Cost, Flexible Automation for High-Mix Production | Develop a low-cost automation solution for a kankotsu task while quantifying expert know-how through videos and real operational data (torque, force, motion trajectory) collected using machines, sensors, or measuring devices.
+[en] Deliverables: Quantified know-how dataset (including force, torque, and trajectory measurements) ; Low-cost automation demonstration ; Cost/ROI report
+[en] Tech: Force/Torque Sensors, IMU, Manual Measurement Devices, Learning from Demonstration (Imitation Learning), Low-cost Cobots, Python
+[vi] Overview: Tự động hóa linh hoạt, chi phí tối ưu cho sản xuất đa chủng loại | Xây dựng giải pháp tự động hóa chi phí thấp cho một thao tác kankotsu, đồng thời định lượng hóa bí quyết thông qua video, dữ liệu thực tế theo công việc (lực siết ốc vít, mô-men, quỹ đạo) bằng máy/cảm biến/thiết bị đo.
+[vi] Deliverables: Bộ dữ liệu định lượng bí quyết (gồm số liệu đo: lực siết, mô-men, quỹ đạo) ; Demo tự động hóa chi phí tối ưu ; Báo cáo chi phí/ROI
+[vi] Tech: Cảm biến lực/mô-men (Torque), IMU, Thiết bị đo thủ công, Học từ minh họa (imitation Learning), Cobot chi phí tối ưu, Python
+
+## D1 — Low-Cost Connectivity for Non-IPC Legacy Equipment [data]
+[en] Overview: Low-Cost Connectivity for Non-IPC Legacy Equipment | Develop a simple, low-cost, and rapidly deployable PLC–IPC connectivity solution to collect data from legacy PLCs and transmit it to a server.
+[en] Deliverables: Low-cost connectivity prototype ; Server data transmission demo ; Cost and implementation time comparison report
+[en] Tech: OPC-UA/Modbus, Low-cost Gateway (Raspberry Pi/ESP32), MQTT, Node-RED
+[vi] Overview: Kết nối chi phí tối ưu cho thiết bị cũ không có IPC | Xây dựng giải pháp kết nối PLC–IPC đơn giản, chi phí thấp và triển khai nhanh để thu thập dữ liệu từ PLC đời cũ lên server.
+[vi] Deliverables: Prototype kết nối chi phí thấp ; Demo dữ liệu lên server ; Báo cáo so sánh chi phí/thời gian
+[vi] Tech: Giao thức truyền thông công nghiệp OPC-UA/Modbus, Gateway chi phí tối ưu (Raspberry Pi/ESP32), giao thức truyền tin MQTT, Node-RED
+
+## D2 — Simulate & Forecast Logistics, Recommend Actions [data]
+[en] Overview: Simulate & Forecast Logistics, Recommend Actions | Build a system with three capabilities: Predict logistics capacity, Detect bottlenecks, and Simulate what-if scenarios to recommend actions.
+[en] Deliverables: Predict–Detect–Simulate system ; Control Room-style dashboard ; Forecast, bottleneck, and action recommendation report
+[en] Tech: Time-series Forecast (Prophet/LSTM), Discrete-event Simulation (SimPy/AnyLogic), Optimization, Dashboard
+[vi] Overview: Mô phỏng & dự báo logistics, đề xuất đối sách tối ưu | Xây dựng hệ thống gồm ba năng lực: Predict (dự báo năng lực logistics), Detect (xác định bottleneck) và Simulate (mô phỏng What-if) để hỗ trợ đề xuất hành động.
+[vi] Deliverables: Hệ thống Predict–Detect–Simulate ; Dashboard kiểu Control Room ; Báo cáo dự báo, bottleneck và gợi ý hành động
+[vi] Tech: Dự báo chuỗi thời gian (Time-series Forecast (Prophet/LSTM)), Mô phỏng sự kiện rời rạc (Discrete-event Simulation (SimPy/AnyLogic)), Optimization, Dashboard trực quan
+
+## D3 — Link Production-Chain Data & Predict Incident Impact/Cause [data]
+[en] Overview: Link Production-Chain Data & Predict Incident Impact/Cause | Connect production-chain data through both the Logic and Manufacturing layers to analyze impact propagation and recommend actions for each department when changes occur.
+[en] Deliverables: Production-chain data linkage model ; Impact propagation inference engine ; Department-specific action recommendations for three scenarios
+[en] Tech: Knowledge Graph (Neo4j/RDF), Impact / What-if Propagation, Rule + Machine Learning, Dashboard
+[vi] Overview: Liên kết dữ liệu chuỗi sản xuất & dự đoán mức ảnh hưởng/nguyên nhân sự cố | Liên kết chuỗi dữ liệu sản xuất qua hai lớp (Logic và Nghiệp vụ sản xuất) để phân tích tác động lan truyền và gợi ý hành động cho từng bộ phận khi có biến động.
+[vi] Deliverables: Mô hình liên kết chuỗi dữ liệu ; Engine phân đoán tác động lan truyền ; Bảng gợi ý hành động theo bộ phận cho 3 tình huống
+[vi] Tech: Đồ thị tri thức Knowledge Graph (Neo4j/RDF), Phân tích tác động và mô phỏng (Impact/What-if Propagation), Luật & kết hợp học máy (Rule + Machine Learning), Dashboard trực quan

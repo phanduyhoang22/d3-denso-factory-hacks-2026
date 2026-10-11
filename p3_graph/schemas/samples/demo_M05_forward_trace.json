@@ -1,0 +1,102 @@
+{
+  "method": "forward_trace",
+  "root": "M05",
+  "root_type": "machine",
+  "severity": 0.93,
+  "threshold": 0.1,
+  "affected": [
+    {
+      "node_id": "P02",
+      "type": "process",
+      "type_vn": "Công đoạn",
+      "est_impact": 0.558,
+      "hops": 1,
+      "path": [
+        "M05",
+        "P02"
+      ],
+      "path_strength": 0.6,
+      "above_threshold": true
+    },
+    {
+      "node_id": "A13",
+      "type": "component",
+      "type_vn": "Linh kiện",
+      "est_impact": 0.4638,
+      "hops": 2,
+      "path": [
+        "M05",
+        "P02",
+        "A13"
+      ],
+      "path_strength": 0.57,
+      "above_threshold": true
+    },
+    {
+      "node_id": "X1",
+      "type": "product",
+      "type_vn": "Sản phẩm",
+      "est_impact": 0.4175,
+      "hops": 3,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "X1"
+      ],
+      "path_strength": 0.513,
+      "above_threshold": true
+    },
+    {
+      "node_id": "O43",
+      "type": "order",
+      "type_vn": "Đơn hàng",
+      "est_impact": 0.334,
+      "hops": 4,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "X1",
+        "O43"
+      ],
+      "path_strength": 0.4104,
+      "above_threshold": true
+    },
+    {
+      "node_id": "O58",
+      "type": "order",
+      "type_vn": "Đơn hàng",
+      "est_impact": 0.2505,
+      "hops": 4,
+      "path": [
+        "M05",
+        "P02",
+        "A13",
+        "X1",
+        "O58"
+      ],
+      "path_strength": 0.3078,
+      "above_threshold": true
+    }
+  ],
+  "by_layer": {
+    "process": [
+      "P02"
+    ],
+    "component": [
+      "A13"
+    ],
+    "product": [
+      "X1"
+    ],
+    "order": [
+      "O43",
+      "O58"
+    ]
+  },
+  "order_paths": [
+    "M05 → P02 → A13 → X1 → O43",
+    "M05 → P02 → A13 → X1 → O58"
+  ]
+}

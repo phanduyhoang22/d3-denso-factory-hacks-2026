@@ -1,0 +1,79 @@
+{
+  "note": "Kịch bản mẫu SECOM. Đồ thị và tham số vận hành là mô phỏng; mỗi dòng SECOM test được gắn vào một máy.",
+  "seed": 0,
+  "size": "medium",
+  "confounder_pct": 50,
+  "delete_pct": 25,
+  "outcome": "ORD_5_02",
+  "backward_truth": "M301",
+  "true_impact_outcome": 0.142,
+  "flagged_machines": [
+    "M101",
+    "M102",
+    "M103",
+    "M201",
+    "M202",
+    "M203",
+    "M301",
+    "M302",
+    "M303",
+    "M304",
+    "M401",
+    "M402",
+    "M403",
+    "S101",
+    "S203",
+    "S304",
+    "S401"
+  ],
+  "confounders": [],
+  "backward_trace_top5": [
+    {
+      "rank": 1,
+      "machine": "M203",
+      "score": 0.4867,
+      "anomaly": 0.9734,
+      "reach": 0.0,
+      "hist_factor": 0.983,
+      "path": []
+    },
+    {
+      "rank": 2,
+      "machine": "M201",
+      "score": 0.4697,
+      "anomaly": 0.9394,
+      "reach": 0.0,
+      "hist_factor": 0.496,
+      "path": []
+    },
+    {
+      "rank": 3,
+      "machine": "S101",
+      "score": 0.4505,
+      "anomaly": 0.9011,
+      "reach": 0.0,
+      "hist_factor": 0.687,
+      "path": []
+    },
+    {
+      "rank": 4,
+      "machine": "M302",
+      "score": 0.4415,
+      "anomaly": 0.883,
+      "reach": 0.0,
+      "hist_factor": 0.435,
+      "path": []
+    },
+    {
+      "rank": 5,
+      "machine": "S304",
+      "score": 0.4021,
+      "anomaly": 0.8043,
+      "reach": 0.0,
+      "hist_factor": 1.87,
+      "path": []
+    }
+  ],
+  "baseline_anomaly_top1": "M203",
+  "root_rank_in_system": 9
+}

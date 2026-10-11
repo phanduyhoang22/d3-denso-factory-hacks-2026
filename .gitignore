@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+.DS_Store
+.streamlit/secrets.toml
+
+# Sinh lại bằng scripts/prepare_team_data.py
+p3_graph/data/
+
+# Kết quả tạm
+results/smoke_test.csv
+results/feedback.jsonl
+*.log
+
+# File zip gốc (đã giải nén)
+*.zip
+
+# Model sinh lại được
+*.joblib

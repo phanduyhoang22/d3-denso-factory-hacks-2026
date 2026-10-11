@@ -1,0 +1,1080 @@
+{
+  "notes": {
+    "backward": "KIỂM TRA ĐƯỜNG ỐNG, không phải độ chính xác ngoài thực tế: luật bằng chứng trùng luật sinh nhãn của AI4I 2020 (khớp 10000/10000 dòng). Khi huấn luyện không có HDF (ml_baseline.drift_without_hdf), luật với prior học từ dữ liệu KHÔNG hơn random forest: prior gần 0 của nguyên nhân chưa từng thấy triệt tiêu bằng chứng. Làm trơn prior (rule_prior_smoothing_sweep) là thăm dò làm sau khi thấy kết quả, cần xác nhận trên dữ liệu khác trước khi dùng.",
+    "priors": "Prior lấy từ 70% đầu theo UDI. Ở tập all_failures, dòng thuộc tập train dùng prior leave-one-out; độ lệch chuẩn dùng cho nhiễu cũng chỉ tính trên tập train.",
+    "rnf": "RNF có rất ít mẫu có nhãn lỗi (xem n_by_mode); không kết luận về RNF.",
+    "forward": "wiring_check chỉ chứng minh đồ thị nối đúng, KHÔNG phải độ chính xác dự báo. pct_incidents_with_missed_deadline phụ thuộc giả định (xem forward_sensitivity).",
+    "synthetic": "Đơn hàng, hạn giao, đệm, thời gian dừng, máy dự phòng là giả lập; cần hiệu chỉnh bằng dữ liệu DENSO.",
+    "hint": "hint_boost là hệ số tự đặt; dataset không có gợi ý thật của P1 nên chỉ khảo sát độ nhạy."
+  },
+  "backward": [
+    {
+      "subset": "last_30pct",
+      "method": "prior_only",
+      "noise_sd_frac": 0.0,
+      "n": 59,
+      "top1": 0.0,
+      "top2": 0.322,
+      "mrr": 0.367,
+      "n_by_mode": {
+        "TWF": 15,
+        "HDF": 0,
+        "PWF": 19,
+        "OSF": 30,
+        "RNF": 0
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 0,
+          "HDF": 15,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 19,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 0,
+          "HDF": 25,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 15,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "HDF": {
+          "n": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "PWF": {
+          "n": 19,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "OSF": {
+          "n": 25,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.0,
+      "macro_f1_excl_rnf": 0.0
+    },
+    {
+      "subset": "last_30pct",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.0,
+      "n": 59,
+      "top1": 1.0,
+      "top2": 1.0,
+      "mrr": 1.0,
+      "n_by_mode": {
+        "TWF": 15,
+        "HDF": 0,
+        "PWF": 19,
+        "OSF": 30,
+        "RNF": 0
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 14,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 17,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 28,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 14,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "HDF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "PWF": {
+          "n": 17,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "OSF": {
+          "n": 28,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 1.0,
+      "macro_f1_excl_rnf": 1.0
+    },
+    {
+      "subset": "last_30pct",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.1,
+      "n": 59,
+      "top1": 0.98,
+      "top2": 1.0,
+      "mrr": 0.99,
+      "n_by_mode": {
+        "TWF": 15,
+        "HDF": 0,
+        "PWF": 19,
+        "OSF": 30,
+        "RNF": 0
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 14,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 17,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 2,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 26,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 14,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.933
+        },
+        "HDF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "PWF": {
+          "n": 17,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "OSF": {
+          "n": 28,
+          "precision": 1.0,
+          "recall": 0.929,
+          "f1": 0.963
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.965,
+      "macro_f1_excl_rnf": 0.965
+    },
+    {
+      "subset": "last_30pct",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.25,
+      "n": 59,
+      "top1": 0.922,
+      "top2": 0.997,
+      "mrr": 0.96,
+      "n_by_mode": {
+        "TWF": 15,
+        "HDF": 0,
+        "PWF": 19,
+        "OSF": 30,
+        "RNF": 0
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 14,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 17,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 2,
+          "HDF": 0,
+          "PWF": 2,
+          "OSF": 24,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 14,
+          "precision": 0.875,
+          "recall": 1.0,
+          "f1": 0.933
+        },
+        "HDF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        },
+        "PWF": {
+          "n": 17,
+          "precision": 0.895,
+          "recall": 1.0,
+          "f1": 0.944
+        },
+        "OSF": {
+          "n": 28,
+          "precision": 1.0,
+          "recall": 0.857,
+          "f1": 0.923
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.933,
+      "macro_f1_excl_rnf": 0.933
+    },
+    {
+      "subset": "last_30pct",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.5,
+      "n": 59,
+      "top1": 0.732,
+      "top2": 0.919,
+      "mrr": 0.848,
+      "n_by_mode": {
+        "TWF": 15,
+        "HDF": 0,
+        "PWF": 19,
+        "OSF": 30,
+        "RNF": 0
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 11,
+          "HDF": 2,
+          "PWF": 0,
+          "OSF": 1,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 1,
+          "PWF": 15,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 5,
+          "HDF": 1,
+          "PWF": 3,
+          "OSF": 20,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 14,
+          "precision": 0.688,
+          "recall": 0.786,
+          "f1": 0.733
+        },
+        "HDF": {
+          "n": 0,
+          "precision": 0.0,
+          "recall": null,
+          "f1": null
+        },
+        "PWF": {
+          "n": 16,
+          "precision": 0.833,
+          "recall": 0.938,
+          "f1": 0.882
+        },
+        "OSF": {
+          "n": 29,
+          "precision": 0.952,
+          "recall": 0.69,
+          "f1": 0.8
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.805,
+      "macro_f1_excl_rnf": 0.805
+    },
+    {
+      "subset": "all_failures",
+      "method": "prior_only",
+      "noise_sd_frac": 0.0,
+      "n": 330,
+      "top1": 0.348,
+      "top2": 0.627,
+      "mrr": 0.601,
+      "n_by_mode": {
+        "TWF": 46,
+        "HDF": 115,
+        "PWF": 95,
+        "OSF": 98,
+        "RNF": 1
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 0,
+          "HDF": 46,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 115,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 91,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 0,
+          "HDF": 78,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 46,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "HDF": {
+          "n": 115,
+          "precision": 0.348,
+          "recall": 1.0,
+          "f1": 0.517
+        },
+        "PWF": {
+          "n": 91,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "OSF": {
+          "n": 78,
+          "precision": null,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.129,
+      "macro_f1_excl_rnf": 0.129
+    },
+    {
+      "subset": "all_failures",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.0,
+      "n": 330,
+      "top1": 0.994,
+      "top2": 1.0,
+      "mrr": 0.997,
+      "n_by_mode": {
+        "TWF": 46,
+        "HDF": 115,
+        "PWF": 95,
+        "OSF": 98,
+        "RNF": 1
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 43,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 113,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 1,
+          "PWF": 85,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 0,
+          "HDF": 1,
+          "PWF": 0,
+          "OSF": 87,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 43,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "HDF": {
+          "n": 113,
+          "precision": 0.983,
+          "recall": 1.0,
+          "f1": 0.991
+        },
+        "PWF": {
+          "n": 86,
+          "precision": 1.0,
+          "recall": 0.988,
+          "f1": 0.994
+        },
+        "OSF": {
+          "n": 88,
+          "precision": 1.0,
+          "recall": 0.989,
+          "f1": 0.994
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.995,
+      "macro_f1_excl_rnf": 0.995
+    },
+    {
+      "subset": "all_failures",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.1,
+      "n": 330,
+      "top1": 0.975,
+      "top2": 0.999,
+      "mrr": 0.987,
+      "n_by_mode": {
+        "TWF": 46,
+        "HDF": 115,
+        "PWF": 95,
+        "OSF": 98,
+        "RNF": 1
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 42,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 1,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 0,
+          "HDF": 114,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 0,
+          "HDF": 1,
+          "PWF": 85,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 4,
+          "HDF": 3,
+          "PWF": 0,
+          "OSF": 80,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 43,
+          "precision": 0.913,
+          "recall": 0.977,
+          "f1": 0.944
+        },
+        "HDF": {
+          "n": 114,
+          "precision": 0.966,
+          "recall": 1.0,
+          "f1": 0.983
+        },
+        "PWF": {
+          "n": 86,
+          "precision": 1.0,
+          "recall": 0.988,
+          "f1": 0.994
+        },
+        "OSF": {
+          "n": 87,
+          "precision": 0.988,
+          "recall": 0.92,
+          "f1": 0.952
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.968,
+      "macro_f1_excl_rnf": 0.968
+    },
+    {
+      "subset": "all_failures",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.25,
+      "n": 330,
+      "top1": 0.892,
+      "top2": 0.987,
+      "mrr": 0.943,
+      "n_by_mode": {
+        "TWF": 46,
+        "HDF": 115,
+        "PWF": 95,
+        "OSF": 98,
+        "RNF": 1
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 38,
+          "HDF": 3,
+          "PWF": 1,
+          "OSF": 1,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 2,
+          "HDF": 107,
+          "PWF": 2,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 1,
+          "HDF": 9,
+          "PWF": 80,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 10,
+          "HDF": 8,
+          "PWF": 2,
+          "OSF": 66,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 43,
+          "precision": 0.745,
+          "recall": 0.884,
+          "f1": 0.809
+        },
+        "HDF": {
+          "n": 111,
+          "precision": 0.843,
+          "recall": 0.964,
+          "f1": 0.899
+        },
+        "PWF": {
+          "n": 90,
+          "precision": 0.941,
+          "recall": 0.889,
+          "f1": 0.914
+        },
+        "OSF": {
+          "n": 86,
+          "precision": 0.985,
+          "recall": 0.767,
+          "f1": 0.863
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.871,
+      "macro_f1_excl_rnf": 0.871
+    },
+    {
+      "subset": "all_failures",
+      "method": "prior+evidence",
+      "noise_sd_frac": 0.5,
+      "n": 330,
+      "top1": 0.748,
+      "top2": 0.937,
+      "mrr": 0.862,
+      "n_by_mode": {
+        "TWF": 46,
+        "HDF": 115,
+        "PWF": 95,
+        "OSF": 98,
+        "RNF": 1
+      },
+      "confusion": {
+        "TWF": {
+          "TWF": 31,
+          "HDF": 8,
+          "PWF": 2,
+          "OSF": 2,
+          "RNF": 0
+        },
+        "HDF": {
+          "TWF": 2,
+          "HDF": 90,
+          "PWF": 17,
+          "OSF": 1,
+          "RNF": 0
+        },
+        "PWF": {
+          "TWF": 2,
+          "HDF": 21,
+          "PWF": 68,
+          "OSF": 0,
+          "RNF": 0
+        },
+        "OSF": {
+          "TWF": 11,
+          "HDF": 13,
+          "PWF": 12,
+          "OSF": 50,
+          "RNF": 0
+        },
+        "RNF": {
+          "TWF": 0,
+          "HDF": 0,
+          "PWF": 0,
+          "OSF": 0,
+          "RNF": 0
+        }
+      },
+      "per_class": {
+        "TWF": {
+          "n": 43,
+          "precision": 0.674,
+          "recall": 0.721,
+          "f1": 0.697
+        },
+        "HDF": {
+          "n": 110,
+          "precision": 0.682,
+          "recall": 0.818,
+          "f1": 0.744
+        },
+        "PWF": {
+          "n": 91,
+          "precision": 0.687,
+          "recall": 0.747,
+          "f1": 0.716
+        },
+        "OSF": {
+          "n": 86,
+          "precision": 0.943,
+          "recall": 0.581,
+          "f1": 0.719
+        },
+        "RNF": {
+          "n": 0,
+          "precision": null,
+          "recall": null,
+          "f1": null
+        }
+      },
+      "macro_f1_all": 0.719,
+      "macro_f1_excl_rnf": 0.719
+    }
+  ],
+  "ml_baseline": {
+    "n_failures_with_label": 330,
+    "cv5": {
+      "rf_raw_sensors": 0.936,
+      "rf_physical_features": 0.973,
+      "rule_prior_plus_evidence": 0.994
+    },
+    "drift_without_hdf": {
+      "hdf_udi_window": [
+        3237,
+        4852
+      ],
+      "train_n": 180,
+      "test_n": 150,
+      "train_hdf": 0,
+      "test_hdf": 115,
+      "rf_raw_sensors": 0.28,
+      "rf_physical_features": 0.293,
+      "rule_prior_plus_evidence": 0.293,
+      "rule_prior_smoothing_sweep": [
+        {
+          "prior_smoothing": 0.0,
+          "drift_top1": 0.293,
+          "in_distribution_top1": 0.994
+        },
+        {
+          "prior_smoothing": 0.25,
+          "drift_top1": 0.827,
+          "in_distribution_top1": 0.982
+        },
+        {
+          "prior_smoothing": 0.5,
+          "drift_top1": 0.887,
+          "in_distribution_top1": 0.955
+        }
+      ],
+      "prior_only": 0.12
+    }
+  },
+  "hint_sensitivity": [
+    {
+      "hint_boost": 1.0,
+      "top1_none_hint": 0.994,
+      "top1_correct_hint": 0.994,
+      "top1_wrong_hint": 0.994
+    },
+    {
+      "hint_boost": 2.0,
+      "top1_none_hint": 0.994,
+      "top1_correct_hint": 1.0,
+      "top1_wrong_hint": 0.957
+    },
+    {
+      "hint_boost": 5.0,
+      "top1_none_hint": 0.994,
+      "top1_correct_hint": 1.0,
+      "top1_wrong_hint": 0.858
+    }
+  ],
+  "forward": {
+    "n_incidents": 339,
+    "wiring_check_precision": 1.0,
+    "wiring_check_recall": 1.0,
+    "risk_bounded_by_severity": true,
+    "orders_affected_median": 1.0,
+    "orders_affected_max": 5,
+    "pct_incidents_with_missed_deadline": 0.074,
+    "runtime_ms_median": 1.33,
+    "runtime_ms_p95": 2.27
+  },
+  "forward_sensitivity": {
+    "slack_mean_min": [
+      {
+        "value": 60,
+        "pct_incidents_with_missed_deadline": 0.289,
+        "orders_affected_median": 3.0
+      },
+      {
+        "value": 120,
+        "pct_incidents_with_missed_deadline": 0.153,
+        "orders_affected_median": 2.0
+      },
+      {
+        "value": 360,
+        "pct_incidents_with_missed_deadline": 0.074,
+        "orders_affected_median": 1.0
+      },
+      {
+        "value": 720,
+        "pct_incidents_with_missed_deadline": 0.0,
+        "orders_affected_median": 0.0
+      },
+      {
+        "value": 1440,
+        "pct_incidents_with_missed_deadline": 0.0,
+        "orders_affected_median": 0.0
+      }
+    ],
+    "recovery_tau_h": [
+      {
+        "value": 6,
+        "pct_incidents_with_missed_deadline": 0.021,
+        "orders_affected_median": 0.0
+      },
+      {
+        "value": 24,
+        "pct_incidents_with_missed_deadline": 0.074,
+        "orders_affected_median": 1.0
+      },
+      {
+        "value": 96,
+        "pct_incidents_with_missed_deadline": 0.292,
+        "orders_affected_median": 3.0
+      }
+    ],
+    "substitute_share": [
+      {
+        "value": 0.0,
+        "pct_incidents_with_missed_deadline": 0.165,
+        "orders_affected_median": 3.0
+      },
+      {
+        "value": 0.3,
+        "pct_incidents_with_missed_deadline": 0.074,
+        "orders_affected_median": 1.0
+      },
+      {
+        "value": 0.5,
+        "pct_incidents_with_missed_deadline": 0.009,
+        "orders_affected_median": 0.0
+      }
+    ]
+  },
+  "config": {
+    "seed": 42,
+    "t0": "2026-10-01 06:00",
+    "takt_min": 1.0,
+    "lot_size": 100,
+    "train_frac": 0.7,
+    "orders_per_type": {
+      "L": 20,
+      "M": 12,
+      "H": 8
+    },
+    "slack_range_min": [
+      15,
+      2880
+    ],
+    "slack_mean_min": 360.0,
+    "priority_p": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "prio_factor": {
+      "1": 0.7,
+      "2": 0.85,
+      "3": 1.0
+    },
+    "downtime_min": {
+      "TWF": 15,
+      "HDF": 45,
+      "PWF": 60,
+      "OSF": 90,
+      "RNF": 30
+    },
+    "severity": {
+      "TWF": 0.5,
+      "HDF": 0.75,
+      "PWF": 0.85,
+      "OSF": 0.95,
+      "RNF": 0.6
+    },
+    "substitute_share": 0.3,
+    "recovery_tau_h": 24.0,
+    "risk_thr": 0.05,
+    "evidence_eps": 0.02,
+    "fg_buffer_min": {
+      "L": 20.0,
+      "M": 8.0,
+      "H": 0.0
+    },
+    "buf_p02_a13": 5.0,
+    "buf_a13_p03": 5.0,
+    "buf_a11_p02": 60.0,
+    "prior_smoothing": 0.0,
+    "hint_boost": 2.0,
+    "level_to_severity": {
+      "cao": 0.9,
+      "high": 0.9,
+      "trung bình": 0.6,
+      "trung binh": 0.6,
+      "medium": 0.6,
+      "thấp": 0.3,
+      "thap": 0.3,
+      "low": 0.3
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "scenario_id": "INC_A003_d0",
+  "seed": 3,
+  "dataset": "ai4i",
+  "config": {
+    "dataset": "ai4i"
+  },
+  "incident": {
+    "incident_id": "INC_A003",
+    "timestamp": "2026-01-01T00:30:00",
+    "timestamp_is_synthetic": true,
+    "dataset": "ai4i",
+    "node_id": "M41",
+    "source_row": 161,
+    "anomaly_type": "Quá tải mô-men",
+    "failure_mode": "OSF",
+    "severity": "high",
+    "anomaly_score": 0.9782,
+    "detector": "iforest",
+    "suspected_cause_group": "Mòn dao × mô-men vượt ngưỡng theo loại máy",
+    "split": "test"
+  },
+  "bad_outcome_node": "DH02628",
+  "forward": [
+    {
+      "node_id": "P7",
+      "type": "process",
+      "depth": 1,
+      "path": [
+        "M41",
+        "P7"
+      ]
+    },
+    {
+      "node_id": "C718@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C718@M41"
+      ]
+    },
+    {
+      "node_id": "C717@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C717@M41"
+      ]
+    },
+    {
+      "node_id": "C708@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C708@M41"
+      ]
+    },
+    {
+      "node_id": "C729@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C729@M41"
+      ]
+    },
+    {
+      "node_id": "C703@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C703@M41"
+      ]
+    },
+    {
+      "node_id": "C706@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C706@M41"
+      ]
+    },
+    {
+      "node_id": "C716@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C716@M41"
+      ]
+    },
+    {
+      "node_id": "C705@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C705@M41"
+      ]
+    },
+    {
+      "node_id": "C738@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C738@M41"
+      ]
+    },
+    {
+      "node_id": "C727@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C727@M41"
+      ]
+    },
+    {
+      "node_id": "C722@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C722@M41"
+      ]
+    },
+    {
+      "node_id": "C711@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C711@M41"
+      ]
+    },
+    {
+      "node_id": "C702@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C702@M41"
+      ]
+    },
+    {
+      "node_id": "C701@M41",
+      "type": "part",
+      "depth": 1,
+      "path": [
+        "M41",
+        "C701@M41"
+      ]
+    }
+  ],
+  "risk": [
+    {
+      "node_id": "C718@M41",
+      "type": "part",
+      "risk_score": 0.81,
+      "reason": "dùng cho 10 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C705@M41",
+      "type": "part",
+      "risk_score": 0.7776,
+      "reason": "dùng cho 9 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C703@M41",
+      "type": "part",
+      "risk_score": 0.7452,
+      "reason": "dùng cho 8 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "P7",
+      "type": "process",
+      "risk_score": 0.7163,
+      "reason": "công đoạn của máy lỗi, phụ thuộc trực tiếp; cách nguồn lỗi 1 bước"
+    },
+    {
+      "node_id": "C702@M41",
+      "type": "part",
+      "risk_score": 0.7128,
+      "reason": "dùng cho 7 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C706@M41",
+      "type": "part",
+      "risk_score": 0.7128,
+      "reason": "dùng cho 7 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C708@M41",
+      "type": "part",
+      "risk_score": 0.7128,
+      "reason": "dùng cho 7 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C722@M41",
+      "type": "part",
+      "risk_score": 0.7128,
+      "reason": "dùng cho 7 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C716@M41",
+      "type": "part",
+      "risk_score": 0.6804,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C727@M41",
+      "type": "part",
+      "risk_score": 0.6804,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C729@M41",
+      "type": "part",
+      "risk_score": 0.6804,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C738@M41",
+      "type": "part",
+      "risk_score": 0.6804,
+      "reason": "dùng cho 6 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C701@M41",
+      "type": "part",
+      "risk_score": 0.648,
+      "reason": "dùng cho 5 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C711@M41",
+      "type": "part",
+      "risk_score": 0.648,
+      "reason": "dùng cho 5 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    },
+    {
+      "node_id": "C717@M41",
+      "type": "part",
+      "risk_score": 0.648,
+      "reason": "dùng cho 5 sản phẩm bị ảnh hưởng; cách nguồn lỗi 2 bước"
+    }
+  ],
+  "backward": [
+    {
+      "rank": 1,
+      "node_id": "M41",
+      "cause": "M41: Mòn dao × mô-men vượt ngưỡng theo loại máy",
+      "score": 0.9782,
+      "evidence": [
+        "INC_A003 · Quá tải mô-men · điểm bất thường 0.98",
+        "nối được tới kết quả xấu trên đồ thị"
+      ]
+    },
+    {
+      "rank": 2,
+      "node_id": "M21",
+      "cause": "M21: Mòn dao × mô-men vượt ngưỡng theo loại máy",
+      "score": 0.906,
+      "evidence": [
+        "INC_A004 · Quá tải mô-men · điểm bất thường 0.91",
+        "nối được tới kết quả xấu trên đồ thị"
+      ]
+    },
+    {
+      "rank": 3,
+      "node_id": "M03",
+      "cause": "M03: Công suất ngoài dải 3500–9000 W",
+      "score": 0.4975,
+      "evidence": [
+        "INC_A000 · Lỗi công suất · điểm bất thường 0.99",
+        "không nối được tới kết quả xấu"
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "priority": 1,
+      "department": "maintenance",
+      "action": "Kiểm tra M41: Giảm tải, kiểm tra tool wear và mô-men — OSF: Quá tải (tool wear x mô-men vượt ngưỡng L/M/H)",
+      "target_node": "M41",
+      "kb_rule_id": "OSF",
+      "adoption_rate": null
+    },
+    {
+      "priority": 2,
+      "department": "maintenance",
+      "action": "Chuyển cảnh báo tới: Kỹ thuật quy trình — sự cố OSF tại M41",
+      "target_node": "M41",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 3,
+      "department": "production",
+      "action": "Chuyển tải sang M40 — nhận ít đơn nhất (682 đơn); tránh M45 (1028 đơn). Chưa mô hình hóa công suất máy dự phòng",
+      "target_node": "M41",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 4,
+      "department": "planning",
+      "action": "Ưu tiên giữ tiến độ 5 đơn rủi ro cao nhất: DH19803, DH06515, DH00535, DH10409, DH31565 — điểm 0.43–0.41; 4/5 đơn ưu tiên Cao",
+      "target_node": "M41",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    },
+    {
+      "priority": 5,
+      "department": "sales",
+      "action": "Cân nhắc dời lịch 401 đơn ưu tiên Thấp có hạn giao ≥ 60 ngày — tổng 98250 sản phẩm; giải phóng năng lực cho đơn gấp",
+      "target_node": "M41",
+      "kb_rule_id": null,
+      "adoption_rate": null
+    }
+  ],
+  "timing_ms": {
+    "generate": 486.793,
+    "forward": 6.87,
+    "risk": 277.965,
+    "backward": 0.401,
+    "action": 19.469
+  }
+}

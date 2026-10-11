@@ -1,0 +1,51 @@
+machine_id,process
+M01,P1 Cắt
+M02,P1 Cắt
+M03,P1 Cắt
+M04,P1 Cắt
+M05,P1 Cắt
+M06,P1 Cắt
+M07,P2 Tiện
+M08,P2 Tiện
+M09,P2 Tiện
+M10,P2 Tiện
+M11,P2 Tiện
+M12,P2 Tiện
+M13,P2 Tiện
+M14,P3 Phay
+M15,P3 Phay
+M16,P3 Phay
+M17,P3 Phay
+M18,P3 Phay
+M19,P3 Phay
+M20,P3 Phay
+M21,P4 Hàn
+M22,P4 Hàn
+M23,P4 Hàn
+M24,P4 Hàn
+M25,P4 Hàn
+M26,P4 Hàn
+M27,P5 Sơn/Xử lý bề mặt
+M28,P5 Sơn/Xử lý bề mặt
+M29,P5 Sơn/Xử lý bề mặt
+M30,P5 Sơn/Xử lý bề mặt
+M31,P5 Sơn/Xử lý bề mặt
+M32,P5 Sơn/Xử lý bề mặt
+M33,P6 Lắp ráp
+M34,P6 Lắp ráp
+M35,P6 Lắp ráp
+M36,P6 Lắp ráp
+M37,P6 Lắp ráp
+M38,P6 Lắp ráp
+M39,P6 Lắp ráp
+M40,P7 Kiểm tra QC
+M41,P7 Kiểm tra QC
+M42,P7 Kiểm tra QC
+M43,P7 Kiểm tra QC
+M44,P7 Kiểm tra QC
+M45,P7 Kiểm tra QC
+M46,P8 Đóng gói
+M47,P8 Đóng gói
+M48,P8 Đóng gói
+M49,P8 Đóng gói
+M50,P8 Đóng gói

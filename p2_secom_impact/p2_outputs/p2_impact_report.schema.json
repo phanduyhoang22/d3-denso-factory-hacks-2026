@@ -1,0 +1,404 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "P2 ImpactReport (đầu ra cho P3)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "scenario",
+    "trigger",
+    "causes",
+    "effect",
+    "affected",
+    "by_department",
+    "substitutes",
+    "buffers",
+    "direct_lots",
+    "contributing_incidents",
+    "assumptions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "p2.impact_report.v1"
+    },
+    "scenario": {
+      "enum": [
+        "machine_incident",
+        "order_backward",
+        "material_delay"
+      ]
+    },
+    "selection": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trigger": {
+      "type": "object",
+      "required": [
+        "type",
+        "id",
+        "source_node",
+        "time"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "machine_incident",
+            "defective_order",
+            "supplier_delay"
+          ]
+        },
+        "id": {
+          "type": "string"
+        },
+        "source_node": {
+          "type": "string"
+        },
+        "owner_dept": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "time": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        }
+      }
+    },
+    "causes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cause",
+          "name",
+          "score"
+        ],
+        "properties": {
+          "cause": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "score": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "prior": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "evidence": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        }
+      },
+      "description": "Xếp hạng giảm dần theo score (điểm tương đối, không phải xác suất đã hiệu chỉnh)."
+    },
+    "effect": {
+      "type": "object",
+      "required": [
+        "downtime_min",
+        "effective_downtime_min",
+        "severity",
+        "severity_source"
+      ],
+      "properties": {
+        "downtime_min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "effective_downtime_min": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "severity": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "severity_source": {
+          "enum": [
+            "cause_mixture",
+            "P1",
+            "assumed",
+            null
+          ]
+        }
+      }
+    },
+    "affected": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "type",
+          "layer",
+          "owner_dept",
+          "risk",
+          "path",
+          "reason"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "process",
+              "part",
+              "product",
+              "order"
+            ]
+          },
+          "layer": {
+            "enum": [
+              "logic",
+              "business"
+            ]
+          },
+          "owner_dept": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "risk": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "path": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reason": {
+            "type": "string"
+          },
+          "reach": {
+            "type": "number"
+          },
+          "delay_min": {
+            "type": "number"
+          },
+          "slack_min": {
+            "type": "number"
+          },
+          "miss_deadline": {
+            "type": "boolean"
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "product": {
+            "type": "string"
+          },
+          "qty": {
+            "type": "integer"
+          },
+          "customer": {
+            "type": "string"
+          },
+          "due": {
+            "type": "string"
+          },
+          "time_to_impact_min": {
+            "type": "number"
+          },
+          "direct_units": {
+            "type": "integer"
+          },
+          "cum_buffer_min": {
+            "type": "number",
+            "description": "Đệm tích lũy (phút sản xuất) dọc đường đi tới đối tượng."
+          },
+          "defect_rate": {
+            "type": "number"
+          }
+        },
+        "additionalProperties": true
+      },
+      "description": "Sắp xếp giảm dần theo risk (truy vết xuôi)."
+    },
+    "by_department": {
+      "type": "object",
+      "description": "Nhóm 'affected' VÀ nút nguồn theo bộ phận để P3 lập bảng hành động. Mục của nút nguồn có role='source' (hoặc 'source+affected'). count = số mục trong items.",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "count",
+          "max_risk",
+          "items",
+          "roles"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer"
+          },
+          "max_risk": {
+            "type": "number"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "affected",
+                "source",
+                "source+affected"
+              ]
+            }
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "type",
+                "risk",
+                "role"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "risk": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "role": {
+                  "enum": [
+                    "affected",
+                    "source",
+                    "source+affected"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "substitutes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "machine_id",
+          "process",
+          "capacity_share"
+        ],
+        "properties": {
+          "machine_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "process": {
+            "type": "string"
+          },
+          "capacity_share": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "buffers": {
+      "type": "array",
+      "description": "Tồn kho/đệm nằm trên đường lan truyền (đơn vị: phút sản xuất).",
+      "items": {
+        "type": "object",
+        "required": [
+          "src",
+          "dst",
+          "buffer_min"
+        ],
+        "properties": {
+          "src": {
+            "type": "string"
+          },
+          "dst": {
+            "type": "string"
+          },
+          "buffer_min": {
+            "type": "number"
+          },
+          "kind": {
+            "enum": [
+              "raw_material",
+              "wip",
+              "finished_goods",
+              null
+            ]
+          }
+        }
+      }
+    },
+    "direct_lots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "lot",
+          "units_delayed"
+        ],
+        "properties": {
+          "lot": {
+            "type": "string"
+          },
+          "units_delayed": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "contributing_incidents": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "assumptions": {
+      "type": "object",
+      "required": [
+        "business_layer",
+        "note"
+      ]
+    },
+    "eval_only": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "incident_id": "INC_demo_doc_format",
+    "time": "03/10/2026 13:50",
+    "machine_id": "M05",
+    "anomaly_type": "Mô-men xoắn bất thường",
+    "level": "Cao",
+    "anomaly_score": 0.93,
+    "suspected_cause_group": "Quá tải cơ học"
+  },
+  {
+    "incident_id": "INC_demo_unmatched_hint",
+    "time": "06/10/2026 02:30",
+    "machine_id": "M05",
+    "anomaly_type": "Độ rung bất thường",
+    "level": "Trung bình",
+    "anomaly_score": 0.81,
+    "suspected_cause_group": "Ổ bi / lệch trục"
+  },
+  {
+    "incident_id": "INC_demo_full_sensors",
+    "udi": 3351,
+    "machine_id": "M05",
+    "product_id": "L50530",
+    "type": "L",
+    "sensors": {
+      "Air temperature [K]": 301.4,
+      "Process temperature [K]": 310.8,
+      "Rotational speed [rpm]": 1285.0,
+      "Torque [Nm]": 62.6,
+      "Tool wear [min]": 183.0
+    },
+    "anomaly_score": 0.97,
+    "severity": 0.9
+  },
+  {
+    "incident_id": "INC_demo_other_machine",
+    "udi": 1500,
+    "machine_id": "M03",
+    "anomaly_type": "Cảnh báo PLC",
+    "level": "Thấp",
+    "downtime_min": 20
+  }
+]

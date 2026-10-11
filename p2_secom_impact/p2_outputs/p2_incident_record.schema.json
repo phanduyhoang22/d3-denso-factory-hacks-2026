@@ -1,0 +1,139 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "P2 IncidentRecord (đầu vào từ P1)",
+  "description": "Một sự cố do P1 phát hiện, theo định dạng mục 5.3 của tài liệu D3 (mã sự cố, thời gian, mã máy, loại bất thường, mức độ, điểm bất thường, nhóm nguyên nhân nghi ngờ). Cần 'udi' HOẶC 'time'. Với máy có mô hình nguyên nhân (M05), nếu thiếu 'sensors'/'type' thì P2 tự đọc từ tầng dữ liệu theo udi. Với máy khác cần 'downtime_min' và 'severity' (hoặc 'level') do P1 ước lượng.",
+  "type": "object",
+  "required": [
+    "incident_id",
+    "machine_id"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "udi"
+      ]
+    },
+    {
+      "required": [
+        "time"
+      ]
+    }
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string"
+    },
+    "udi": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Số thứ tự sản phẩm đang gia công khi sự cố xảy ra (liên kết với đơn hàng). Ưu tiên hơn 'time'."
+    },
+    "time": {
+      "type": "string",
+      "examples": [
+        "02/10/2026 17:27",
+        "2026-10-02 17:27"
+      ],
+      "description": "Thời điểm sự cố. Dùng khi chưa có udi; P2 quy đổi sang udi theo takt giả định."
+    },
+    "machine_id": {
+      "type": "string",
+      "examples": [
+        "M05"
+      ]
+    },
+    "anomaly_type": {
+      "type": "string",
+      "description": "Loại bất thường (văn bản tự do), chỉ lưu lại để hiển thị."
+    },
+    "level": {
+      "type": "string",
+      "description": "Mức độ: Cao / Trung bình / Thấp. Quy đổi 0.9 / 0.6 / 0.3 nếu không có 'severity'."
+    },
+    "suspected_cause_group": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      ],
+      "description": "Nhóm nguyên nhân P1 nghi ngờ. Khớp mã (TWF/HDF/PWF/OSF/RNF) hoặc tên tiếng Việt thì nhân điểm nguyên nhân đó; không khớp thì ghi vào trigger.details.hints_ignored."
+    },
+    "type": {
+      "enum": [
+        "L",
+        "M",
+        "H"
+      ],
+      "description": "Biến thể sản phẩm."
+    },
+    "product_id": {
+      "type": "string"
+    },
+    "sensors": {
+      "type": "object",
+      "required": [
+        "Air temperature [K]",
+        "Process temperature [K]",
+        "Rotational speed [rpm]",
+        "Torque [Nm]",
+        "Tool wear [min]"
+      ],
+      "properties": {
+        "Air temperature [K]": {
+          "type": "number"
+        },
+        "Process temperature [K]": {
+          "type": "number"
+        },
+        "Rotational speed [rpm]": {
+          "type": "number"
+        },
+        "Torque [Nm]": {
+          "type": "number"
+        },
+        "Tool wear [min]": {
+          "type": "number"
+        }
+      },
+      "description": "Giá trị cảm biến tại thời điểm sự cố, khóa là tên cột AI4I."
+    },
+    "anomaly_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "severity": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Nếu có thì ưu tiên hơn mức nghiêm trọng P2 tự suy ra từ nguyên nhân."
+    },
+    "downtime_min": {
+      "type": "number",
+      "minimum": 0
+    },
+    "node_id": {
+      "type": "string",
+      "description": "Mã nút trong đồ thị mà sự cố gắn vào (thường trùng machine_id)."
+    },
+    "dataset": {
+      "type": "string",
+      "examples": [
+        "AI4I2020",
+        "SECOM"
+      ],
+      "description": "Nguồn dữ liệu của sự cố."
+    },
+    "timestamp_is_synthetic": {
+      "type": "boolean",
+      "description": "true nếu 'time' là timestamp giả định theo thứ tự dòng (AI4I không có thời gian thật)."
+    }
+  },
+  "additionalProperties": true
+}

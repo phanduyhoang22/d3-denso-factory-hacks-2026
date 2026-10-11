@@ -1,0 +1,6155 @@
+[
+  {
+    "incident_id": "INC_SECOM_1254",
+    "time": "02/10/2008 20:54",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9234,
+    "severity": 0.923,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      171,
+      442
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1255",
+    "time": "02/10/2008 21:32",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9394,
+    "severity": 0.939,
+    "downtime_min": 45.0,
+    "top_features": [
+      359,
+      221,
+      493
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1256",
+    "time": "02/10/2008 21:33",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6915,
+    "severity": 0.691,
+    "downtime_min": 45.0,
+    "top_features": [
+      169,
+      440,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1257",
+    "time": "02/10/2008 22:23",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8415,
+    "severity": 0.841,
+    "downtime_min": 45.0,
+    "top_features": [
+      139,
+      571,
+      274
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1258",
+    "time": "02/10/2008 22:33",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9734,
+    "severity": 0.973,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      171,
+      408
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1259",
+    "time": "02/10/2008 23:32",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5213,
+    "severity": 0.521,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      297
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1260",
+    "time": "02/10/2008 23:32",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8585,
+    "severity": 0.859,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      576,
+      407
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1261",
+    "time": "03/10/2008 00:24",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9511,
+    "severity": 0.951,
+    "downtime_min": 45.0,
+    "top_features": [
+      577,
+      572,
+      574
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1262",
+    "time": "03/10/2008 00:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8043,
+    "severity": 0.804,
+    "downtime_min": 45.0,
+    "top_features": [
+      169,
+      440,
+      84
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1263",
+    "time": "03/10/2008 02:41",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7723,
+    "severity": 0.772,
+    "downtime_min": 45.0,
+    "top_features": [
+      571,
+      132,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1264",
+    "time": "03/10/2008 03:52",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7809,
+    "severity": 0.781,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      485,
+      33
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1265",
+    "time": "03/10/2008 03:56",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9723,
+    "severity": 0.972,
+    "downtime_min": 45.0,
+    "top_features": [
+      331,
+      467,
+      195
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1266",
+    "time": "03/10/2008 04:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4713,
+    "severity": 0.471,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      78
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1267",
+    "time": "03/10/2008 05:01",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8702,
+    "severity": 0.87,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      71
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1268",
+    "time": "03/10/2008 05:45",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9181,
+    "severity": 0.918,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      547
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1269",
+    "time": "03/10/2008 06:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8032,
+    "severity": 0.803,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      417,
+      279
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1270",
+    "time": "03/10/2008 08:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7511,
+    "severity": 0.751,
+    "downtime_min": 45.0,
+    "top_features": [
+      417,
+      144,
+      4
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1271",
+    "time": "03/10/2008 09:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.584,
+    "severity": 0.584,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      432,
+      543
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1272",
+    "time": "03/10/2008 11:40",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6202,
+    "severity": 0.62,
+    "downtime_min": 45.0,
+    "top_features": [
+      424,
+      78,
+      544
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1273",
+    "time": "03/10/2008 12:31",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.783,
+    "severity": 0.783,
+    "downtime_min": 45.0,
+    "top_features": [
+      487,
+      132,
+      140
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1275",
+    "time": "03/10/2008 19:23",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8266,
+    "severity": 0.827,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1277",
+    "time": "03/10/2008 20:11",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7032,
+    "severity": 0.703,
+    "downtime_min": 45.0,
+    "top_features": [
+      129,
+      485,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1279",
+    "time": "03/10/2008 20:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6447,
+    "severity": 0.645,
+    "downtime_min": 45.0,
+    "top_features": [
+      433,
+      545,
+      544
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1280",
+    "time": "03/10/2008 20:46",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      182,
+      318,
+      454
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1281",
+    "time": "03/10/2008 21:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8734,
+    "severity": 0.873,
+    "downtime_min": 45.0,
+    "top_features": [
+      6,
+      571,
+      543
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1282",
+    "time": "03/10/2008 21:52",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6,
+    "severity": 0.6,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      543,
+      415
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1283",
+    "time": "03/10/2008 22:08",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6085,
+    "severity": 0.609,
+    "downtime_min": 45.0,
+    "top_features": [
+      297,
+      162,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1284",
+    "time": "03/10/2008 22:53",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9234,
+    "severity": 0.923,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      433
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1285",
+    "time": "03/10/2008 23:46",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6085,
+    "severity": 0.609,
+    "downtime_min": 45.0,
+    "top_features": [
+      565,
+      567,
+      569
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1286",
+    "time": "04/10/2008 00:58",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6085,
+    "severity": 0.609,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      140,
+      214
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1287",
+    "time": "04/10/2008 01:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8734,
+    "severity": 0.873,
+    "downtime_min": 45.0,
+    "top_features": [
+      565,
+      569,
+      567
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1290",
+    "time": "04/10/2008 04:12",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9043,
+    "severity": 0.904,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      415
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1292",
+    "time": "04/10/2008 09:29",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9777,
+    "severity": 0.978,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1293",
+    "time": "04/10/2008 15:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8777,
+    "severity": 0.878,
+    "downtime_min": 45.0,
+    "top_features": [
+      210,
+      348,
+      101
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1295",
+    "time": "04/10/2008 18:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6596,
+    "severity": 0.66,
+    "downtime_min": 45.0,
+    "top_features": [
+      6,
+      433,
+      132
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1296",
+    "time": "04/10/2008 18:25",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.634,
+    "severity": 0.634,
+    "downtime_min": 45.0,
+    "top_features": [
+      560,
+      489,
+      115
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1297",
+    "time": "04/10/2008 18:59",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.3904,
+    "severity": 0.39,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1298",
+    "time": "04/10/2008 19:12",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      120,
+      571,
+      393
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1299",
+    "time": "04/10/2008 19:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9702,
+    "severity": 0.97,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      279,
+      171
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1300",
+    "time": "04/10/2008 19:54",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7128,
+    "severity": 0.713,
+    "downtime_min": 45.0,
+    "top_features": [
+      6,
+      132,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1301",
+    "time": "04/10/2008 20:39",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9128,
+    "severity": 0.913,
+    "downtime_min": 45.0,
+    "top_features": [
+      442,
+      543,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1304",
+    "time": "05/10/2008 00:33",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5447,
+    "severity": 0.545,
+    "downtime_min": 45.0,
+    "top_features": [
+      473,
+      117,
+      474
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1305",
+    "time": "05/10/2008 00:33",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      140,
+      275,
+      4
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1306",
+    "time": "05/10/2008 01:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6128,
+    "severity": 0.613,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      547
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1307",
+    "time": "05/10/2008 04:01",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7,
+    "severity": 0.7,
+    "downtime_min": 45.0,
+    "top_features": [
+      571,
+      316,
+      272
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1308",
+    "time": "05/10/2008 04:20",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9809,
+    "severity": 0.981,
+    "downtime_min": 45.0,
+    "top_features": [
+      19,
+      428,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1309",
+    "time": "05/10/2008 04:48",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      577,
+      572,
+      574
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1310",
+    "time": "05/10/2008 05:31",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5457,
+    "severity": 0.546,
+    "downtime_min": 45.0,
+    "top_features": [
+      485,
+      542,
+      216
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1311",
+    "time": "05/10/2008 05:53",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9372,
+    "severity": 0.937,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      572,
+      417
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1312",
+    "time": "05/10/2008 06:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9468,
+    "severity": 0.947,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      171,
+      442
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1313",
+    "time": "05/10/2008 08:02",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8298,
+    "severity": 0.83,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1314",
+    "time": "05/10/2008 08:40",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8277,
+    "severity": 0.828,
+    "downtime_min": 45.0,
+    "top_features": [
+      0,
+      1,
+      144
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1315",
+    "time": "05/10/2008 09:04",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9915,
+    "severity": 0.991,
+    "downtime_min": 45.0,
+    "top_features": [
+      19,
+      428,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1316",
+    "time": "05/10/2008 09:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6872,
+    "severity": 0.687,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      4,
+      208
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1317",
+    "time": "05/10/2008 10:00",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8989,
+    "severity": 0.899,
+    "downtime_min": 45.0,
+    "top_features": [
+      562,
+      432,
+      442
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1319",
+    "time": "05/10/2008 11:05",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.817,
+    "severity": 0.817,
+    "downtime_min": 45.0,
+    "top_features": [
+      569,
+      442,
+      564
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1320",
+    "time": "05/10/2008 11:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9787,
+    "severity": 0.979,
+    "downtime_min": 45.0,
+    "top_features": [
+      19,
+      428,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1321",
+    "time": "05/10/2008 12:03",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      140,
+      275,
+      4
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1322",
+    "time": "05/10/2008 12:17",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6702,
+    "severity": 0.67,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      543,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1323",
+    "time": "05/10/2008 13:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8532,
+    "severity": 0.853,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      543,
+      571
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1324",
+    "time": "05/10/2008 14:34",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8585,
+    "severity": 0.859,
+    "downtime_min": 45.0,
+    "top_features": [
+      562,
+      571,
+      563
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1325",
+    "time": "05/10/2008 15:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9266,
+    "severity": 0.927,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      407,
+      545
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1326",
+    "time": "05/10/2008 15:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4947,
+    "severity": 0.495,
+    "downtime_min": 45.0,
+    "top_features": [
+      485,
+      417,
+      496
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1327",
+    "time": "05/10/2008 16:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9596,
+    "severity": 0.96,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      171,
+      442
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1328",
+    "time": "05/10/2008 16:37",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5702,
+    "severity": 0.57,
+    "downtime_min": 45.0,
+    "top_features": [
+      485,
+      6,
+      433
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1329",
+    "time": "05/10/2008 16:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7766,
+    "severity": 0.777,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      576,
+      574
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1330",
+    "time": "05/10/2008 18:46",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6149,
+    "severity": 0.615,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      544
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1331",
+    "time": "05/10/2008 18:59",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5457,
+    "severity": 0.546,
+    "downtime_min": 45.0,
+    "top_features": [
+      415,
+      142,
+      274
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1332",
+    "time": "05/10/2008 19:45",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9915,
+    "severity": 0.991,
+    "downtime_min": 45.0,
+    "top_features": [
+      19,
+      428,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1333",
+    "time": "05/10/2008 20:12",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9564,
+    "severity": 0.956,
+    "downtime_min": 45.0,
+    "top_features": [
+      112,
+      487,
+      543
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1334",
+    "time": "05/10/2008 20:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9245,
+    "severity": 0.924,
+    "downtime_min": 45.0,
+    "top_features": [
+      227,
+      365,
+      367
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1336",
+    "time": "06/10/2008 00:41",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.867,
+    "severity": 0.867,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1337",
+    "time": "06/10/2008 01:25",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5766,
+    "severity": 0.577,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      279,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1338",
+    "time": "06/10/2008 01:27",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      577,
+      572,
+      574
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1339",
+    "time": "06/10/2008 01:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9181,
+    "severity": 0.918,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1340",
+    "time": "06/10/2008 02:44",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7277,
+    "severity": 0.728,
+    "downtime_min": 45.0,
+    "top_features": [
+      56,
+      564,
+      566
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1341",
+    "time": "06/10/2008 02:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.667,
+    "severity": 0.667,
+    "downtime_min": 45.0,
+    "top_features": [
+      564,
+      566,
+      568
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1342",
+    "time": "06/10/2008 03:31",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6596,
+    "severity": 0.66,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      316,
+      417
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1343",
+    "time": "06/10/2008 03:50",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5053,
+    "severity": 0.505,
+    "downtime_min": 45.0,
+    "top_features": [
+      433,
+      81,
+      357
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1344",
+    "time": "06/10/2008 03:57",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7777,
+    "severity": 0.778,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      571
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1345",
+    "time": "06/10/2008 04:26",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.783,
+    "severity": 0.783,
+    "downtime_min": 45.0,
+    "top_features": [
+      539,
+      81,
+      440
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1346",
+    "time": "06/10/2008 05:21",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8957,
+    "severity": 0.896,
+    "downtime_min": 45.0,
+    "top_features": [
+      588,
+      587,
+      357
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1347",
+    "time": "06/10/2008 05:24",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9309,
+    "severity": 0.931,
+    "downtime_min": 45.0,
+    "top_features": [
+      588,
+      587,
+      543
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1348",
+    "time": "06/10/2008 06:11",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8372,
+    "severity": 0.837,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      576,
+      574
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1349",
+    "time": "06/10/2008 06:26",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7021,
+    "severity": 0.702,
+    "downtime_min": 45.0,
+    "top_features": [
+      357,
+      491,
+      88
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1350",
+    "time": "06/10/2008 06:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7851,
+    "severity": 0.785,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1351",
+    "time": "06/10/2008 07:12",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7362,
+    "severity": 0.736,
+    "downtime_min": 45.0,
+    "top_features": [
+      432,
+      496,
+      161
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1352",
+    "time": "06/10/2008 07:17",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.767,
+    "severity": 0.767,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1353",
+    "time": "06/10/2008 07:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5053,
+    "severity": 0.505,
+    "downtime_min": 45.0,
+    "top_features": [
+      483,
+      542,
+      162
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1354",
+    "time": "06/10/2008 07:38",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8372,
+    "severity": 0.837,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1355",
+    "time": "06/10/2008 08:24",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.884,
+    "severity": 0.884,
+    "downtime_min": 45.0,
+    "top_features": [
+      169,
+      304,
+      440
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1356",
+    "time": "06/10/2008 08:57",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9521,
+    "severity": 0.952,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1357",
+    "time": "06/10/2008 09:11",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8702,
+    "severity": 0.87,
+    "downtime_min": 45.0,
+    "top_features": [
+      571,
+      545,
+      543
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1359",
+    "time": "06/10/2008 10:07",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7564,
+    "severity": 0.756,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      71
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1360",
+    "time": "06/10/2008 11:51",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4883,
+    "severity": 0.488,
+    "downtime_min": 45.0,
+    "top_features": [
+      562,
+      354,
+      216
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1361",
+    "time": "06/10/2008 12:39",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5011,
+    "severity": 0.501,
+    "downtime_min": 45.0,
+    "top_features": [
+      442,
+      306,
+      171
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1362",
+    "time": "06/10/2008 12:42",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8255,
+    "severity": 0.826,
+    "downtime_min": 45.0,
+    "top_features": [
+      562,
+      71,
+      487
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1363",
+    "time": "06/10/2008 13:08",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8245,
+    "severity": 0.824,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1364",
+    "time": "06/10/2008 13:38",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5989,
+    "severity": 0.599,
+    "downtime_min": 45.0,
+    "top_features": [
+      316,
+      132,
+      433
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1365",
+    "time": "06/10/2008 13:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4202,
+    "severity": 0.42,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      571
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1366",
+    "time": "06/10/2008 15:00",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7947,
+    "severity": 0.795,
+    "downtime_min": 45.0,
+    "top_features": [
+      569,
+      565,
+      567
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1368",
+    "time": "06/10/2008 15:52",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5968,
+    "severity": 0.597,
+    "downtime_min": 45.0,
+    "top_features": [
+      588,
+      587,
+      71
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1369",
+    "time": "06/10/2008 16:42",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.883,
+    "severity": 0.883,
+    "downtime_min": 45.0,
+    "top_features": [
+      117,
+      417,
+      144
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1370",
+    "time": "06/10/2008 16:50",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4638,
+    "severity": 0.464,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      588,
+      587
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1371",
+    "time": "06/10/2008 17:26",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8521,
+    "severity": 0.852,
+    "downtime_min": 45.0,
+    "top_features": [
+      574,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1372",
+    "time": "06/10/2008 17:26",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9543,
+    "severity": 0.954,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1373",
+    "time": "06/10/2008 17:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9457,
+    "severity": 0.946,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1374",
+    "time": "06/10/2008 18:54",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.416,
+    "severity": 0.416,
+    "downtime_min": 45.0,
+    "top_features": [
+      442,
+      306,
+      171
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1375",
+    "time": "06/10/2008 18:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.984,
+    "severity": 0.984,
+    "downtime_min": 45.0,
+    "top_features": [
+      19,
+      428,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1376",
+    "time": "06/10/2008 19:42",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.784,
+    "severity": 0.784,
+    "downtime_min": 45.0,
+    "top_features": [
+      442,
+      306,
+      171
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1377",
+    "time": "06/10/2008 20:02",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7468,
+    "severity": 0.747,
+    "downtime_min": 45.0,
+    "top_features": [
+      166,
+      301,
+      433
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1379",
+    "time": "06/10/2008 20:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9479,
+    "severity": 0.948,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      171,
+      442
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1380",
+    "time": "06/10/2008 21:46",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7319,
+    "severity": 0.732,
+    "downtime_min": 45.0,
+    "top_features": [
+      407,
+      269,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1382",
+    "time": "06/10/2008 22:37",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.783,
+    "severity": 0.783,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      407,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1383",
+    "time": "06/10/2008 23:03",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7809,
+    "severity": 0.781,
+    "downtime_min": 45.0,
+    "top_features": [
+      562,
+      543,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1384",
+    "time": "07/10/2008 01:46",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      407,
+      144,
+      279
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1385",
+    "time": "07/10/2008 03:29",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9638,
+    "severity": 0.964,
+    "downtime_min": 45.0,
+    "top_features": [
+      222,
+      494,
+      360
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1386",
+    "time": "07/10/2008 03:39",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9734,
+    "severity": 0.973,
+    "downtime_min": 45.0,
+    "top_features": [
+      331,
+      467,
+      195
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1387",
+    "time": "07/10/2008 07:32",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6755,
+    "severity": 0.676,
+    "downtime_min": 45.0,
+    "top_features": [
+      571,
+      169,
+      440
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1388",
+    "time": "07/10/2008 07:41",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9415,
+    "severity": 0.941,
+    "downtime_min": 45.0,
+    "top_features": [
+      26,
+      279,
+      144
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1389",
+    "time": "07/10/2008 08:25",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7532,
+    "severity": 0.753,
+    "downtime_min": 45.0,
+    "top_features": [
+      496,
+      562,
+      4
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1390",
+    "time": "07/10/2008 08:26",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6734,
+    "severity": 0.673,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      543,
+      81
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1391",
+    "time": "07/10/2008 09:11",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5787,
+    "severity": 0.579,
+    "downtime_min": 45.0,
+    "top_features": [
+      4,
+      305,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1392",
+    "time": "07/10/2008 09:20",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.783,
+    "severity": 0.783,
+    "downtime_min": 45.0,
+    "top_features": [
+      71,
+      489,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1393",
+    "time": "07/10/2008 09:59",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8255,
+    "severity": 0.826,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      71,
+      483
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1394",
+    "time": "07/10/2008 10:04",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7809,
+    "severity": 0.781,
+    "downtime_min": 45.0,
+    "top_features": [
+      588,
+      587,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1395",
+    "time": "07/10/2008 10:10",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9021,
+    "severity": 0.902,
+    "downtime_min": 45.0,
+    "top_features": [
+      417,
+      279,
+      144
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1396",
+    "time": "07/10/2008 10:51",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6277,
+    "severity": 0.628,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      576,
+      574
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1397",
+    "time": "07/10/2008 11:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      91,
+      219,
+      491
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1398",
+    "time": "07/10/2008 11:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9606,
+    "severity": 0.961,
+    "downtime_min": 45.0,
+    "top_features": [
+      470,
+      198,
+      201
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1399",
+    "time": "07/10/2008 11:36",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8245,
+    "severity": 0.824,
+    "downtime_min": 45.0,
+    "top_features": [
+      442,
+      306,
+      171
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1400",
+    "time": "07/10/2008 12:40",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9564,
+    "severity": 0.956,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1401",
+    "time": "07/10/2008 13:10",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9681,
+    "severity": 0.968,
+    "downtime_min": 45.0,
+    "top_features": [
+      348,
+      75,
+      210
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1402",
+    "time": "07/10/2008 13:48",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7532,
+    "severity": 0.753,
+    "downtime_min": 45.0,
+    "top_features": [
+      316,
+      4,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1403",
+    "time": "07/10/2008 14:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8128,
+    "severity": 0.813,
+    "downtime_min": 45.0,
+    "top_features": [
+      301,
+      166,
+      437
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1404",
+    "time": "07/10/2008 16:32",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8691,
+    "severity": 0.869,
+    "downtime_min": 45.0,
+    "top_features": [
+      491,
+      219,
+      357
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1405",
+    "time": "07/10/2008 17:06",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9468,
+    "severity": 0.947,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      417,
+      563
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1406",
+    "time": "07/10/2008 17:28",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9649,
+    "severity": 0.965,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1407",
+    "time": "07/10/2008 18:39",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8287,
+    "severity": 0.829,
+    "downtime_min": 45.0,
+    "top_features": [
+      279,
+      144,
+      417
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1408",
+    "time": "07/10/2008 19:24",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8383,
+    "severity": 0.838,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      144,
+      417
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1409",
+    "time": "07/10/2008 20:19",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9862,
+    "severity": 0.986,
+    "downtime_min": 45.0,
+    "top_features": [
+      19,
+      428,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1410",
+    "time": "07/10/2008 20:39",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5809,
+    "severity": 0.581,
+    "downtime_min": 45.0,
+    "top_features": [
+      468,
+      56,
+      134
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1411",
+    "time": "07/10/2008 20:48",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8989,
+    "severity": 0.899,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      417,
+      279
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1412",
+    "time": "08/10/2008 04:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7947,
+    "severity": 0.795,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      71,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1413",
+    "time": "08/10/2008 05:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8617,
+    "severity": 0.862,
+    "downtime_min": 45.0,
+    "top_features": [
+      587,
+      588,
+      281
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1414",
+    "time": "08/10/2008 05:38",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.883,
+    "severity": 0.883,
+    "downtime_min": 45.0,
+    "top_features": [
+      587,
+      563,
+      588
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1415",
+    "time": "08/10/2008 06:25",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.667,
+    "severity": 0.667,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      433,
+      81
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1416",
+    "time": "08/10/2008 07:10",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9245,
+    "severity": 0.924,
+    "downtime_min": 45.0,
+    "top_features": [
+      18,
+      12,
+      357
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1417",
+    "time": "08/10/2008 07:13",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8415,
+    "severity": 0.841,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      545,
+      543
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1418",
+    "time": "08/10/2008 07:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8309,
+    "severity": 0.831,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      417,
+      285
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1419",
+    "time": "08/10/2008 09:01",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9894,
+    "severity": 0.989,
+    "downtime_min": 45.0,
+    "top_features": [
+      520,
+      248,
+      386
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1420",
+    "time": "08/10/2008 09:06",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9511,
+    "severity": 0.951,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      171,
+      442
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1421",
+    "time": "08/10/2008 10:37",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8128,
+    "severity": 0.813,
+    "downtime_min": 45.0,
+    "top_features": [
+      228,
+      366,
+      98
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1422",
+    "time": "08/10/2008 12:11",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4968,
+    "severity": 0.497,
+    "downtime_min": 45.0,
+    "top_features": [
+      4,
+      279,
+      87
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1423",
+    "time": "08/10/2008 13:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9245,
+    "severity": 0.924,
+    "downtime_min": 45.0,
+    "top_features": [
+      521,
+      424,
+      151
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1424",
+    "time": "08/10/2008 13:38",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7798,
+    "severity": 0.78,
+    "downtime_min": 45.0,
+    "top_features": [
+      316,
+      485,
+      9
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1425",
+    "time": "08/10/2008 14:48",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8553,
+    "severity": 0.855,
+    "downtime_min": 45.0,
+    "top_features": [
+      412,
+      571,
+      274
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1426",
+    "time": "08/10/2008 15:37",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.784,
+    "severity": 0.784,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      574,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1427",
+    "time": "08/10/2008 16:26",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6862,
+    "severity": 0.686,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      543,
+      279
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1428",
+    "time": "08/10/2008 17:14",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.884,
+    "severity": 0.884,
+    "downtime_min": 45.0,
+    "top_features": [
+      200,
+      201,
+      472
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1429",
+    "time": "08/10/2008 17:31",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.817,
+    "severity": 0.817,
+    "downtime_min": 45.0,
+    "top_features": [
+      316,
+      496,
+      117
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1430",
+    "time": "08/10/2008 17:41",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9883,
+    "severity": 0.988,
+    "downtime_min": 45.0,
+    "top_features": [
+      520,
+      248,
+      386
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1431",
+    "time": "08/10/2008 18:22",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8074,
+    "severity": 0.807,
+    "downtime_min": 45.0,
+    "top_features": [
+      26,
+      4,
+      589
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1432",
+    "time": "08/10/2008 20:27",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7181,
+    "severity": 0.718,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      545,
+      4
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1433",
+    "time": "08/10/2008 21:19",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9234,
+    "severity": 0.923,
+    "downtime_min": 45.0,
+    "top_features": [
+      357,
+      491,
+      219
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1435",
+    "time": "08/10/2008 22:08",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7809,
+    "severity": 0.781,
+    "downtime_min": 45.0,
+    "top_features": [
+      0,
+      1,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1436",
+    "time": "08/10/2008 23:13",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7383,
+    "severity": 0.738,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      473,
+      417
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1437",
+    "time": "08/10/2008 23:50",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8255,
+    "severity": 0.826,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      543,
+      0
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1438",
+    "time": "09/10/2008 00:23",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9128,
+    "severity": 0.913,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      144,
+      417
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1439",
+    "time": "09/10/2008 04:34",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6872,
+    "severity": 0.687,
+    "downtime_min": 45.0,
+    "top_features": [
+      26,
+      4,
+      215
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1440",
+    "time": "09/10/2008 06:06",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6319,
+    "severity": 0.632,
+    "downtime_min": 45.0,
+    "top_features": [
+      412,
+      542,
+      487
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1441",
+    "time": "09/10/2008 07:38",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5702,
+    "severity": 0.57,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      166,
+      301
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1442",
+    "time": "09/10/2008 14:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.984,
+    "severity": 0.984,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1443",
+    "time": "09/10/2008 15:04",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8191,
+    "severity": 0.819,
+    "downtime_min": 45.0,
+    "top_features": [
+      118,
+      547,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1444",
+    "time": "09/10/2008 15:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7606,
+    "severity": 0.761,
+    "downtime_min": 45.0,
+    "top_features": [
+      144,
+      417,
+      279
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1445",
+    "time": "09/10/2008 15:56",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9128,
+    "severity": 0.913,
+    "downtime_min": 45.0,
+    "top_features": [
+      118,
+      376,
+      238
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1446",
+    "time": "10/10/2008 10:05",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8309,
+    "severity": 0.831,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      214,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1447",
+    "time": "10/10/2008 10:46",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      140,
+      275,
+      4
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1449",
+    "time": "10/10/2008 12:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9979,
+    "severity": 0.998,
+    "downtime_min": 45.0,
+    "top_features": [
+      7,
+      416,
+      143
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1450",
+    "time": "10/10/2008 15:33",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6979,
+    "severity": 0.698,
+    "downtime_min": 45.0,
+    "top_features": [
+      485,
+      6,
+      571
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1451",
+    "time": "10/10/2008 15:50",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5309,
+    "severity": 0.531,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1452",
+    "time": "10/10/2008 20:02",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9564,
+    "severity": 0.956,
+    "downtime_min": 45.0,
+    "top_features": [
+      118,
+      357,
+      491
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1453",
+    "time": "10/10/2008 21:03",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7255,
+    "severity": 0.726,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      574,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1454",
+    "time": "10/10/2008 21:07",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.584,
+    "severity": 0.584,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      60,
+      155
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1455",
+    "time": "10/10/2008 21:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9415,
+    "severity": 0.941,
+    "downtime_min": 45.0,
+    "top_features": [
+      408,
+      135,
+      572
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1456",
+    "time": "11/10/2008 02:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5777,
+    "severity": 0.578,
+    "downtime_min": 45.0,
+    "top_features": [
+      71,
+      6,
+      95
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1457",
+    "time": "11/10/2008 06:56",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      140,
+      275,
+      4
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1458",
+    "time": "11/10/2008 07:38",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7819,
+    "severity": 0.782,
+    "downtime_min": 45.0,
+    "top_features": [
+      589,
+      571,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1459",
+    "time": "11/10/2008 07:39",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      338,
+      202,
+      339
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1460",
+    "time": "11/10/2008 07:42",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      7,
+      19,
+      428
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1461",
+    "time": "11/10/2008 08:27",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9979,
+    "severity": 0.998,
+    "downtime_min": 45.0,
+    "top_features": [
+      7,
+      416,
+      143
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1462",
+    "time": "11/10/2008 14:43",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      7,
+      19,
+      428
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1463",
+    "time": "11/10/2008 15:33",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9096,
+    "severity": 0.91,
+    "downtime_min": 45.0,
+    "top_features": [
+      587,
+      588,
+      417
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1464",
+    "time": "11/10/2008 16:25",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5106,
+    "severity": 0.511,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      20,
+      587
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1465",
+    "time": "11/10/2008 23:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7745,
+    "severity": 0.774,
+    "downtime_min": 45.0,
+    "top_features": [
+      271,
+      86,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1466",
+    "time": "11/10/2008 23:58",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6702,
+    "severity": 0.67,
+    "downtime_min": 45.0,
+    "top_features": [
+      86,
+      8,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1467",
+    "time": "12/10/2008 00:57",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7809,
+    "severity": 0.781,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      574,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1468",
+    "time": "12/10/2008 01:50",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9979,
+    "severity": 0.998,
+    "downtime_min": 45.0,
+    "top_features": [
+      7,
+      571,
+      416
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1469",
+    "time": "12/10/2008 02:59",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9074,
+    "severity": 0.907,
+    "downtime_min": 45.0,
+    "top_features": [
+      424,
+      151,
+      286
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1470",
+    "time": "12/10/2008 03:21",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 1.0,
+    "severity": 1.0,
+    "downtime_min": 45.0,
+    "top_features": [
+      7,
+      424,
+      151
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1471",
+    "time": "12/10/2008 03:28",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7043,
+    "severity": 0.704,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      117,
+      144
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1472",
+    "time": "12/10/2008 08:19",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5968,
+    "severity": 0.597,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      150,
+      285
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1473",
+    "time": "12/10/2008 18:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8415,
+    "severity": 0.841,
+    "downtime_min": 45.0,
+    "top_features": [
+      81,
+      547,
+      88
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1474",
+    "time": "13/10/2008 03:34",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9298,
+    "severity": 0.93,
+    "downtime_min": 45.0,
+    "top_features": [
+      417,
+      144,
+      279
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1475",
+    "time": "13/10/2008 03:53",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7766,
+    "severity": 0.777,
+    "downtime_min": 45.0,
+    "top_features": [
+      589,
+      162,
+      121
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1476",
+    "time": "13/10/2008 11:27",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7947,
+    "severity": 0.795,
+    "downtime_min": 45.0,
+    "top_features": [
+      589,
+      8,
+      117
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1477",
+    "time": "13/10/2008 12:18",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8617,
+    "severity": 0.862,
+    "downtime_min": 45.0,
+    "top_features": [
+      589,
+      9,
+      359
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1478",
+    "time": "13/10/2008 14:06",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.916,
+    "severity": 0.916,
+    "downtime_min": 45.0,
+    "top_features": [
+      589,
+      0,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1479",
+    "time": "13/10/2008 14:29",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8277,
+    "severity": 0.828,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      82,
+      355
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1480",
+    "time": "13/10/2008 14:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7564,
+    "severity": 0.756,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      3,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1481",
+    "time": "13/10/2008 14:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7574,
+    "severity": 0.757,
+    "downtime_min": 45.0,
+    "top_features": [
+      545,
+      543,
+      133
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1482",
+    "time": "13/10/2008 15:42",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9106,
+    "severity": 0.911,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      9
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1483",
+    "time": "13/10/2008 15:42",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9564,
+    "severity": 0.956,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      572,
+      576
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1484",
+    "time": "13/10/2008 16:13",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6745,
+    "severity": 0.674,
+    "downtime_min": 45.0,
+    "top_features": [
+      432,
+      545,
+      543
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1485",
+    "time": "13/10/2008 19:17",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7532,
+    "severity": 0.753,
+    "downtime_min": 45.0,
+    "top_features": [
+      417,
+      468,
+      124
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1486",
+    "time": "13/10/2008 19:36",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7457,
+    "severity": 0.746,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      133
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1487",
+    "time": "13/10/2008 19:40",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8372,
+    "severity": 0.837,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      544
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1488",
+    "time": "13/10/2008 20:10",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8617,
+    "severity": 0.862,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      483,
+      121
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1489",
+    "time": "13/10/2008 20:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9394,
+    "severity": 0.939,
+    "downtime_min": 45.0,
+    "top_features": [
+      32,
+      36,
+      34
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1490",
+    "time": "13/10/2008 20:53",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9351,
+    "severity": 0.935,
+    "downtime_min": 45.0,
+    "top_features": [
+      202,
+      338,
+      521
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1491",
+    "time": "13/10/2008 21:20",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8128,
+    "severity": 0.813,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      6,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1492",
+    "time": "13/10/2008 21:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9309,
+    "severity": 0.931,
+    "downtime_min": 45.0,
+    "top_features": [
+      543,
+      545,
+      496
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1493",
+    "time": "13/10/2008 21:57",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.867,
+    "severity": 0.867,
+    "downtime_min": 45.0,
+    "top_features": [
+      569,
+      162,
+      297
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1494",
+    "time": "13/10/2008 22:48",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9681,
+    "severity": 0.968,
+    "downtime_min": 45.0,
+    "top_features": [
+      53,
+      54,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1495",
+    "time": "13/10/2008 22:54",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9606,
+    "severity": 0.961,
+    "downtime_min": 45.0,
+    "top_features": [
+      357,
+      491,
+      219
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1496",
+    "time": "14/10/2008 00:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9681,
+    "severity": 0.968,
+    "downtime_min": 45.0,
+    "top_features": [
+      357,
+      491,
+      219
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1497",
+    "time": "14/10/2008 03:21",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6649,
+    "severity": 0.665,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      133,
+      306
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1498",
+    "time": "14/10/2008 03:28",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8043,
+    "severity": 0.804,
+    "downtime_min": 45.0,
+    "top_features": [
+      6,
+      56,
+      275
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1499",
+    "time": "14/10/2008 03:35",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9085,
+    "severity": 0.909,
+    "downtime_min": 45.0,
+    "top_features": [
+      588,
+      587,
+      547
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1500",
+    "time": "14/10/2008 13:13",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8702,
+    "severity": 0.87,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      274
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1501",
+    "time": "14/10/2008 13:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8564,
+    "severity": 0.856,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      544
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1502",
+    "time": "14/10/2008 14:07",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8702,
+    "severity": 0.87,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      146,
+      485
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1503",
+    "time": "14/10/2008 14:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9085,
+    "severity": 0.909,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      133
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1504",
+    "time": "14/10/2008 14:43",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9309,
+    "severity": 0.931,
+    "downtime_min": 45.0,
+    "top_features": [
+      26,
+      542,
+      3
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1505",
+    "time": "14/10/2008 17:36",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6947,
+    "severity": 0.695,
+    "downtime_min": 45.0,
+    "top_features": [
+      6,
+      547,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1506",
+    "time": "14/10/2008 19:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5702,
+    "severity": 0.57,
+    "downtime_min": 45.0,
+    "top_features": [
+      275,
+      140,
+      166
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1507",
+    "time": "14/10/2008 20:01",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8043,
+    "severity": 0.804,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      279
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1508",
+    "time": "14/10/2008 20:30",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4309,
+    "severity": 0.431,
+    "downtime_min": 45.0,
+    "top_features": [
+      568,
+      564,
+      566
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1509",
+    "time": "14/10/2008 20:48",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4809,
+    "severity": 0.481,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      115,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1510",
+    "time": "14/10/2008 21:36",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8149,
+    "severity": 0.815,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      485,
+      91
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1511",
+    "time": "14/10/2008 23:07",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5245,
+    "severity": 0.524,
+    "downtime_min": 45.0,
+    "top_features": [
+      275,
+      140,
+      143
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1512",
+    "time": "15/10/2008 00:03",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9255,
+    "severity": 0.926,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      274
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1513",
+    "time": "15/10/2008 00:27",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6979,
+    "severity": 0.698,
+    "downtime_min": 45.0,
+    "top_features": [
+      4,
+      18,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1514",
+    "time": "15/10/2008 00:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      542,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1515",
+    "time": "15/10/2008 01:52",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8415,
+    "severity": 0.841,
+    "downtime_min": 45.0,
+    "top_features": [
+      432,
+      546,
+      306
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1516",
+    "time": "15/10/2008 01:52",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9053,
+    "severity": 0.905,
+    "downtime_min": 45.0,
+    "top_features": [
+      306,
+      275,
+      171
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1517",
+    "time": "15/10/2008 01:52",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8277,
+    "severity": 0.828,
+    "downtime_min": 45.0,
+    "top_features": [
+      275,
+      140,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1518",
+    "time": "15/10/2008 02:40",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9106,
+    "severity": 0.911,
+    "downtime_min": 45.0,
+    "top_features": [
+      432,
+      274,
+      139
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1519",
+    "time": "15/10/2008 02:40",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6947,
+    "severity": 0.695,
+    "downtime_min": 45.0,
+    "top_features": [
+      544,
+      0,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1520",
+    "time": "15/10/2008 02:42",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9862,
+    "severity": 0.986,
+    "downtime_min": 45.0,
+    "top_features": [
+      99,
+      104,
+      102
+    ],
+    "eval_only": {
+      "label_fail": true
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1521",
+    "time": "15/10/2008 03:24",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5872,
+    "severity": 0.587,
+    "downtime_min": 45.0,
+    "top_features": [
+      26,
+      543,
+      545
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1522",
+    "time": "15/10/2008 04:08",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8436,
+    "severity": 0.844,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      274
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1523",
+    "time": "15/10/2008 05:13",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7468,
+    "severity": 0.747,
+    "downtime_min": 45.0,
+    "top_features": [
+      417,
+      279,
+      144
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1524",
+    "time": "15/10/2008 05:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8564,
+    "severity": 0.856,
+    "downtime_min": 45.0,
+    "top_features": [
+      26,
+      3,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1525",
+    "time": "15/10/2008 06:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      134,
+      130,
+      56
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1526",
+    "time": "15/10/2008 07:36",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9319,
+    "severity": 0.932,
+    "downtime_min": 45.0,
+    "top_features": [
+      134,
+      32,
+      36
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1527",
+    "time": "15/10/2008 07:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.883,
+    "severity": 0.883,
+    "downtime_min": 45.0,
+    "top_features": [
+      134,
+      544,
+      130
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1528",
+    "time": "15/10/2008 08:21",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9447,
+    "severity": 0.945,
+    "downtime_min": 45.0,
+    "top_features": [
+      134,
+      3,
+      130
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1529",
+    "time": "15/10/2008 09:11",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9394,
+    "severity": 0.939,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      3
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1530",
+    "time": "15/10/2008 10:00",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8266,
+    "severity": 0.827,
+    "downtime_min": 45.0,
+    "top_features": [
+      81,
+      558,
+      279
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1531",
+    "time": "15/10/2008 12:53",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6723,
+    "severity": 0.672,
+    "downtime_min": 45.0,
+    "top_features": [
+      150,
+      96,
+      98
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1532",
+    "time": "15/10/2008 13:14",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5011,
+    "severity": 0.501,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      275,
+      140
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1533",
+    "time": "15/10/2008 13:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.6872,
+    "severity": 0.687,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      139
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1534",
+    "time": "15/10/2008 14:08",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9564,
+    "severity": 0.956,
+    "downtime_min": 45.0,
+    "top_features": [
+      222,
+      494,
+      360
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1535",
+    "time": "15/10/2008 15:11",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7362,
+    "severity": 0.736,
+    "downtime_min": 45.0,
+    "top_features": [
+      6,
+      542,
+      544
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1536",
+    "time": "15/10/2008 16:24",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5213,
+    "severity": 0.521,
+    "downtime_min": 45.0,
+    "top_features": [
+      569,
+      275,
+      140
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1537",
+    "time": "15/10/2008 17:19",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9521,
+    "severity": 0.952,
+    "downtime_min": 45.0,
+    "top_features": [
+      250,
+      388,
+      522
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1538",
+    "time": "15/10/2008 18:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4277,
+    "severity": 0.428,
+    "downtime_min": 45.0,
+    "top_features": [
+      483,
+      275,
+      140
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1539",
+    "time": "15/10/2008 19:15",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5638,
+    "severity": 0.564,
+    "downtime_min": 45.0,
+    "top_features": [
+      279,
+      417,
+      81
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1540",
+    "time": "15/10/2008 19:24",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9394,
+    "severity": 0.939,
+    "downtime_min": 45.0,
+    "top_features": [
+      572,
+      574,
+      473
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1541",
+    "time": "15/10/2008 21:44",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.867,
+    "severity": 0.867,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      432,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1542",
+    "time": "15/10/2008 22:45",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.783,
+    "severity": 0.783,
+    "downtime_min": 45.0,
+    "top_features": [
+      4,
+      140,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1543",
+    "time": "15/10/2008 22:54",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5766,
+    "severity": 0.577,
+    "downtime_min": 45.0,
+    "top_features": [
+      560,
+      6,
+      558
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1544",
+    "time": "15/10/2008 23:00",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7819,
+    "severity": 0.782,
+    "downtime_min": 45.0,
+    "top_features": [
+      357,
+      219,
+      491
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1545",
+    "time": "15/10/2008 23:45",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8436,
+    "severity": 0.844,
+    "downtime_min": 45.0,
+    "top_features": [
+      357,
+      219,
+      491
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1546",
+    "time": "16/10/2008 02:16",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.4521,
+    "severity": 0.452,
+    "downtime_min": 45.0,
+    "top_features": [
+      473,
+      589,
+      6
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1549",
+    "time": "16/10/2008 02:22",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7532,
+    "severity": 0.753,
+    "downtime_min": 45.0,
+    "top_features": [
+      555,
+      552,
+      549
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1550",
+    "time": "16/10/2008 02:55",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7819,
+    "severity": 0.782,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      544
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1551",
+    "time": "16/10/2008 03:56",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7819,
+    "severity": 0.782,
+    "downtime_min": 45.0,
+    "top_features": [
+      432,
+      542,
+      3
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1552",
+    "time": "16/10/2008 04:02",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5053,
+    "severity": 0.505,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      6,
+      140
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1553",
+    "time": "16/10/2008 04:02",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9128,
+    "severity": 0.913,
+    "downtime_min": 45.0,
+    "top_features": [
+      254,
+      526,
+      392
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1554",
+    "time": "16/10/2008 04:04",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.8191,
+    "severity": 0.819,
+    "downtime_min": 45.0,
+    "top_features": [
+      357,
+      219,
+      491
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1555",
+    "time": "16/10/2008 04:47",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5234,
+    "severity": 0.523,
+    "downtime_min": 45.0,
+    "top_features": [
+      468,
+      417,
+      122
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1556",
+    "time": "16/10/2008 04:50",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.883,
+    "severity": 0.883,
+    "downtime_min": 45.0,
+    "top_features": [
+      521,
+      306,
+      171
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1557",
+    "time": "16/10/2008 04:54",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.8521,
+    "severity": 0.852,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      3
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1558",
+    "time": "16/10/2008 05:08",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7532,
+    "severity": 0.753,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      542
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1559",
+    "time": "16/10/2008 05:13",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5447,
+    "severity": 0.545,
+    "downtime_min": 45.0,
+    "top_features": [
+      496,
+      558,
+      120
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1560",
+    "time": "16/10/2008 05:44",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7809,
+    "severity": 0.781,
+    "downtime_min": 45.0,
+    "top_features": [
+      558,
+      417,
+      316
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1561",
+    "time": "16/10/2008 05:58",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Cao",
+    "anomaly_score": 0.9883,
+    "severity": 0.988,
+    "downtime_min": 45.0,
+    "top_features": [
+      270,
+      135,
+      408
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1563",
+    "time": "16/10/2008 15:13",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Trung bình",
+    "anomaly_score": 0.9011,
+    "severity": 0.901,
+    "downtime_min": 45.0,
+    "top_features": [
+      274,
+      139,
+      3
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1564",
+    "time": "16/10/2008 20:49",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.5489,
+    "severity": 0.549,
+    "downtime_min": 45.0,
+    "top_features": [
+      91,
+      219,
+      491
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1566",
+    "time": "17/10/2008 06:01",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.783,
+    "severity": 0.783,
+    "downtime_min": 45.0,
+    "top_features": [
+      542,
+      88,
+      306
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  },
+  {
+    "incident_id": "INC_SECOM_1567",
+    "time": "17/10/2008 06:07",
+    "machine_id": "SECOM_LINE",
+    "node_id": "SECOM_LINE",
+    "dataset": "SECOM",
+    "timestamp_is_synthetic": false,
+    "anomaly_type": "Bất thường đa biến (Isolation Forest trên PCA)",
+    "level": "Thấp",
+    "anomaly_score": 0.7277,
+    "severity": 0.728,
+    "downtime_min": 45.0,
+    "top_features": [
+      3,
+      6,
+      411
+    ],
+    "eval_only": {
+      "label_fail": false
+    }
+  }
+]

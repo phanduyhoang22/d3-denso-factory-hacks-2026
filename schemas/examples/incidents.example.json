@@ -1,0 +1,47 @@
+[
+  {
+    "incident_id": "INC_A003",
+    "timestamp": "2026-01-01T00:30:00",
+    "timestamp_is_synthetic": true,
+    "dataset": "ai4i",
+    "node_id": "M41",
+    "source_row": 161,
+    "anomaly_type": "Quá tải mô-men",
+    "failure_mode": "OSF",
+    "severity": "high",
+    "anomaly_score": 0.9782,
+    "detector": "iforest",
+    "suspected_cause_group": "Mòn dao × mô-men vượt ngưỡng theo loại máy",
+    "split": "test"
+  },
+  {
+    "incident_id": "INC_A001",
+    "timestamp": "2026-01-01T00:20:00",
+    "timestamp_is_synthetic": true,
+    "dataset": "ai4i",
+    "node_id": "M34",
+    "source_row": 70,
+    "anomaly_type": "Quá tải mô-men (+PWF)",
+    "failure_mode": "PWF+OSF",
+    "severity": "high",
+    "anomaly_score": 0.9707,
+    "detector": "iforest",
+    "suspected_cause_group": "Mòn dao × mô-men vượt ngưỡng theo loại máy",
+    "split": "test"
+  },
+  {
+    "incident_id": "INC_B339",
+    "timestamp": "2008-07-19T13:17:00",
+    "timestamp_is_synthetic": false,
+    "dataset": "secom",
+    "node_id": "PB04",
+    "source_row": 2,
+    "anomaly_type": "Lô bán dẫn không đạt QC",
+    "failure_mode": "SECOM_FAIL",
+    "severity": "high",
+    "anomaly_score": 1.0,
+    "detector": "label",
+    "suspected_cause_group": "Bất thường trong 590 thông số quy trình",
+    "split": "test"
+  }
+]

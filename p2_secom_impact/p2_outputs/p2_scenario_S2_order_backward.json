@@ -1,0 +1,261 @@
+{
+  "schema_version": "p2.impact_report.v1",
+  "scenario": "order_backward",
+  "selection": "most_defective_order_ORD_L09",
+  "trigger": {
+    "type": "defective_order",
+    "id": "ORD_L09",
+    "source_node": "ORD_L09",
+    "owner_dept": "Kế hoạch sản xuất",
+    "time": "2026-10-04 08:48",
+    "details": {
+      "order": {
+        "id": "ORD_L09",
+        "product": "L",
+        "qty": 300,
+        "priority": 1,
+        "first": "2026-10-04 00:51",
+        "finish": "2026-10-04 08:48",
+        "due": "2026-10-04 16:17"
+      },
+      "defective_units": 48,
+      "defective_unit_details": [
+        {
+          "udi": 4033,
+          "product_id": "L51212",
+          "top_cause": "OSF",
+          "top_score": 0.484
+        },
+        {
+          "udi": 4035,
+          "product_id": "L51214",
+          "top_cause": "TWF",
+          "top_score": 0.829
+        },
+        {
+          "udi": 4049,
+          "product_id": "L51228",
+          "top_cause": "PWF",
+          "top_score": 0.902
+        },
+        {
+          "udi": 4072,
+          "product_id": "L51251",
+          "top_cause": "PWF",
+          "top_score": 0.603
+        },
+        {
+          "udi": 4081,
+          "product_id": "L51260",
+          "top_cause": "HDF",
+          "top_score": 0.822
+        },
+        {
+          "udi": 4082,
+          "product_id": "L51261",
+          "top_cause": "HDF",
+          "top_score": 0.863
+        },
+        {
+          "udi": 4088,
+          "product_id": "L51267",
+          "top_cause": "HDF",
+          "top_score": 0.843
+        },
+        {
+          "udi": 4097,
+          "product_id": "L51276",
+          "top_cause": "HDF",
+          "top_score": 0.877
+        },
+        {
+          "udi": 4118,
+          "product_id": "L51297",
+          "top_cause": "OSF",
+          "top_score": 0.408
+        },
+        {
+          "udi": 4120,
+          "product_id": "L51299",
+          "top_cause": "HDF",
+          "top_score": 0.612
+        },
+        {
+          "udi": 4131,
+          "product_id": "L51310",
+          "top_cause": "HDF",
+          "top_score": 0.798
+        },
+        {
+          "udi": 4139,
+          "product_id": "L51318",
+          "top_cause": "HDF",
+          "top_score": 0.897
+        },
+        {
+          "udi": 4141,
+          "product_id": "L51320",
+          "top_cause": "HDF",
+          "top_score": 0.744
+        },
+        {
+          "udi": 4156,
+          "product_id": "L51335",
+          "top_cause": "HDF",
+          "top_score": 0.89
+        },
+        {
+          "udi": 4158,
+          "product_id": "L51337",
+          "top_cause": "HDF",
+          "top_score": 0.894
+        }
+      ]
+    }
+  },
+  "causes": [
+    {
+      "cause": "HDF",
+      "name": "Tản nhiệt kém",
+      "score": 0.722,
+      "prior": null,
+      "evidence": null
+    },
+    {
+      "cause": "PWF",
+      "name": "Công suất bất thường",
+      "score": 0.12,
+      "prior": null,
+      "evidence": null
+    },
+    {
+      "cause": "TWF",
+      "name": "Mòn dụng cụ",
+      "score": 0.075,
+      "prior": null,
+      "evidence": null
+    },
+    {
+      "cause": "OSF",
+      "name": "Quá tải cơ học",
+      "score": 0.065,
+      "prior": null,
+      "evidence": null
+    },
+    {
+      "cause": "RNF",
+      "name": "Lỗi ngẫu nhiên",
+      "score": 0.018,
+      "prior": null,
+      "evidence": null
+    }
+  ],
+  "effect": {
+    "downtime_min": null,
+    "effective_downtime_min": null,
+    "severity": null,
+    "severity_source": null
+  },
+  "affected": [
+    {
+      "id": "ORD_L09",
+      "name": "ORD_L09",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": null,
+      "path": [],
+      "reason": "48/300 sản phẩm lỗi trong đơn hàng",
+      "defect_rate": 0.16,
+      "product": "L",
+      "qty": 300,
+      "priority": 1,
+      "customer": "KH1",
+      "due": "2026-10-04 16:17"
+    }
+  ],
+  "by_department": {
+    "Kế hoạch sản xuất": {
+      "count": 1,
+      "max_risk": 0.0,
+      "items": [
+        {
+          "id": "ORD_L09",
+          "type": "order",
+          "risk": null,
+          "role": "source+affected"
+        }
+      ],
+      "roles": [
+        "source+affected"
+      ]
+    }
+  },
+  "substitutes": [],
+  "buffers": [],
+  "direct_lots": [],
+  "contributing_incidents": [
+    {
+      "udi": 4463,
+      "time": "2026-10-04 08:22",
+      "top_cause": "HDF",
+      "expected_downtime_min": 59.8,
+      "delay_contribution_min": 41.1
+    },
+    {
+      "udi": 4420,
+      "time": "2026-10-04 07:39",
+      "top_cause": "PWF",
+      "expected_downtime_min": 59.3,
+      "delay_contribution_min": 39.5
+    },
+    {
+      "udi": 4384,
+      "time": "2026-10-04 07:03",
+      "top_cause": "HDF",
+      "expected_downtime_min": 56.7,
+      "delay_contribution_min": 36.9
+    },
+    {
+      "udi": 4371,
+      "time": "2026-10-04 06:50",
+      "top_cause": "HDF",
+      "expected_downtime_min": 56.5,
+      "delay_contribution_min": 36.4
+    },
+    {
+      "udi": 4418,
+      "time": "2026-10-04 07:37",
+      "top_cause": "PWF",
+      "expected_downtime_min": 52.8,
+      "delay_contribution_min": 35.2
+    }
+  ],
+  "assumptions": {
+    "business_layer": "synthetic",
+    "takt_min": 1.0,
+    "substitute_share": 0.3,
+    "recovery_tau_h": 24.0,
+    "slack_mean_min": 360.0,
+    "priority_factor": {
+      "1": 0.7,
+      "2": 0.85,
+      "3": 1.0
+    },
+    "downtime_min_by_cause": {
+      "TWF": 15,
+      "HDF": 45,
+      "PWF": 60,
+      "OSF": 90,
+      "RNF": 30
+    },
+    "severity_by_cause": {
+      "TWF": 0.5,
+      "HDF": 0.75,
+      "PWF": 0.85,
+      "OSF": 0.95,
+      "RNF": 0.6
+    },
+    "note": "Đơn hàng, đệm, thời gian dừng, máy dự phòng là giả lập; cần hiệu chỉnh bằng dữ liệu DENSO."
+  }
+}

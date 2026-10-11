@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "D3 incident record (mục 5.3 + Part 0)",
+  "type": "object",
+  "required": [
+    "incident_id",
+    "timestamp",
+    "timestamp_is_synthetic",
+    "node_id",
+    "node_type",
+    "dataset",
+    "source_row_id",
+    "anomaly_type",
+    "severity",
+    "anomaly_score"
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string",
+      "pattern": "^INC_"
+    },
+    "timestamp": {
+      "type": "string",
+      "description": "ISO 8601"
+    },
+    "timestamp_is_synthetic": {
+      "type": "boolean"
+    },
+    "node_id": {
+      "type": "string"
+    },
+    "node_type": {
+      "enum": [
+        "machine",
+        "process"
+      ]
+    },
+    "dataset": {
+      "enum": [
+        "ai4i",
+        "secom"
+      ]
+    },
+    "source_row_id": {
+      "type": "integer",
+      "description": "AI4I: UDI; SECOM: chỉ số dòng gốc"
+    },
+    "source_row_pos": {
+      "type": "integer"
+    },
+    "failure_mode": {
+      "enum": [
+        "TWF",
+        "HDF",
+        "PWF",
+        "OSF",
+        "RNF",
+        "UNK",
+        "SECOM_FAIL",
+        "NORMAL"
+      ]
+    },
+    "anomaly_type": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "Cao",
+        "Trung bình",
+        "Thấp"
+      ]
+    },
+    "severity_score": {
+      "type": "number"
+    },
+    "anomaly_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "detected": {
+      "type": "boolean"
+    },
+    "suspected_cause_group": {
+      "type": "string"
+    }
+  }
+}

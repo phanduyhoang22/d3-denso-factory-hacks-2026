@@ -1,0 +1,523 @@
+{
+  "schema_version": "p2.graph_view.v1",
+  "scenario": "material_delay",
+  "nodes": [
+    {
+      "id": "A11",
+      "name": "Phôi A11",
+      "type": "part",
+      "layer": "logic",
+      "owner_dept": "Kho & Logistics",
+      "risk": 0.6,
+      "band": "high",
+      "is_source": true
+    },
+    {
+      "id": "A13",
+      "name": "Chi tiết phay A13",
+      "type": "part",
+      "layer": "logic",
+      "owner_dept": "Kho & Logistics",
+      "risk": 0.345,
+      "band": "medium",
+      "is_source": false
+    },
+    {
+      "id": "FM_HDF",
+      "name": "Tản nhiệt kém",
+      "type": "failure_mode",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "FM_OSF",
+      "name": "Quá tải cơ học",
+      "type": "failure_mode",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "FM_PWF",
+      "name": "Công suất bất thường",
+      "type": "failure_mode",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "FM_RNF",
+      "name": "Lỗi ngẫu nhiên",
+      "type": "failure_mode",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "FM_TWF",
+      "name": "Mòn dụng cụ",
+      "type": "failure_mode",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "M03",
+      "name": "Máy cắt phôi (thượng nguồn)",
+      "type": "machine",
+      "layer": "logic",
+      "owner_dept": "Bảo trì",
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "M05",
+      "name": "Máy phay (có dữ liệu AI4I)",
+      "type": "machine",
+      "layer": "logic",
+      "owner_dept": "Bảo trì",
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "M07",
+      "name": "Máy phay dự phòng",
+      "type": "machine",
+      "layer": "logic",
+      "owner_dept": "Bảo trì",
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "M09",
+      "name": "Máy lắp ráp/kiểm tra (hạ nguồn)",
+      "type": "machine",
+      "layer": "logic",
+      "owner_dept": "Bảo trì",
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "ORD_H04",
+      "name": "ORD_H04",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.099,
+      "band": "low",
+      "is_source": false
+    },
+    {
+      "id": "ORD_H05",
+      "name": "ORD_H05",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.077,
+      "band": "low",
+      "is_source": false
+    },
+    {
+      "id": "ORD_L08",
+      "name": "ORD_L08",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.054,
+      "band": "low",
+      "is_source": false
+    },
+    {
+      "id": "ORD_L12",
+      "name": "ORD_L12",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.07,
+      "band": "low",
+      "is_source": false
+    },
+    {
+      "id": "ORD_M08",
+      "name": "ORD_M08",
+      "type": "order",
+      "layer": "business",
+      "owner_dept": "Kế hoạch sản xuất",
+      "risk": 0.18,
+      "band": "low",
+      "is_source": false
+    },
+    {
+      "id": "P01",
+      "name": "Cắt phôi",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "P02",
+      "name": "Phay",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "risk": 0.4,
+      "band": "medium",
+      "is_source": false
+    },
+    {
+      "id": "P03",
+      "name": "Lắp ráp & kiểm tra",
+      "type": "process",
+      "layer": "logic",
+      "owner_dept": "Sản xuất",
+      "risk": 0.314,
+      "band": "medium",
+      "is_source": false
+    },
+    {
+      "id": "PRD_H",
+      "name": "Sản phẩm loại H",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "risk": 0.282,
+      "band": "medium",
+      "is_source": false
+    },
+    {
+      "id": "PRD_L",
+      "name": "Sản phẩm loại L",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "risk": 0.231,
+      "band": "low",
+      "is_source": false
+    },
+    {
+      "id": "PRD_M",
+      "name": "Sản phẩm loại M",
+      "type": "product",
+      "layer": "logic",
+      "owner_dept": "Chất lượng",
+      "risk": 0.262,
+      "band": "medium",
+      "is_source": false
+    },
+    {
+      "id": "S_AIR",
+      "name": "Air temperature [K]",
+      "type": "sensor",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "S_PROC",
+      "name": "Process temperature [K]",
+      "type": "sensor",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "S_RPM",
+      "name": "Rotational speed [rpm]",
+      "type": "sensor",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "S_TORQUE",
+      "name": "Torque [Nm]",
+      "type": "sensor",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    },
+    {
+      "id": "S_WEAR",
+      "name": "Tool wear [min]",
+      "type": "sensor",
+      "layer": "logic",
+      "owner_dept": null,
+      "risk": null,
+      "band": null,
+      "is_source": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "S_AIR",
+      "target": "FM_HDF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_AIR",
+      "target": "M05",
+      "rel": "monitors",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_PROC",
+      "target": "FM_HDF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_PROC",
+      "target": "M05",
+      "rel": "monitors",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_RPM",
+      "target": "FM_HDF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_RPM",
+      "target": "FM_PWF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_RPM",
+      "target": "M05",
+      "rel": "monitors",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_TORQUE",
+      "target": "FM_PWF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_TORQUE",
+      "target": "FM_OSF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_TORQUE",
+      "target": "M05",
+      "rel": "monitors",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_WEAR",
+      "target": "FM_TWF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_WEAR",
+      "target": "FM_OSF",
+      "rel": "evidence_for",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "S_WEAR",
+      "target": "M05",
+      "rel": "monitors",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "FM_TWF",
+      "target": "M05",
+      "rel": "can_occur_on",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "M05",
+      "target": "P02",
+      "rel": "performs",
+      "buffer_min": 0.0,
+      "on_path": false
+    },
+    {
+      "source": "FM_HDF",
+      "target": "M05",
+      "rel": "can_occur_on",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "FM_PWF",
+      "target": "M05",
+      "rel": "can_occur_on",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "FM_OSF",
+      "target": "M05",
+      "rel": "can_occur_on",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "FM_RNF",
+      "target": "M05",
+      "rel": "can_occur_on",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "M03",
+      "target": "P01",
+      "rel": "performs",
+      "buffer_min": 0.0,
+      "on_path": false
+    },
+    {
+      "source": "M07",
+      "target": "P02",
+      "rel": "can_perform",
+      "buffer_min": null,
+      "on_path": false
+    },
+    {
+      "source": "M09",
+      "target": "P03",
+      "rel": "performs",
+      "buffer_min": 0.0,
+      "on_path": false
+    },
+    {
+      "source": "P01",
+      "target": "A11",
+      "rel": "produces",
+      "buffer_min": 0.0,
+      "on_path": false
+    },
+    {
+      "source": "P02",
+      "target": "A13",
+      "rel": "produces",
+      "buffer_min": 5.0,
+      "on_path": true
+    },
+    {
+      "source": "P03",
+      "target": "PRD_L",
+      "rel": "produces",
+      "buffer_min": 20.0,
+      "on_path": true
+    },
+    {
+      "source": "P03",
+      "target": "PRD_M",
+      "rel": "produces",
+      "buffer_min": 8.0,
+      "on_path": true
+    },
+    {
+      "source": "P03",
+      "target": "PRD_H",
+      "rel": "produces",
+      "buffer_min": 0.0,
+      "on_path": true
+    },
+    {
+      "source": "A11",
+      "target": "P02",
+      "rel": "consumed_by",
+      "buffer_min": 60.0,
+      "on_path": true
+    },
+    {
+      "source": "A13",
+      "target": "P03",
+      "rel": "consumed_by",
+      "buffer_min": 5.0,
+      "on_path": true
+    },
+    {
+      "source": "PRD_L",
+      "target": "ORD_L08",
+      "rel": "requested",
+      "buffer_min": 0.0,
+      "on_path": true
+    },
+    {
+      "source": "PRD_L",
+      "target": "ORD_L12",
+      "rel": "requested",
+      "buffer_min": 0.0,
+      "on_path": true
+    },
+    {
+      "source": "PRD_M",
+      "target": "ORD_M08",
+      "rel": "requested",
+      "buffer_min": 0.0,
+      "on_path": true
+    },
+    {
+      "source": "PRD_H",
+      "target": "ORD_H04",
+      "rel": "requested",
+      "buffer_min": 0.0,
+      "on_path": true
+    },
+    {
+      "source": "PRD_H",
+      "target": "ORD_H05",
+      "rel": "requested",
+      "buffer_min": 0.0,
+      "on_path": true
+    }
+  ],
+  "legend": {
+    "band": {
+      "high": "risk >= 0.5",
+      "medium": "risk >= 0.25",
+      "low": "risk > 0"
+    }
+  }
+}

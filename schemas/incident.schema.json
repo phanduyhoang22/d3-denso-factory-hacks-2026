@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "d3/incident.schema.json",
+  "title": "Incident record (bản ghi sự cố chuẩn hóa, mục 5.3)",
+  "description": "Output của Module 1 (P1: AI4I, P2: SECOM). File incidents_*.json là một mảng các bản ghi này.",
+  "type": "object",
+  "required": [
+    "incident_id",
+    "timestamp",
+    "timestamp_is_synthetic",
+    "dataset",
+    "node_id",
+    "source_row",
+    "anomaly_type",
+    "severity",
+    "anomaly_score",
+    "detector",
+    "split"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "incident_id": {
+      "type": "string",
+      "pattern": "^INC_[A-Za-z0-9_]+$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601, ví dụ 2026-09-15T10:32:00"
+    },
+    "timestamp_is_synthetic": {
+      "type": "boolean",
+      "description": "true với AI4I (gán theo thứ tự dòng), false với SECOM (timestamp thật)"
+    },
+    "dataset": {
+      "enum": [
+        "ai4i",
+        "secom",
+        "mock"
+      ]
+    },
+    "node_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Node trong đồ thị mà bản ghi được gán vào (P3 điền ở assign_data); null nếu chưa gán"
+    },
+    "source_row": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Chỉ số dòng trong file dataset gốc, để truy lại"
+    },
+    "anomaly_type": {
+      "type": "string",
+      "description": "Mô tả ngắn, ví dụ 'Quá tải mô-men', 'Mòn dao', 'SECOM fail'"
+    },
+    "failure_mode": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^(TWF|HDF|PWF|OSF|RNF|UNKNOWN|SECOM_FAIL)(\\+(TWF|HDF|PWF|OSF|RNF))*$",
+      "description": "Nhãn thật từ dataset; nhiều chế độ nối bằng '+' (vd PWF+OSF); UNKNOWN = Machine failure=1 nhưng không có chế độ; null nếu không phải lỗi thật"
+    },
+    "severity": {
+      "enum": [
+        "low",
+        "medium",
+        "high"
+      ]
+    },
+    "anomaly_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "detector": {
+      "enum": [
+        "rule",
+        "iforest",
+        "ocsvm",
+        "autoencoder",
+        "lstm_ae",
+        "mock",
+        "label"
+      ],
+      "description": "label = dùng nhãn lỗi thật (khi Module 1 chưa xong)"
+    },
+    "suspected_cause_group": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Nhóm nguyên nhân nghi ngờ, ví dụ 'Dao mòn quá hạn'"
+    },
+    "split": {
+      "enum": [
+        "train",
+        "val",
+        "test"
+      ]
+    },
+    "is_confounder": {
+      "type": "boolean",
+      "default": false,
+      "description": "Chỉ bộ sinh kịch bản (P3) điền. Pipeline KHÔNG được đọc trường này."
+    }
+  }
+}
